@@ -10,13 +10,13 @@ const [openIndex, setOpenIndex] = useState<number | null>(null);
       q: "What is outreach AI?",
       a: "Lorem ipsum dolor sit amet consectetur. At morbi arcu feugiat est tristique risus ipsum maecenas morbi. Elementum eu non eleifend dolor. Erat fermentum id nisl diam rhoncus proin purus duis."
     },
-    { q: "What is AI personalization?" },
-    { q: "What's the impact of AI on prospecting?" },
-    { q: "Can AI replace human interaction in outreach?" },
-    { q: "How does AI improve outreach effectiveness?" },
-    { q: "What are the benefits of using AI in outreach?" },
-    { q: "Can AI help in optimizing outreach campaigns?" },
-    { q: "How to generate personalized campaigns with lemlist AI?" },
+    { q: "What is AI personalization?" , a: "Lorem ipsum dolor sit amet consectetur. At morbi arcu feugiat est tristique risus ipsum maecenas morbi. Elementum eu non eleifend dolor. Erat fermentum id nisl diam rhoncus proin purus duis."},
+    { q: "What's the impact of AI on prospecting?", a: "Lorem ipsum dolor sit amet consectetur. At morbi arcu feugiat est tristique risus ipsum maecenas morbi. Elementum eu non eleifend dolor. Erat fermentum id nisl diam rhoncus proin purus duis." },
+    { q: "Can AI replace human interaction in outreach?" , a: "Lorem ipsum dolor sit amet consectetur. At morbi arcu feugiat est tristique risus ipsum maecenas morbi. Elementum eu non eleifend dolor. Erat fermentum id nisl diam rhoncus proin purus duis."},
+    { q: "How does AI improve outreach effectiveness?", a: "Lorem ipsum dolor sit amet consectetur. At morbi arcu feugiat est tristique risus ipsum maecenas morbi. Elementum eu non eleifend dolor. Erat fermentum id nisl diam rhoncus proin purus duis." },
+    { q: "What are the benefits of using AI in outreach?", a: "Lorem ipsum dolor sit amet consectetur. At morbi arcu feugiat est tristique risus ipsum maecenas morbi. Elementum eu non eleifend dolor. Erat fermentum id nisl diam rhoncus proin purus duis." },
+    { q: "Can AI help in optimizing outreach campaigns?", a: "Lorem ipsum dolor sit amet consectetur. At morbi arcu feugiat est tristique risus ipsum maecenas morbi. Elementum eu non eleifend dolor. Erat fermentum id nisl diam rhoncus proin purus duis." },
+    { q: "How to generate personalized campaigns with lemlist AI?" , a: "Lorem ipsum dolor sit amet consectetur. At morbi arcu feugiat est tristique risus ipsum maecenas morbi. Elementum eu non eleifend dolor. Erat fermentum id nisl diam rhoncus proin purus duis."},
   ];
 
   return (
@@ -56,7 +56,7 @@ const [openIndex, setOpenIndex] = useState<number | null>(null);
                 <div className="bg-[#050514] rounded-[13px] px-5 py-5">
                   <button
                     onClick={() => setOpenIndex(isOpen ? null : index)}
-                    className="w-full flex justify-between items-center"
+                    className="w-full flex justify-between items-center cursor-pointer"
                   >
                     <p className="text-base font-medium text-left">
                       {item.q}
