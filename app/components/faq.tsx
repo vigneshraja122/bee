@@ -21,10 +21,10 @@ const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
     <section className="w-full h-screen bg-[#00020f] py-10">
-      <div className="w-[1320px] mx-auto flex gap-[120px] text-white">
+      <div className="w-[80%] mx-auto flex gap-[120px] text-white">
 
         {/* LEFT SIDE */}
-        <div className="w-[420px] flex flex-col gap-12">
+        <div className="w-[40%] flex flex-col gap-12">
           <h2 className="text-[64px] font-bold leading-tight">
             Frequently <br /> Asked <br /> Questions
           </h2>
@@ -43,7 +43,7 @@ const [openIndex, setOpenIndex] = useState<number | null>(null);
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="w-[646px] flex flex-col gap-4">
+        <div className="w-[60%] flex flex-col gap-4">
           {faqs.map((item, index) => {
             const isOpen = openIndex === index;
 
@@ -53,7 +53,7 @@ const [openIndex, setOpenIndex] = useState<number | null>(null);
                 className="relative rounded-[14px] p-[0.8px] bg-[linear-gradient(160deg,#3ADCFF_0%,#050514_65%)]"
                 
               >
-                <div className="bg-[#050514] rounded-[13px] px-5 py-5">
+                <div className="bg-[#050514] rounded-[13px] px-5 py-3">
                   <button
                     onClick={() => setOpenIndex(isOpen ? null : index)}
                     className="w-full flex justify-between items-center cursor-pointer"
