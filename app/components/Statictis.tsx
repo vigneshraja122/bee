@@ -1,3 +1,4 @@
+import NavLabel from "./NavLable";
 const Statictis = () => {
     return (
         <div className="h-[130vh] w-full flex flex-col justify-center items-center bg-[#00020F] space-y-2">
@@ -16,12 +17,17 @@ const Statictis = () => {
                     </div>
 
 
-                    <h2 className="relative text-white font-semibold tracking-wide ">
+                    {/* <h2 className="relative text-white font-semibold tracking-wide ">
                         Who we are
-                    </h2>
+                    </h2> */}
+                    <NavLabel label="Who we are"/>
                 </div>
                 <div className="flex flex-col">
-                    <div className="flex items-center gap-2"><h1 className="text-3xl">We helping</h1><img src="/animation.svg" className="w-10 h-10"></img><h1 className="text-3xl">grow businesses</h1></div><div className="flex items-center"><h1 className="text-3xl">and</h1><span><img src="/animation (1).svg" className="w-10 h-10"></img></span><h1 className="text-3xl">scale with smart, data-</h1></div><div><h1 className="text-3xl">driven AI agency </h1></div>
+                    <div className="flex items-center gap-2"><h1 className="text-3xl text-white">We helping</h1><img src="/animation.svg" className="w-10 h-10"></img>
+                    <h1 className="text-3xl text-white">grow businesses</h1></div><div className="flex items-center">
+                        <h1 className="text-3xl text-white">and</h1><span><img src="/animation (1).svg" className="w-10 h-10"></img></span>
+                        <h1 className="text-3xl text-white">scale with smart, data-</h1></div><div><h1 className="text-3xl text-white">driven AI agency </h1>
+                        </div>
                 </div>
 
 

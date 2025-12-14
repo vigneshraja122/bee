@@ -1,11 +1,12 @@
 const Whatwebuild = () => {
     return (
         <div className="w-full h-[320vh] bg-[#00020F] flex flex-col items-center" style={{ backgroundImage: "" }}>
-            <h1 className="text-4xl text-white">What We Build</h1>
+            <h1 className="text-4xl mt-14 font-bold text-transparent bg-clip-text bg-[linear-gradient(90deg,#00A993_0%,#57ADCD_28%,#FFFFFF_60%)]">
+            What We Build</h1>
             <div className="w-full flex justify-center bg-[#00020F] py-10">
-                <div className="relative w-[74%] max-w-7xl rounded-[28px] overflow-hidden
-    bg-gradient-to-br from-[#0B0F1C] via-[#070A14] to-[#05070F]
-    border border-white/10">
+             <div className="relative w-[74%] max-w-7xl rounded-[28px] overflow-hidden
+                bg-gradient-to-br from-[#0B0F1C] via-[#070A14] to-[#05070F]
+                 border border-white/10">
 
                     {/* subtle noise */}
                     <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.08),transparent_40%)]" />
