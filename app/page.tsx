@@ -7,6 +7,7 @@ import FAQSection from "./components/faq";
 import AIProjectFinderSection from "./components/AIProjectFinderSection";
 import Whychooseus from "./components/whychooseus";
 import Aiblueprint from "./components/Aiblueprint";
+import TechnologiesSection from "./components/TechnologiesUsed";
 export default function Home() {
   return (
     <div>
@@ -15,6 +16,7 @@ export default function Home() {
       <Aiblueprint/>
       <Whatwebuild/>
       <Whychooseus/>
+      <TechnologiesSection/>
       <AIProjectFinderSection/>
       <FAQSection/>
       <Footer/>
