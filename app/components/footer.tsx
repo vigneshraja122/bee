@@ -171,7 +171,7 @@ const Footer = () => {
       <div className="absolute top-[615px] w-full border-t border-[#262833]" />
 
       {/* Social links */}
-      <div className="absolute top-[615px] left-1/2 -translate-x-1/2 w-[1429px] flex">
+      <div className="absolute top-[615px] left-1/2 -translate-x-1/2 w-full flex">
         {[
           { name: "Facebook", icon: FacebookIcon },
           { name: "Twitter", icon: TwitterIcon },
