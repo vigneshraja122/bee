@@ -26,11 +26,9 @@ const Statictis = () => {
                     <div className="flex items-center gap-2"><h1 className="text-3xl text-white">We helping</h1><img src="/animation.svg" className="w-10 h-10"></img>
                     <h1 className="text-3xl text-white">grow businesses</h1></div><div className="flex items-center">
                         <h1 className="text-3xl text-white">and</h1><span><img src="/animation (1).svg" className="w-10 h-10"></img></span>
-                        <h1 className="text-3xl text-white">scale with smart, data-</h1></div><div><h1 className="text-3xl text-white">driven AI agency </h1>
+                        <h1 className="text-3xl text-white">scale with smart, data-</h1></div><div className="flex "><h1 className="text-3xl text-white">driven AI agency </h1><img src="/Container (2).svg" className="w-40"/>
                         </div>
                 </div>
-
-
             </div>
             <div className="flex justify-center items-center h-[60%] w-[80%] gap-4">
                 <div className="w-[25%] h-full  flex flex-col justify-center items-center gap-10">
