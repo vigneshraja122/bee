@@ -1,3 +1,5 @@
+import NavLabel from "./NavLable";
+
 const ProcessSection = () => {
   return (
     <section className="w-full bg-black py-24 flex justify-center">
@@ -10,10 +12,22 @@ const ProcessSection = () => {
       >
         {/* TOP BADGE */}
         <div className="flex justify-center mb-6">
-          <div className="flex items-center gap-2 px-4 py-2 rounded-full
-            bg-white/5 border border-white/10 text-sm text-white">
-            <span className="w-2 h-2 rounded-full bg-cyan-400" />
-            Simple Process
+          <div className="relative inline-flex items-center gap-1 rounded-xl 
+  bg-linear-to-r from-[#0B0F1C] via-[#111827] to-[#0B0F1C]
+  shadow-[0_0_40px_rgba(0,255,255,0.15)]">
+            <span className="absolute inset-0 rounded-xl bg-[radial-gradient(circle_at_20%_30%,rgba(0,255,255,0.15),transparent_40%)] pointer-events-none"></span>
+
+
+            <div className="relative flex items-center justify-center w-10 h-10 rounded-full 
+   ">
+              <img src="/Group 2.svg" className="w-5 h-5"></img>
+            </div>
+
+
+            {/* <h2 className="relative text-white font-semibold tracking-wide ">
+                        Who we are
+                    </h2> */}
+            <NavLabel label="Simple process" />
           </div>
         </div>
 
@@ -83,10 +97,13 @@ const ProcessSection = () => {
           ].map((item) => (
             <div
               key={item.step}
-              className="relative rounded-2xl p-6
-              bg-gradient-to-b from-[#1b1f2a] to-[#0b0f1a]
+              className="relative rounded-2xl p-6 overflow-hidden
+              bg-[linear-gradient(180deg,#05070f_0%,#0b0f1a_5%,#06303a_85%,#22d3ee_100%)]
               border border-white/10
-              shadow-[inset_0_0_0.5px_rgba(255,255,255,0.2)]
+              shadow-[0_20px_60px_rgba(0,180,180,0.15)]
+              transition-all duration-300
+              hover:scale-[1.02]
+              hover:shadow-[0_30px_80px_rgba(0,255,255,0.25)]
               text-white"
             >
               {/* STEP BADGE */}

@@ -8,11 +8,11 @@ const AIProjectFinderSection = () => {
 
       {/* SECTION HEADER */}
       <div className="max-w-[1140px] mx-auto text-center">
-        <h2 className="text-[64px] font-bold mb-6">
+        <h2 className="text-5xl font-bold mb-6">
           3x your reply rates with AI
         </h2>
 
-        <p className="text-xl text-white/80 max-w-[640px] mx-auto leading-relaxed">
+        <p className="text-lg text-white/80 max-w-[640px] mx-auto leading-relaxed">
           Generate highly-personalized campaigns with AI.
           <br />
           Expert quality, no expertise required!

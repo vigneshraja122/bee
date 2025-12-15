@@ -1,10 +1,15 @@
 const Whatwebuild = () => {
     return (
-        <div className="w-full h-[320vh] bg-[#00020F] flex flex-col items-center" style={{ backgroundImage: "" }}>
+        <div className="w-full h-[320vh] bg-[#00020F] flex flex-col items-center" style={{
+            backgroundImage: "url('/Group 1707480377.svg')",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "top center",
+        }}>
             <h1 className="text-4xl mt-14 font-bold text-transparent bg-clip-text bg-[linear-gradient(90deg,#00A993_0%,#57ADCD_28%,#FFFFFF_60%)]">
-            What We Build</h1>
+                What We Build</h1>
             <div className="w-full flex justify-center bg-[#00020F] py-10">
-             <div className="relative w-[74%] max-w-7xl rounded-[28px] overflow-hidden
+                <div className="relative w-[74%] max-w-7xl rounded-[28px] overflow-hidden
                 bg-gradient-to-br from-[#0B0F1C] via-[#070A14] to-[#05070F]
                  border border-white/10">
 
@@ -24,7 +29,7 @@ const Whatwebuild = () => {
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00121A" strokeWidth="2">
                                     <path d="M6 9l6 6 6-6" />
                                 </svg>
-                             
+
                             </div>
 
                             <h2 className="text-white text-2xl font-semibold mb-8 ml-6">
@@ -142,7 +147,7 @@ const Whatwebuild = () => {
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00121A" strokeWidth="2">
                                     <path d="M6 9l6 6 6-6" />
                                 </svg>
-                              
+
                             </div>
 
                             <h2 className="text-white text-2xl font-bold mb-8 ml-6">
