@@ -23,11 +23,11 @@ const AIProjectFinderSection = () => {
       <div className="relative max-w-[1140px] mx-auto">
 
         {/* BACKGROUND IMAGE */}
-        <Image
-          src={ProjectFinderBg}
+        <img
+          src="assets/images/aiproject-finder-ui.png"
           alt="AI Project Finder"
           className="w-full rounded-[48px]"
-          priority
+      
         />
 
         {/* OVERLAY CONTENT

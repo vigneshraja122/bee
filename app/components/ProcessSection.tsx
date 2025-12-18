@@ -47,7 +47,7 @@ const ProcessSection = () => {
         </div>
 
         {/* TAGS */}
-        <div className="flex flex-wrap gap-3 justify-center mb-14">
+        <div className="flex flex-wrap gap-3 justify-start mb-14">
           {[
             "WEB3",
             "IT Services",
@@ -72,7 +72,7 @@ const ProcessSection = () => {
         </div>
 
         {/* STEPS */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 ">
           {[
             {
               step: "STEP 01",
@@ -94,6 +94,37 @@ const ProcessSection = () => {
               title: "Execute & Install",
               desc: "Planned and developed IT solutions are actually put into practical operation.",
             },
+               {
+              step: "STEP 01",
+              title: "Discussion",
+              desc: "Communication, collaboration, & knowledge sharing through structured.",
+            },
+            {
+              step: "STEP 02",
+              title: "Ideas & Concept",
+              desc: "Leveraging technology for business innovation and problem-solving.",
+            },
+            {
+              step: "STEP 03",
+              title: "Testing & Trying",
+              desc: "Process of evaluating and verifying that IT systems and integrated solutions.",
+            },
+            {
+              step: "STEP 04",
+              title: "Execute & Install",
+              desc: "Planned and developed IT solutions are actually put into practical operation.",
+            },
+               {
+              step: "STEP 01",
+              title: "Discussion",
+              desc: "Communication, collaboration, & knowledge sharing through structured.",
+            },
+            {
+              step: "STEP 02",
+              title: "Ideas & Concept",
+              desc: "Leveraging technology for business innovation and problem-solving.",
+            },
+            
           ].map((item) => (
             <div
               key={item.step}

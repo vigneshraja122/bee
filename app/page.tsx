@@ -1,4 +1,3 @@
-
 import Hero from "./components/Hero";
 import Statictis from "./components/Statictis";
 import Whatwebuild from "./components/Whatwebuild";
@@ -9,13 +8,18 @@ import Whychooseus from "./components/whychooseus";
 import Aiblueprint from "./components/Aiblueprint";
 import ProcessSection from "./components/ProcessSection";
 import TechnologiesSection from "./components/TechnologiesUsed";
+import Aisolution from "./components/Aisolution";
+import Teams from "./components/Teams";
 export default function Home() {
   return (
     <div>
       <Hero/>
       <Statictis/>
+       <Teams/>
+      <Aisolution/>
+     
       <Aiblueprint/>
-      <Whatwebuild/>
+      {/* <Whatwebuild/> */}
       <Whychooseus/>
       <TechnologiesSection/>
       <AIProjectFinderSection/>

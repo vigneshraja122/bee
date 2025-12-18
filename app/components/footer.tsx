@@ -94,13 +94,13 @@ const Footer = () => {
   return (
     <footer className="relative h-screen w-full bg-[#00020f] overflow-hidden">
       {/* Background text */}
-      <Image
-        src={beelockImg}
+      <img
+        src="assets/images/footer-bg-text.png"
         alt="Beelock"
-        className="absolute left-[150px] top-[27px]"
+        className="absolute left-[150px] top-[27px] w-full h-96"
         width={1200} // adjust to match 320px text size
         height={300}
-        priority
+      
       />
 
       {/* Email CTA */}
