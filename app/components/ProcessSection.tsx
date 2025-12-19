@@ -5,7 +5,7 @@ const ProcessSection = () => {
     <section className="w-full bg-black py-24 flex justify-center">
       <div
         className="relative w-[90%] max-w-7xl rounded-3xl
-        bg-gradient-to-b from-[#0b0f1a] via-[#121212] to-[#085967]
+        bg-gradient-to-b from-[#0b0f1a] via-[#000000] to-[#085967]
         border border-white/10
         shadow-[0_0_80px_rgba(0,255,255,0.08)]
         px-10 py-16"
@@ -129,7 +129,7 @@ const ProcessSection = () => {
             <div
               key={item.step}
               className="relative rounded-2xl p-6 overflow-hidden
-              bg-[linear-gradient(180deg,#05070f_0%,#0b0f1a_5%,#06303a_85%,#22d3ee_100%)]
+     
               border border-white/10
               shadow-[0_20px_60px_rgba(0,180,180,0.15)]
               transition-all duration-300
@@ -142,7 +142,7 @@ const ProcessSection = () => {
                 <span className="px-3 py-1 text-xs rounded-full bg-cyan-400/20 text-cyan-300">
                   {item.step}
                 </span>
-                <span className="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center">
+                <span className="w-7 h-7 rounded-full bg-white text-black flex items-center justify-center">
                   ↗
                 </span>
               </div>

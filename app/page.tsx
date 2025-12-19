@@ -10,22 +10,24 @@ import ProcessSection from "./components/ProcessSection";
 import TechnologiesSection from "./components/TechnologiesUsed";
 import Aisolution from "./components/Aisolution";
 import Teams from "./components/Teams";
+import TechTrendsMarquee from "./components/Marquee";
+
 export default function Home() {
   return (
-    <div>
-      <Hero/>
-      <Statictis/>
-       <Teams/>
-      <Aisolution/>
-     
-      <Aiblueprint/>
+    <div className="bg-[#00020F]">
+      <Hero />
+      <Statictis />
+      <Teams />
+      <TechTrendsMarquee />
+      <Aisolution />
+      <Aiblueprint />
       {/* <Whatwebuild/> */}
-      <Whychooseus/>
-      <TechnologiesSection/>
-      <AIProjectFinderSection/>
-      <ProcessSection/>
-      <FAQSection/>
-      <Footer/>
+      <Whychooseus />
+      <TechnologiesSection />
+      <AIProjectFinderSection />
+      <ProcessSection />
+      <FAQSection />
+      <Footer />
     </div>
   );
 }

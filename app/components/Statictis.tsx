@@ -36,7 +36,7 @@ const Statictis = () => {
                         <h1 className="text-4xl text-center">Pioneers in Blockchain Engineering</h1>
                     </div>
                     <div className="text-white w-64 h-64 gap-4 rounded-[32px] bg-gradient-to-br flex flex-col justify-center items-center from-[#2A2A2A] via-[#151515] to-[#050505] border border-white/10 shadow-[inset_0_1px_1px_rgba(255,255,255,0.15),_0_20px_40px_rgba(0,0,0,0.8)]">
-                        <p className="text-center text-3xl">Predictive & Adaptive Architecture</p>
+                        <img src="/Frame 19.svg"/><p className="text-center text-3xl">Predictive & Adaptive Architecture</p>
                     </div>
                 </div>
                 <div className="w-[30%] h-full  flex justify-center items-center">
@@ -58,11 +58,11 @@ const Statictis = () => {
                         </div>
 
                         {/* Phone image */}
-                        <div className="absolute bottom-0 left-1/2 -translate-x-1/2">
+                        <div className="absolute  w-full h-full ">
                             <img
                                 src="/84b9d6946f21a30ebcea8ae14a70972e 1.svg"
                                 alt="Phone UI"
-                                className="w-[460px] h-[200px]"
+                               className="w-full h-[73%]"
                             />
                         </div>
                     </div>
@@ -71,11 +71,11 @@ const Statictis = () => {
                 <div className="w-[30%] h-full flex flex-col justify-center items-end gap-10">
                     <div className="text-white w-full h-64 rounded-[32px] bg-gradient-to-br gap-4 flex flex-col justify-center items-center from-[#2A2A2A] via-[#151515] to-[#050505] border border-white/10 shadow-[inset_0_1px_1px_rgba(255,255,255,0.15),_0_20px_40px_rgba(0,0,0,0.8)]">
 
-                        <h1 className="text-4xl text-center"> Automated & Optimized</h1>
+                        <h1  className="bg-gradient-to-r from-[#2AF5FF] via-[#22E6E0] to-[#16D6A1] bg-clip-text text-transparent text-4xl text-center font-semibold"> Automated & Optimized</h1>
                         <p>Machine learning suggestions</p>
                     </div>
                     <div className="text-white w-full h-64 gap-4 flex flex-col justify-center items-center rounded-[32px] bg-gradient-to-br from-[#2A2A2A] via-[#151515] to-[#050505]f border border-white/10 shadow-[inset_0_1px_1px_rgba(255,255,255,0.15),0_20px_40px_rgba(0,0,0,0.8)]">
-                        <h1 className="text-4xl text-center">Accelerated Time-to-Market</h1>
+                        <h1 className="text-4xl text-center">Accelerated <br/>Time-to-<br/>Market</h1>
                     </div>
                 </div>
             </div >

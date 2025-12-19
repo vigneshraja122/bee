@@ -92,19 +92,20 @@ const Footer = () => {
     </svg>
   );
   return (
-    <footer className="relative h-screen w-full bg-[#00020f] overflow-hidden">
+    <footer className="relative h-screen w-full bg-[#00020f] overflow-hidden flex flex-col items-center">
       {/* Background text */}
       <img
         src="assets/images/footer-bg-text.png"
         alt="Beelock"
-        className="absolute left-[150px] top-[27px] w-full h-96"
-        width={1200} // adjust to match 320px text size
-        height={300}
+        className="absolute  w-[80%] h-96"
+       
       
       />
+      <p><span className="text-[#1BFFE1]">Beelockchain- he World’s First AI-Centered Blockchain Development Company</span><br/>Future-ready blockchain development, smart contract solutions, Web3 ecosystems, and AI-powered<br/>automation all under one roof.
+</p>
 
       {/* Email CTA */}
-      <div className="absolute left-[500px] top-[150px] w-[518px] h-[78px] rounded-[61px] overflow-hidden">
+      <div className="absolute left-[400px] top-[150px] w-[518px] h-[78px] rounded-[61px] overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-[#3adcff] to-[#1bffe1]" />
 
         {/* Mail Icon */}
