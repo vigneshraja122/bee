@@ -12,7 +12,7 @@ const Hero = () => {
                         <h1 className="text-4xl font-semibold text-white">World’s First AI-Powered Blockchain &<br /> Gaming Development Engine</h1>
                         <p className="text-md text-white">Where Blockchain, Crypto, Metaverse, and AI-Automation come together<br /> to build the future</p>
                     </div>
-                    <div className="w-[70%] flex justify-between items-center">
+                    <div className="w-[45%] flex justify-between items-center">
                         <GradientGlowButton>
                             Build Your Project
                         </GradientGlowButton>

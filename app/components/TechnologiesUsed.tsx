@@ -51,11 +51,12 @@ const [activeId, setActiveId] = useState<number>(technologies[0].id);
                 >
                     {/* ICON */}
                     <div className="absolute top-[20px] left-1/2 -translate-x-1/2">
-                    <Image
+                    <img
                         src={tech.icon}
                         alt={tech.label}
-                        width={40}
-                        height={40}
+                     
+                        className="w-10 h-10"
+
                     />
                     </div>
 
