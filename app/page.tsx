@@ -9,6 +9,8 @@ import Whychooseus from "./components/whychooseus";
 import Aiblueprint from "./components/Aiblueprint";
 import ProcessSection from "./components/ProcessSection";
 import TechnologiesSection from "./components/TechnologiesUsed";
+import HowItWorksCards from "./sections/HowItWorksCards";
+import HowItworksSlide from "./sections/HowItworksSlide";
 export default function Home() {
   return (
     <div>
@@ -19,6 +21,8 @@ export default function Home() {
       <Whychooseus/>
       <TechnologiesSection/>
       <AIProjectFinderSection/>
+      <HowItWorksCards/>
+      <HowItworksSlide/>
       <ProcessSection/>
       <FAQSection/>
       <Footer/>

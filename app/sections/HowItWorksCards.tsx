@@ -1,0 +1,135 @@
+import Image from "next/image";
+
+const HowItWorksSection = () => {
+  return (
+  <section className="relative w-full py-24 overflow-hidden bg-[#00020f]">
+  
+  {/* Background image overlay */}
+  <div
+    className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-70"
+    style={{
+      backgroundImage: "url('/assets/images/howitworks-bg-cards.png')",
+    }}
+  />
+
+    
+
+      {/* Container */}
+      <div className="relative max-w-7xl mx-auto px-6">
+
+        {/* Heading */}
+        <h2 className="text-center text-transparent bg-clip-text bg-[linear-gradient(90deg,#00A993_0%,#57ADCD_54%,#FFFFFF_60%)] text-5xl md:text-6xl font-semibold  mb-16">
+          How It Works
+        </h2>
+
+        {/* Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+          {/* Card 1 (Large) */}
+          <div className="lg:col-span-2 rounded-2xl bg-gradient-to-b from-emerald-950 to-teal-800 border border-slate-600 shadow-xl overflow-hidden">
+            <div className="p-8">
+              <h3 className="text-gray-200 text-2xl font-medium  mb-4">
+                User enters an idea Example:
+              </h3>
+              <p className="text-stone-300 text-lg">
+                “I want a staking platform where users earn rewards based on holding time.”
+              </p>
+            </div>
+
+            <Image
+              src="/assets/images/howworks3.png"
+              alt="User idea input"
+              width={900}
+              height={400}
+              className="w-full object-cover"
+            />
+          </div>
+
+          {/* Card 2 */}
+          <div className="rounded-2xl bg-gradient-to-b from-teal-500 to-black border border-slate-600 shadow-xl overflow-hidden">
+            <Image
+              src="/assets/images/howworks2.png"
+              alt="AI analysis"
+              width={400}
+              height={300}
+              className="w-full object-cover"
+            />
+
+            <div className="p-6">
+              <h3 className="text-gray-200 text-2xl font-medium  mb-3">
+                EVO AI analyzes the concept
+              </h3>
+              <p className="text-stone-300 text-lg">
+                Our AI breaks the idea into technology requirements, features,
+                modules, user flows, and blockchain logic.
+              </p>
+            </div>
+          </div>
+
+          {/* Card 3 */}
+          <div className="rounded-2xl bg-gradient-to-b from-teal-500 to-black border border-slate-600
+ shadow-xl overflow-hidden">
+            <Image
+              src="/assets/images/howworks4.png"
+              alt="Blueprint generation"
+              width={400}
+              height={300}
+              className="w-full object-cover"
+            />
+            <div className="p-6">
+              <h3 className="text-gray-200 text-2xl font-medium  mb-3">
+                AI auto-generates the full blueprint
+              </h3>
+              <p className="text-stone-300 text-lg ">
+                Protecting digital assets while ensuring strict compliance
+                across the entire system.
+              </p>
+            </div>
+          </div>
+
+          {/* Card 4 */}
+          <div className="rounded-2xl bg-gradient-to-b from-teal-500 to-black border border-slate-600 shadow-xl overflow-hidden">
+            <Image
+              src="/assets/images/howworks5.png"
+              alt="Structured document"
+              width={400}
+              height={300}
+              className="w-full object-cover"
+            />
+            <div className="p-6">
+              <h3 className="text-gray-200 text-2xl font-medium  mb-3">
+                Structured project document
+              </h3>
+              <p className="text-stone-300 text-lg ">
+                Within seconds, you get a clear, ready-to-build project blueprint.
+              </p>
+            </div>
+          </div>
+
+          {/* Card 5 */}
+          <div className="rounded-2xl bg-gradient-to-b from-teal-500 to-black border border-slate-600 shadow-xl overflow-hidden">
+            <Image
+              src="/assets/images/howworks1.png"
+              alt="Download PDF"
+              width={400}
+              height={300}
+              className="w-full object-cover"
+            />
+            <div className="p-6">
+              <h3 className="text-gray-200 text-2xl font-medium  mb-3">
+                Download as PDF
+              </h3>
+              <p className="text-stone-300 text-lg ">
+                Share it with your team, investors, or kickstart development
+                with Beelockchain.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HowItWorksSection;
