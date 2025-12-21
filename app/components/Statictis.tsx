@@ -14,10 +14,10 @@ const Statictis = () => {
                     <NavLabel label="Who we are"/>
                 </div>
                 <div className="flex flex-col">
-                    <div className="flex items-center gap-2"><h1 className="text-3xl text-white">We helping</h1><img src="/animation.svg" className="w-10 h-10"></img>
-                    <h1 className="text-3xl text-white">grow businesses</h1></div><div className="flex items-center">
-                        <h1 className="text-3xl text-white">and</h1><span><img src="/animation (1).svg" className="w-10 h-10"></img></span>
-                        <h1 className="text-3xl text-white">scale with smart, data-</h1></div><div className="flex "><h1 className="text-3xl text-white">driven AI agency </h1><img src="/Container (2).svg" className="w-40"/>
+                    <div className="flex items-center gap-2"><h1 className="text-3xl text-white">Create smart blockchain </h1><img src="/animation.svg" className="w-10 h-10"></img>
+                    <h1 className="text-3xl text-white">systems that think,</h1></div><div className="flex items-center">
+                        <h1 className="text-3xl text-white">adapt, and evolve just like the businesses </h1><span><img src="/animation (1).svg" className="w-10 h-10"></img></span>
+                        <h1 className="text-3xl text-white"> that use </h1></div><div className="flex "><h1 className="text-3xl text-white">them.</h1><img src="/Container (2).svg" className="w-40"/>
                         </div>
                 </div>
             </div>

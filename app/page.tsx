@@ -15,22 +15,27 @@ import TechTrendsMarquee from "./components/Marquee";
 import Aisolution from "./components/Aisolution";
 export default function Home() {
   return (
-    <div>
-      <Hero/>
-      <Statictis/>
+    <div className="space-y-10 bg-[#00020F]">
+      <Hero />
+      <Statictis />
       <Teams />
+      <Whychooseus />
       <TechTrendsMarquee />
       <Aisolution />
-      <Aiblueprint/>
-      <Whatwebuild/>
-      <Whychooseus/>
-      <TechnologiesSection/>
-      <AIProjectFinderSection/>
-      <HowItWorksCards/>
-      <HowItworksSlide/>
-      <ProcessSection/>
-      <FAQSection/>
-      <Footer/>
+
+      <Aiblueprint />
+      {/* <Whatwebuild/> */}
+      <HowItWorksCards />
+      <HowItworksSlide />
+      <ProcessSection />
+      <TechnologiesSection />
+
+      <AIProjectFinderSection />
+
+
+
+      <FAQSection />
+      <Footer />
     </div>
   );
 }
