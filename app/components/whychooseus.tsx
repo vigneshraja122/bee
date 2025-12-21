@@ -3,11 +3,16 @@
 import Image from "next/image";
 import React from "react";
 import GradientGlowButton from "./GradientGlowButton";
+import NavLabel from "./NavLable";
 
 const Whychooseus = () => {
   return (
     <section className="w-full bg-[#00020F] py-20 flex justify-center text-white">
+
       <div className="relative w-full max-w-[1200px] px-6">
+             <div className="mb-16 flex justify-center">
+              <NavLabel label="Why Choose Us" />
+            </div>
 
         {/* MAIN GRID */}
         <div className="grid grid-cols-12 gap-6 items-stretch">

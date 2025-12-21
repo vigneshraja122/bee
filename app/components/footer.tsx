@@ -101,8 +101,7 @@ const Footer = () => {
        
       
       />
-      <p><span className="text-[#1BFFE1]">Beelockchain- he World’s First AI-Centered Blockchain Development Company</span><br/>Future-ready blockchain development, smart contract solutions, Web3 ecosystems, and AI-powered<br/>automation all under one roof.
-</p>
+
 
       {/* Email CTA */}
       <div className="absolute left-[400px] top-[150px] w-[518px] h-[78px] rounded-[61px] overflow-hidden">
@@ -151,9 +150,25 @@ const Footer = () => {
 
         <p className="absolute left-[107px] top-[20px] text-[32px] text-black">Info@beelockchain.com</p>
       </div>
+{/* Description text */}
+<div className="absolute top-[330px] left-1/2 -translate-x-1/2 w-[80%] text-start px-6">
+  <p className="text-[18px] leading-relaxed">
+    <span className="text-[#1BFFE1]">
+      Beelockchain – the World’s First AI-Centered Blockchain Development Company
+    </span>
+    <br />
+  <span className="text-white opacity-80">
+Future-ready blockchain development, smart contract solutions, Web3 ecosystems, and AI-powered 
+  <br />
+  automation all under one roof.
+</span>
+
+  </p>
+</div>
 
       {/* Navigation blocks */}
-      <div className="absolute top-[439px] left-0 w-full flex justify-center gap-[90px]">
+         
+      <div className="absolute top-[439px] left-0 w-full flex justify-center gap-[90px] mt-10">
         {[
           { label: "What we do?", value: "Services" },
           { label: "Who we are?", value: "About us" },

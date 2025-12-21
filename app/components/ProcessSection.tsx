@@ -12,23 +12,14 @@ const ProcessSection = () => {
       >
         {/* TOP BADGE */}
         <div className="flex justify-center mb-6">
-          <div className="relative inline-flex items-center gap-1 rounded-xl 
-  bg-linear-to-r from-[#0B0F1C] via-[#111827] to-[#0B0F1C]
-  shadow-[0_0_40px_rgba(0,255,255,0.15)]">
-            <span className="absolute inset-0 rounded-xl bg-[radial-gradient(circle_at_20%_30%,rgba(0,255,255,0.15),transparent_40%)] pointer-events-none"></span>
-
-
-            <div className="relative flex items-center justify-center w-10 h-10 rounded-full 
-   ">
-              <img src="/Group 2.svg" className="w-5 h-5"></img>
-            </div>
+     
 
 
             {/* <h2 className="relative text-white font-semibold tracking-wide ">
                         Who we are
                     </h2> */}
             <NavLabel label="Simple process" />
-          </div>
+        
         </div>
 
         {/* TITLE */}
