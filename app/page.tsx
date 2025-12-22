@@ -16,21 +16,21 @@ import Aisolution from "./components/Aisolution";
 export default function Home() {
   return (
     <div className="space-y-10 bg-[#00020F]">
-      {/* <Hero />
+      <Hero />
       <Statictis />
       <Teams />
       <Whychooseus />
-      <TechTrendsMarquee /> */}
+      <TechTrendsMarquee />
       <Aisolution />
-      {/* <Aiblueprint /> */}
+      <Aiblueprint />
       {/* <Whatwebuild/> */}
-      {/* <HowItWorksCards />
+      <HowItWorksCards />
       <HowItworksSlide />
       <ProcessSection />
       <TechnologiesSection />
       <AIProjectFinderSection />
       <FAQSection />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
