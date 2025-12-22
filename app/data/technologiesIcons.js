@@ -8,6 +8,9 @@ export const technologies = [
     top: "0px",
     bg: "#281d1d",
     icon: "/assets/icons/ts-icon.png",
+            category: "ai",
+
+
   },
   {
     id: 2,
@@ -16,6 +19,7 @@ export const technologies = [
     top: "0px",
     bg: "#281d1d",
     icon: "/assets/icons/a-icon.png",
+    category: "backend",
   },
   {
     id: 3,
@@ -24,6 +28,8 @@ export const technologies = [
     top: "0px",
     bg: "#25211d",
     icon: "/assets/icons/j-icon.png",
+             category: "smart-contract",
+
   },
   {
     id: 4,
@@ -32,6 +38,7 @@ export const technologies = [
     top: "0px",
     bg: "#28212c",
     icon: "/assets/icons/g-icon.png",
+    category: "backend",
   },
   {
     id: 5,
@@ -40,6 +47,8 @@ export const technologies = [
     top: "0px",
     bg: "#212121",
     icon: "/assets/icons/b-icon.png",
+             category: "smart-contract",
+
   },
   {
     id: 6,
@@ -48,6 +57,8 @@ export const technologies = [
     top: "0px",
     bg: "#281d1d",
     icon: "/assets/icons/a-icon.png",
+            category: "ai",
+
   },
   {
     id: 7,
@@ -56,6 +67,8 @@ export const technologies = [
     top: "0px",
     bg: "#281d1d",
     icon: "/assets/icons/g-icon.png",
+             category: "smart-contract",
+
   },
   {
     id: 8,
@@ -64,6 +77,7 @@ export const technologies = [
     top: "0px",
     bg: "#25211d",
     icon: "/assets/icons/j-icon.png",
+    category: "program",
   },
   {
     id: 9,
@@ -72,6 +86,7 @@ export const technologies = [
     top: "0px",
     bg: "#28212c",
     icon: "/assets/icons/b-icon.png",
+     category: "backend",
   },
   {
     id: 10,
@@ -80,6 +95,7 @@ export const technologies = [
     top: "0px",
     bg: "#212121",
     icon: "/assets/icons/a-icon.png",
+    category: "program",
   },
     {
     id: 11,
@@ -88,6 +104,7 @@ export const technologies = [
     top: "0px",
     bg: "#25211d",
     icon: "/assets/icons/g-icon.png",
+     category: "backend",
   },
   {
     id: 12,
@@ -96,6 +113,7 @@ export const technologies = [
     top: "0px",
     bg: "#28212c",
     icon: "/assets/icons/b-icon.png",
+     category: "backend",
   },
   {
     id: 13,
@@ -104,6 +122,8 @@ export const technologies = [
     top: "0px",
     bg: "#212121",
     icon: "/assets/icons/ts-icon.png",
+             category: "smart-contract",
+
   },
   {
     id: 14,
@@ -112,6 +132,8 @@ export const technologies = [
     top: "0px",
     bg: "#281d1d",
     icon: "/assets/icons/a-icon.png",
+         category: "smart-contract",
+
   },
   {
     id: 15,
@@ -120,6 +142,7 @@ export const technologies = [
     top: "0px",
     bg: "#281d1d",
     icon: "/assets/icons/b-icon.png",
+     category: "backend",
   },
   {
     id: 16,
@@ -128,6 +151,7 @@ export const technologies = [
     top: "0px",
     bg: "#25211d",
     icon: "/assets/icons/j-icon.png",
+        category: "smart-contract",
   },
   {
     id: 17,
@@ -136,6 +160,7 @@ export const technologies = [
     top: "0px",
     bg: "#28212c",
     icon: "/assets/icons/g-icon.png",
+     category: "blockchain",
   },
   {
     id: 18,
@@ -144,6 +169,7 @@ export const technologies = [
     top: "0px",
     bg: "#212121",
     icon: "/assets/icons/a-icon.png",
+     category: "blockchain",
   },
     {
     id: 19,
@@ -152,6 +178,8 @@ export const technologies = [
     top: "0px",
     bg: "#281d1d",
     icon: "/assets/icons/a-icon.png",
+            category: "ai",
+
   },
   {
     id: 20,
@@ -160,6 +188,7 @@ export const technologies = [
     top: "0px",
     bg: "#281d1d",
     icon: "/assets/icons/g-icon.png",
+     category: "program",
   },
   {
     id: 21,
@@ -168,6 +197,8 @@ export const technologies = [
     top: "0px",
     bg: "#25211d",
     icon: "/assets/icons/j-icon.png",
+            category: "backend",
+
   },
   {
     id: 22,
@@ -176,6 +207,7 @@ export const technologies = [
     top: "0px",
     bg: "#28212c",
     icon: "/assets/icons/b-icon.png",
+           category: "smart-contract",
   },
   {
     id: 23,
@@ -184,6 +216,7 @@ export const technologies = [
     top: "0px",
     bg: "#212121",
     icon: "/assets/icons/a-icon.png",
+        category: "blockchain",
   },
     {
     id: 24,
@@ -192,6 +225,8 @@ export const technologies = [
     top: "0px",
     bg: "#25211d",
     icon: "/assets/icons/g-icon.png",
+     category: "smart-contract",
+     
   },
   {
     id: 25,
@@ -200,6 +235,8 @@ export const technologies = [
     top: "0px",
     bg: "#28212c",
     icon: "/assets/icons/b-icon.png",
+    category: "blockchain",
+
   },
   {
     id: 26,
@@ -208,6 +245,8 @@ export const technologies = [
     top: "0px",
     bg: "#212121",
     icon: "/assets/icons/ts-icon.png",
+        category: "smart-contract",
+
   },
   {
     id: 27,
@@ -216,6 +255,8 @@ export const technologies = [
     top: "0px",
     bg: "#281d1d",
     icon: "/assets/icons/a-icon.png",
+        category: "backend",
+
   },
   {
     id: 28,
@@ -224,6 +265,8 @@ export const technologies = [
     top: "0px",
     bg: "#281d1d",
     icon: "/assets/icons/b-icon.png",
+        category: "program",
+
   },
   {
     id: 29,
@@ -232,6 +275,9 @@ export const technologies = [
     top: "0px",
     bg: "#25211d",
     icon: "/assets/icons/j-icon.png",
+
+        category: "ai",
+
   },
   {
     id: 30,
@@ -240,6 +286,7 @@ export const technologies = [
     top: "0px",
     bg: "#28212c",
     icon: "/assets/icons/g-icon.png",
+     category: "program",
   },
 
 ];
