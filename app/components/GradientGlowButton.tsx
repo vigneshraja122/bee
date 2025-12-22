@@ -7,7 +7,7 @@ type GradientGlowButtonProps = {
 
 const GradientGlowButton = ({ children, className = "" }: GradientGlowButtonProps) => {
   return (
-    <div className={`relative inline-flex rounded-full p-[1px] ${className}`}>
+    <div className={`relative inline-flex rounded-full md:p-[1px] ${className}`}>
 
       {/* GRADIENT BORDER */}
       <div
@@ -25,8 +25,9 @@ const GradientGlowButton = ({ children, className = "" }: GradientGlowButtonProp
           absolute
           -top-[4px]
           -right-[8px]
-          w-[80%]
-          h-[100%]
+          md:w-[80%]
+          md:h-[100%]
+      
           rounded-full
           bg-[linear-gradient(255deg,#3ADCFF_0%,rgba(58,220,255,0.35)_30%,transparent_60%)]
           blur-[8px]
@@ -39,11 +40,14 @@ const GradientGlowButton = ({ children, className = "" }: GradientGlowButtonProp
       <button
         className="
           relative z-10
-          px-8 py-3
+          md:px-8 md:py-3
+          px-5 py-2
           rounded-full
           bg-[#090920]
           border border-white/10
-          text-base text-white
+          md:text-base text-white
+          text-xs
+          
         "
       >
         {children}
