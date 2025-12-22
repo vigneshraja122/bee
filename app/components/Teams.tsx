@@ -7,12 +7,12 @@ const Teams = () => {
             backgroundRepeat: "no-repeat",
         }}>
 
-      <h2 className="text-white font-bold text-4xl tracking-widest mb-10">
+      <h2 className="text-white font-bold text-4xl tracking-widest md:mb-10">
         TEAMS
       </h2>
 
       <div
-        className="relative flex items-center justify-center rounded-2xl"
+        className="relative flex items-center justify-center rounded-2xl m-6"
         style={{
           width: "433px",
           height: "420px",
