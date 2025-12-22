@@ -1,6 +1,11 @@
 const Teams = () => {
   return (
-    <section className="w-full h-[600px] bg-[#00020F] flex flex-col items-center justify-center relative overflow-hidden">
+    <section className="w-full h-[600px] bg-[#00020F] flex flex-col items-center justify-center relative overflow-hidden" style={{
+            backgroundImage: "url('/Frame 1561446121 (1).svg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+        }}>
 
       <h2 className="text-white font-bold text-4xl tracking-widest mb-10">
         TEAMS
@@ -10,7 +15,7 @@ const Teams = () => {
         className="relative flex items-center justify-center rounded-2xl"
         style={{
           width: "433px",
-          height: "450px",
+          height: "420px",
           backgroundImage: "url('/Group 1707480401.svg')",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",

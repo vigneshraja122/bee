@@ -3,7 +3,12 @@ import Topnav from "./Topnav";
 
 const Hero = () => {
     return (
-        <div className="w-full h-screen flex flex-col items-center" style={{ backgroundImage: "url('/Desktop - 4.svg')" }}>
+        <div className="w-full h-screen flex flex-col items-center" style={{
+            backgroundImage: "url('/Desktop - 4 (1).svg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+        }}>
             <Topnav />
             <div className="w-full h-full flex flex-col justify-center items-center">
                 <img src="/Group 2.svg" className="w-[350px]" />
@@ -17,9 +22,9 @@ const Hero = () => {
                             Build Your Project
                         </GradientGlowButton>
                         <GradientGlowButton>
-                           Explore the Techverse
+                            Explore the Techverse
                         </GradientGlowButton>
-                        </div>
+                    </div>
                 </div>
             </div>
         </div>
