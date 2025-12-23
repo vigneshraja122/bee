@@ -18,7 +18,7 @@ const Topnav = () => {
             bg-black rounded-none lg:rounded-full md:rounded-full px-3 sm:px-4 md:px-6 lg:px-8 mt-0 lg:mt-5"
         >
           {/* LOGO */}
-          <img src="/Group 10.svg" alt="Logo" className="w-20 sm:w-24 md:w-28 lg:w-32" />
+          <img src="/assets/images/Group 10.svg" alt="Logo" className="w-20 sm:w-24 md:w-28 lg:w-32" />
 
           {/* RIGHT SIDE */}
           <div className="flex items-center gap-2 sm:gap-3 lg:gap-5">

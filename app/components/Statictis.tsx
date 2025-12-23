@@ -15,7 +15,7 @@ const Statictis = () => {
                 <div className="hidden md:flex flex-col">
                     <div className="flex items-center gap-2 flex-wrap">
                         <h1 className="xl:text-4xl lg:text-4xl md:text-2xl text-white">Create smart blockchain</h1>
-                        <img src="/animation.svg" className="w-10 h-10" />
+                        <img src="/assets/images/animation.svg" className="w-10 h-10" />
                         <h1 className="xl:text-4xl lg:text-4xl md:text-2xl text-white">systems that think,</h1>
                     </div>
 
@@ -23,13 +23,14 @@ const Statictis = () => {
                         <h1 className="xl:text-4xl lg:text-4xl md:text-2xl text-white">
                             adapt, and evolve just like the businesses
                         </h1>
-                        <img src="/animation (1).svg" className="w-10 h-10" />
+                        <img src="/assets/images/animation (1).svg" className="w-10 h-10" />
                         <h1 className="xl:text-4xl lg:text-4xl md:text-2xl text-white">that use</h1>
                     </div>
 
+
                     <div className="flex items-center">
                         <h1 className="xl:text-4xl lg:text-4xl md:text-2xl text-white">them.</h1>
-                        <img src="/Container (2).svg" className="w-40" />
+                        <img src="/assets/images/Container (2).svg" className="w-40" />
                     </div>
                 </div>
 
@@ -39,7 +40,7 @@ const Statictis = () => {
                     <h1>Create smart blockchain</h1>
 
                     <div className="flex items-center gap-3">
-                        <img src="/animation.svg" className="w-10 h-10" />
+                        <img src="/assets/images/animation.svg" className="w-10 h-10" />
                         <h1>systems that think,</h1>
                     </div>
 
@@ -50,11 +51,11 @@ const Statictis = () => {
                     <div className="flex items-center gap-3">
                         <div className="space-y-4"> <h1>the businesses</h1><h1>that use them.</h1></div>
 
-                        <img src="/animation (1).svg" className="w-20 h-20" />
+                        <img src="/assets/images/animation (1).svg" className="w-20 h-20" />
                     </div>
 
                     <img
-                        src="/Container (2).svg"
+                        src="/assets/images/Container (2).svg"
                         className="w-[90%] mt-2"
                     />
                 </div>
@@ -83,7 +84,7 @@ const Statictis = () => {
               md:w-full md:h-full flex justify-center items-end w-full"
                         >
                             <img
-                                src="/84b9d6946f21a30ebcea8ae14a70972e 1.svg"
+                                src="/assets/images/84b9d6946f21a30ebcea8ae14a70972e 1.svg"
                                 alt="Phone UI"
                                 className="sm:w-[10px] md:w-[320px] "
                             />
@@ -112,7 +113,7 @@ const Statictis = () => {
             shadow-[inset_0_1px_1px_rgba(255,255,255,0.15),_0_20px_40px_rgba(0,0,0,0.8)]
             flex flex-col justify-center items-center xl:gap-4 lg:gap-4 md:gap-4"
                     >
-                        <img src="/Frame 19.svg" />
+                        <img src="/assets/images/Frame 19.svg" />
                         <p className="text-center xl:text-2xl lg:text-2xl md:text-xl text-md">
                             Predictive & <br /> Adaptive <br /> Architecture
                         </p>

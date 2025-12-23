@@ -1,7 +1,7 @@
 const Teams = () => {
   return (
     <section className="w-full h-[600px] bg-[#00020F] flex flex-col items-center justify-center relative overflow-hidden" style={{
-            backgroundImage: "url('/Frame 1561446121 (1).svg')",
+            backgroundImage: "url('/assets/images/Frame 1561446121 (1).svg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
@@ -16,7 +16,7 @@ const Teams = () => {
         style={{
           width: "433px",
           height: "420px",
-          backgroundImage: "url('/Group 1707480401.svg')",
+          backgroundImage: "url('/assets/images/Group 1707480401.svg')",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",

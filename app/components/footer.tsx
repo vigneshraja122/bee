@@ -1,8 +1,8 @@
 import Image from "next/image";
-import beelockImg from "../../public/assets/images/footer-bg-text.png";
+import Link from "next/link";
 const Footer = () => {
   const FacebookIcon = () => (
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="22" height="22" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M15.5 7.75C15.5 11.625 12.6562 14.8438 8.9375 15.4062V10H10.75L11.0938 7.75H8.9375V6.3125C8.9375 5.6875 9.25 5.09375 10.2188 5.09375H11.1875V3.1875C11.1875 3.1875 10.3125 3.03125 9.4375 3.03125C7.6875 3.03125 6.53125 4.125 6.53125 6.0625V7.75H4.5625V10H6.53125V15.4062C2.8125 14.8438 0 11.625 0 7.75C0 3.46875 3.46875 0 7.75 0C12.0312 0 15.5 3.46875 15.5 7.75Z"
         fill="white"
@@ -11,16 +11,22 @@ const Footer = () => {
   );
 
   const TwitterIcon = () => (
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <svg width="22" height="22" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.46973 0.0390625C14.6996 0.0390625 18.9395 4.29263 18.9395 9.53906C18.9394 14.7855 14.6996 19.0391 9.46973 19.0391C4.24002 19.0389 8.74258e-05 14.7854 0 9.53906C0 4.29272 4.23997 0.0392127 9.46973 0.0390625ZM8.27441 10.1592L4.02344 15.1162H4.98438L8.70117 10.7813L11.6709 15.1162H14.9131L10.5039 8.67968L14.5586 3.95215H13.5977L10.0771 8.05664L7.26562 3.95215H4.02344L8.27441 10.1592ZM13.5977 14.4239H12.1221L5.33008 4.67773H6.80566L13.5977 14.4239Z" fill="white"/>
+</svg>
+
+  );
+
+  const LinkedInIcon = () => (
+    <svg width="20" height="20" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
-        d="M15.5 7.75C15.5 11.625 12.6562 14.8438 8.9375 15.4062V10H10.75L11.0938 7.75H8.9375V6.3125C8.9375 5.6875 9.25 5.09375 10.2188 5.09375H11.1875V3.1875C11.1875 3.1875 10.3125 3.03125 9.4375 3.03125C7.6875 3.03125 6.53125 4.125 6.53125 6.0625V7.75H4.5625V10H6.53125V15.4062C2.8125 14.8438 0 11.625 0 7.75C0 3.46875 3.46875 0 7.75 0C12.0312 0 15.5 3.46875 15.5 7.75Z"
+        d="M13 0C13.5312 0 14 0.46875 14 1.03125V13C14 13.5625 13.5312 14 13 14H0.96875C0.4375 14 0 13.5625 0 13V1.03125C0 0.46875 0.4375 0 0.96875 0H13ZM4.21875 12V5.34375H2.15625V12H4.21875ZM3.1875 4.40625C3.84375 4.40625 4.375 3.875 4.375 3.21875C4.375 2.5625 3.84375 2 3.1875 2C2.5 2 1.96875 2.5625 1.96875 3.21875C1.96875 3.875 2.5 4.40625 3.1875 4.40625ZM12 12V8.34375C12 6.5625 11.5938 5.15625 9.5 5.15625C8.5 5.15625 7.8125 5.71875 7.53125 6.25H7.5V5.34375H5.53125V12H7.59375V8.71875C7.59375 7.84375 7.75 7 8.84375 7C9.90625 7 9.90625 8 9.90625 8.75V12H12Z"
         fill="white"
       />
     </svg>
   );
-
-  const LinkedInIcon = () => (
-    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    const InstagramIcon = () => (
+    <svg width="20" height="20" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M13 0C13.5312 0 14 0.46875 14 1.03125V13C14 13.5625 13.5312 14 13 14H0.96875C0.4375 14 0 13.5625 0 13V1.03125C0 0.46875 0.4375 0 0.96875 0H13ZM4.21875 12V5.34375H2.15625V12H4.21875ZM3.1875 4.40625C3.84375 4.40625 4.375 3.875 4.375 3.21875C4.375 2.5625 3.84375 2 3.1875 2C2.5 2 1.96875 2.5625 1.96875 3.21875C1.96875 3.875 2.5 4.40625 3.1875 4.40625ZM12 12V8.34375C12 6.5625 11.5938 5.15625 9.5 5.15625C8.5 5.15625 7.8125 5.71875 7.53125 6.25H7.5V5.34375H5.53125V12H7.59375V8.71875C7.59375 7.84375 7.75 7 8.84375 7C9.90625 7 9.90625 8 9.90625 8.75V12H12Z"
         fill="white"
@@ -80,8 +86,8 @@ const Footer = () => {
       </defs>
     </svg>
   );
-  const ArrowIcon = () => (
-    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+  const ArrowIcon = ({ className = "" }: { className?: string }) => (
+    <svg width="28" className={className} height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M20.7562 5.97763L5.0625 19.2773L6.75135 21.2702L22.445 7.97048L20.7562 5.97763Z" fill="white" />
       <path d="M9.96159 4.85607L7.96875 6.54492L9.6576 8.53777L11.6504 6.84892L9.96159 4.85607Z" fill="white" />
       <path d="M13.6491 5.15881L11.6562 6.84766L13.3451 8.8405L15.3379 7.15165L13.6491 5.15881Z" fill="white" />
@@ -91,171 +97,229 @@ const Footer = () => {
       <path d="M20.0944 16.8131L18.1016 18.502L19.7904 20.4948L21.7833 18.806L20.0944 16.8131Z" fill="white" />
     </svg>
   );
+const MailIcon = ({ className = "" }: { className?: string }) => (
+  <svg
+    className={className}
+    width="20"
+    height="18"
+    viewBox="0 0 20 18"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g clipPath="url(#clip0_1060_3451)">
+      <path d="M11.9691 9.28516L10.7509 10.5075C10.2568 11.0033 9.38763 11.014 8.88294 10.5075L7.66461 9.28516L3.28906 13.6749C3.45194 13.7503 3.63151 13.7952 3.82241 13.7952H15.8113C16.0023 13.7952 16.1818 13.7503 16.3446 13.675L11.9691 9.28516Z" fill="black"/>
+      <path d="M15.8113 3.56836H3.82237C3.63146 3.56836 3.45188 3.6133 3.28906 3.68862L7.96466 8.37972L7.96564 8.3804L7.96602 8.38116L9.48633 9.90648C9.64779 10.0679 9.98593 10.0679 10.1474 9.90648L11.6674 8.38142L11.6681 8.3804L11.6691 8.37972L16.3446 3.68859C16.1817 3.61325 16.0022 3.56836 15.8113 3.56836Z" fill="black"/>
+      <path d="M2.68285 4.2832C2.59858 4.45361 2.54688 4.64278 2.54688 4.84538V12.516C2.54688 12.7186 2.59853 12.9078 2.68282 13.0782L7.06598 8.68086L2.68285 4.2832Z" fill="black"/>
+      <path d="M16.9534 4.2832L12.5703 8.68089L16.9534 13.0783C17.0377 12.9079 17.0894 12.7187 17.0894 12.5161V4.84545C17.0894 4.64278 17.0377 4.45361 16.9534 4.2832Z" fill="black"/>
+    </g>
+  </svg>
+);
+
   return (
-    <footer className="relative h-screen w-full bg-[#00020f] overflow-hidden flex flex-col items-center">
-      {/* Background text */}
-      <img
-        src="assets/images/footer-bg-text.png"
-        alt="Beelock"
-        className="absolute  w-[80%] h-96"
-       
-      
-      />
+<footer className="relative w-full bg-[#00020f] overflow-hidden flex flex-col items-center">
 
+  {/* ================= DESKTOP / TABLET ================= */}
+  <div className="hidden sm:block relative w-full bg-[#00020f] overflow-hidden min-h-[1000px] md:min-h-[800px]  lg:min-h-[800px]">
 
-      {/* Email CTA */}
-      <div className="absolute left-[400px] top-[150px] w-[518px] h-[78px] rounded-[61px] overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#3adcff] to-[#1bffe1]" />
+    {/* BACKGROUND TEXT */}
+    <img
+      src="/assets/images/footer-bg-text.png"
+      alt="Beelock"
+      className="
+        absolute top-8 sm:top-10
+        left-1/2 -translate-x-1/2
+        w-[95%] sm:w-[90%] lg:w-[80%]
+        h-72 sm:h-80 lg:h-96
+        object-contain opacity-60
+      "
+    />
 
-        {/* Mail Icon */}
-
-        <svg
-          className="absolute left-10 top-[20px]"
-          width="52"
-          height="46"
-          viewBox="0 0 52 46"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g clipPath="url(#clip0_517_6794)">
-            <g clipPath="url(#clip1_517_6794)">
-              <path
-                d="M31.7011 24.5996L28.4733 27.8383C27.1644 29.1518 24.8614 29.1801 23.5242 27.8383L20.2962 24.5996L8.70312 36.2304C9.13467 36.43 9.61046 36.549 10.1162 36.549H41.8812C42.3871 36.549 42.8627 36.4301 43.2941 36.2305L31.7011 24.5996Z"
-                fill="black"
-              />
-              <path
-                d="M41.8811 9.45117H10.1161C9.61031 9.45117 9.13451 9.57025 8.70312 9.7698L21.0912 22.199L25.1229 26.2442C25.5507 26.672 26.4466 26.672 26.8745 26.2442L30.9061 22.199L43.294 9.76973C42.8626 9.5701 42.3869 9.45117 41.8811 9.45117Z"
-                fill="black"
-              />
-              <path
-                d="M7.09464 11.3477C6.87138 11.7992 6.73438 12.3004 6.73438 12.8372V33.1608C6.73438 33.6976 6.87122 34.1988 7.09455 34.6503L18.7079 22.9994L7.09464 11.3477Z"
-                fill="black"
-              />
-              <path
-                d="M44.91 11.3477L33.2969 22.9995L44.91 34.6506C45.1333 34.1991 45.2703 33.6979 45.2703 33.1609V12.8374C45.2703 12.3004 45.1333 11.7992 44.91 11.3477Z"
-                fill="black"
-              />
-            </g>
-          </g>
-
-          <defs>
-            <clipPath id="clip0_517_6794">
-              <rect width="52" height="46" fill="white" />
-            </clipPath>
-            <clipPath id="clip1_517_6794">
-              <rect width="52" height="46" fill="white" />
-            </clipPath>
-          </defs>
-        </svg>
-
-        <p className="absolute left-[107px] top-[20px] text-[32px] text-black">Info@beelockchain.com</p>
+    {/* EMAIL CTA */}
+    <div className="absolute left-1/2 -translate-x-1/2 top-[110px] sm:top-[130px] md:top-[160px] lg:top-[200px] w-[90%] sm:w-[520px] h-[70px] lg:h-[78px] rounded-full overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-[#3adcff] to-[#1bffe1]" />
+      <div className="absolute left-6 top-1/2 -translate-y-1/2 z-10">
+        <MailIcon className="w-8 h-8 lg:w-10 lg:h-10" />
       </div>
-{/* Description text */}
-<div className="absolute top-[330px] left-1/2 -translate-x-1/2 w-[80%] text-start px-6">
-  <p className="text-[18px] leading-relaxed">
-    <span className="text-[#1BFFE1]">
-      Beelockchain – the World’s First AI-Centered Blockchain Development Company
-    </span>
-    <br />
-  <span className="text-white opacity-80">
-Future-ready blockchain development, smart contract solutions, Web3 ecosystems, and AI-powered 
-  <br />
-  automation all under one roof.
-</span>
+      <p className="absolute left-[80px] sm:left-[90px] top-1/2 -translate-y-1/2 text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] font-manrope text-black">
+        info@beelockchain.com
+      </p>
+    </div>
 
-  </p>
+    {/* DESCRIPTION */}
+    <div className="absolute left-1/2 -translate-x-1/2 top-[260px] sm:top-[300px] lg:top-[350px] w-[95%] sm:w-[90%] lg:w-[80%] px-6 text-start">
+      <p className="text-[15px] sm:text-[16px] md:text-[18px] font-poppins font-semibold leading-relaxed">
+        <span className="text-[#1BFFE1]">
+          Beelockchain – The World’s First AI-Centered Blockchain Development Company
+        </span>
+        <br />
+        <span className="text-white/80">
+          Future-ready blockchain development, smart contract solutions,
+          Web3 ecosystems, and AI-powered <br /> automation under one roof.
+        </span>
+      </p>
+    </div>
+
+    {/* NAVIGATION */}
+<div className="
+  absolute left-0 w-full
+  top-[420px] sm:top-[460px] md:top-[520px]  lg:top-[500px]
+  flex justify-center flex-wrap
+  gap-6
+  sm:gap-10
+  md:gap-12
+  lg:gap-20
+  xl:gap-28
+">
+      {[
+        ["What we do?", "Services"],
+        ["Who we are?", "About us"],
+        ["How we deliver", "Contact us"],
+        ["What we're good at?", "Our project"],
+        ["News?", "News"],
+      ].map(([label, value], i) => (
+        <div key={i} className="text-center">
+          <p className="text-xs sm:text-sm md:text-base font-poppins uppercase text-[#b2b3b7]">
+            {label}
+          </p>
+          <p className="text-[22px] sm:text-[26px] md:text-[16px] lg:text-[28px] font-manrope text-white mt-2">
+            {value}
+          </p>
+        </div>
+      ))}
+    </div>
+
+    {/* SOCIAL DIVIDER */}
+    <div className="absolute top-[650px] lg:top-[620px] w-full border-t border-[#262833]" />
+
+{/* SOCIAL LINKS */}
+<div className="absolute z-20 left-1/2 -translate-x-1/2 top-[650px] lg:top-[620px] w-full flex text-white">
+
+  {/* FACEBOOK */}
+  <Link
+    href="https://www.facebook.com/61585163291942/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-1/4 h-[60px] flex items-center justify-between px-6 border-r border-[#262833] hover:bg-white/5 transition-colors"
+  >
+    <div className="flex items-center gap-3">
+      <FacebookIcon />
+      <span className="uppercase font-poppins text-[14px] lg:text-[18px]">
+        Facebook
+      </span>
+    </div>
+    <ArrowIcon className="pointer-events-none" />
+  </Link>
+
+  {/* TWITTER */}
+  <Link
+    href="https://x.com/Beelockchain_io"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-1/4 h-[60px] flex items-center justify-between px-6 border-r border-[#262833] hover:bg-white/5 transition-colors"
+  >
+    <div className="flex items-center gap-3">
+      <TwitterIcon />
+      <span className="uppercase font-poppins text-[14px] lg:text-[18px]">
+        Twitter
+      </span>
+    </div>
+    <ArrowIcon className="pointer-events-none" />
+  </Link>
+
+  {/* LINKEDIN */}
+  <Link
+    href="https://www.linkedin.com/company/beelockchain-io"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-1/4 h-[60px] flex items-center justify-between px-6 border-r border-[#262833] hover:bg-white/5 transition-colors"
+  >
+    <div className="flex items-center gap-3">
+      <LinkedInIcon />
+      <span className="uppercase font-poppins text-[14px] lg:text-[18px]">
+        LinkedIn
+      </span>
+    </div>
+    <ArrowIcon className="pointer-events-none" />
+  </Link>
+
+  {/* INSTAGRAM */}
+  <Link
+    href="https://www.instagram.com/beelockchain_io/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-1/4 h-[60px] flex items-center justify-between px-6 hover:bg-white/5 transition-colors"
+  >
+    <div className="flex items-center gap-3">
+      <InstagramIcon />
+      <span className="uppercase font-poppins text-[14px] lg:text-[18px]">
+        Instagram
+      </span>
+    </div>
+    <ArrowIcon className="pointer-events-none" />
+  </Link>
+
 </div>
 
-      {/* Navigation blocks */}
-         
-      <div className="absolute top-[439px] left-0 w-full flex justify-center gap-[90px] mt-10">
-        {[
-          { label: "What we do?", value: "Services" },
-          { label: "Who we are?", value: "About us" },
-          { label: "How we deliver", value: "Contact us" },
-          { label: "What we're good at?", value: "Our project" },
-          { label: "News?", value: "News" },
-        ].map((item, i) => (
-          <div key={i} className="text-center">
-            <p className="text-base  uppercase text-[#b2b3b7]">{item.label}</p>
-            <p className="text-[38px] capitalize text-white mt-2">{item.value}</p>
-          </div>
-        ))}
+
+
+    {/* BOTTOM BAR */}
+    <div className="absolute text-white top-[710px] lg:top-[680px] w-full border-t border-[#262833] flex justify-between items-center px-10 lg:px-20 h-[70px]">
+      <div className="flex items-center gap-3">
+        <LocationIcon />
+        <p className="text-base lg:text-xl font-poppins">4517 Washington, USA</p>
       </div>
 
-      {/* Divider */}
-      <div className="absolute top-[615px] w-full border-t border-[#262833]" />
+      <p className="text-[18px] sm:text-[14px] md:text-[14px] lg:text-[20px] font-poppins text-center">
+        © 2025 Beelockchain. All rights reserved.
+      </p>
 
-      {/* Social links */}
-      <div className="absolute top-[615px] left-1/2 -translate-x-1/2 w-full flex">
-        {[
-          { name: "Facebook", icon: FacebookIcon },
-          { name: "Twitter", icon: TwitterIcon },
-          { name: "LinkedIn", icon: LinkedInIcon },
-        ].map(({ name, icon: Icon }, i) => (
-          <div
-            key={i}
-            className="flex items-center justify-between w-1/3 h-[60px] border-r border-[#262833] px-6 text-white"
-          >
-            <div className="flex items-center gap-4">
-              <Icon />
-              <span className=" uppercase text-sm">{name}</span>
-            </div>
-
-            <ArrowIcon />
-          </div>
-        ))}
+      <div className="flex items-center gap-3">
+        <PhoneIcon />
+        <p className="text-base lg:text-xl font-poppins">+(1) 1230 452 8597</p>
       </div>
+    </div>
 
-      {/* Top divider above bottom section */}
-      <div className="absolute top-[675px] w-full border-t border-[#262833]" />
-      {/* Bottom section */}
-      <div className="absolute top-[677px] w-full flex justify-center items-center text-white">
-        {/* Location */}
-        <div className="flex items-center gap-3 px-10 h-[60px] border-r border-[#262833]">
-          <LocationIcon />
-          <p className="text-2xl">4517 Washington, USA</p>
-        </div>
+    {/* HEIGHT SPACER — THIS IS THE FIX */}
+    <div className="absolute bottom-0 h-[200px] w-full" />
 
-        {/* Copyright */}
-        <div className="flex items-center px-40 h-[60px] border-r border-[#262833]">
-          <p className="text-base opacity-80">Copyright © 2025 beelockchain, All rights reserved.</p>
-        </div>
+  </div>
 
-        {/* Phone */}
-        <div className="flex items-center gap-3 px-10 h-[60px]">
-          <PhoneIcon />
-          <p className="text-2xl">+(1)1230 452 8597</p>
-        </div>
-      </div>
 
 
 {/* ================= MOBILE FOOTER ================= */}
 <div className="md:hidden relative w-full bg-[#00020f] px-6 py-16 text-white overflow-hidden">
+{/* BACKGROUND TEXT – MOBILE ONLY */}
+<div className="absolute inset-0 flex justify-center items-start pointer-events-none md:hidden">
+  <Image
+    src="/assets/images/mobile-footer-textbg.png"
+    alt="Beelock background"
+    width={600}
+    height={300}
+    priority
+    className="
+      mt-6
+      w-[140%]
+      max-w-none
+      object-contain
+    "
+  />
+</div>
 
-  {/* BACKGROUND TEXT */}
-  <h1 className="absolute top-6 left-1/2 -translate-x-1/2 text-[64px] font-bold tracking-widest text-white/5 select-none">
-    BEELOCK
-    <span className="text-[#1BFFE1] text-sm align-top ml-1">Chain</span>
-  </h1>
 
   {/* EMAIL PILL */}
   <div className="relative z-10 flex justify-center mt-14">
-    <div className="flex items-center gap-3 px-6 py-3 rounded-full bg-[#1BFFE1] text-black text-sm font-medium">
-      <svg width="20" height="18" viewBox="0 0 52 46" fill="black">
-        <path d="M31.7 24.6L28.47 27.83C27.16 29.15 24.86 29.18 23.52 27.83L20.29 24.6L8.7 36.23C9.13 36.43 9.61 36.55 10.11 36.55H41.88C42.38 36.55 42.86 36.43 43.29 36.23L31.7 24.6Z"/>
-        <path d="M41.88 9.45H10.11C9.61 9.45 9.13 9.57 8.7 9.77L25.12 26.24C25.55 26.67 26.44 26.67 26.87 26.24L43.29 9.77C42.86 9.57 42.38 9.45 41.88 9.45Z"/>
-      </svg>
+    <div className="flex items-center gap-3 px-6 py-1  font-manrope rounded-full bg-[#1BFFE1] text-black text-sm font-medium">
+     <MailIcon className="w-10 h-10" />
       info@beelockchain.com
     </div>
   </div>
 
   {/* DESCRIPTION */}
-  <div className="relative z-10 mt-6 text-center text-sm leading-relaxed">
-    <p className="text-[#1BFFE1] font-medium">
+  <div className="relative z-10 mt-6 text-start text-[12px] leading-relaxed">
+    <p className="text-[#1BFFE1]  font-poppins font-medium">
       Beelockchain – the World’s First AI-Centered Blockchain Development Company
     </p>
-    <p className="text-white/70 mt-2">
+    <p className="text-white/70  font-poppins mt-2">
       Future-ready blockchain development, smart contract solutions, Web3 ecosystems, and AI-powered automation all under one roof.
     </p>
   </div>
@@ -269,25 +333,64 @@ Future-ready blockchain development, smart contract solutions, Web3 ecosystems, 
       { label: "What we're good at?", value: "Our Project" },
     ].map((item, i) => (
       <div key={i}>
-        <p className="text-xs text-white/50 uppercase mb-1">{item.label}</p>
-        <p className="text-lg">{item.value}</p>
+        <p className="text-[12px]  font-poppins text-white/40 uppercase mb-1 text-nowrap">{item.label}</p>
+        <p className="text-lg  font-poppins">{item.value}</p>
       </div>
     ))}
     <div className="col-span-2">
-      <p className="text-xs text-white/50 uppercase mb-1">News?</p>
+      <p className="text-[12px] text-white/50 uppercase mb-1">News?</p>
       <p className="text-lg">News</p>
     </div>
   </div>
 
-  {/* SOCIAL ICONS */}
-  <div className="relative z-10 mt-10 flex justify-center gap-8">
+{/* SOCIAL ICONS – MOBILE */}
+<div className="relative z-10 mt-10 grid grid-cols-2 gap-y-6 gap-x-8 md:hidden">
+  <a
+    href="https://www.facebook.com/61585163291942/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center justify-center gap-1 text-[12px] uppercase font-poppins hover:opacity-80 transition"
+  >
     <FacebookIcon />
+    <span>Facebook</span>
+  </a>
+
+  <a
+    href="https://x.com/Beelockchain_io"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center justify-center gap-1 text-[12px] uppercase font-poppins hover:opacity-80 transition"
+  >
     <TwitterIcon />
+    <span>Twitter</span>
+  </a>
+
+  <a
+    href="https://www.linkedin.com/company/beelockchain-io"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center justify-center gap-1 text-[12px] uppercase font-poppins hover:opacity-80 transition"
+  >
     <LinkedInIcon />
-  </div>
+    <span>LinkedIn</span>
+  </a>
+
+  <a
+    href="https://www.instagram.com/beelockchain_io/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center justify-center gap-1 text-[12px] uppercase font-poppins hover:opacity-80 transition"
+  >
+    <InstagramIcon />
+    <span>Instagram</span>
+  </a>
+</div>
+
+
+
 
   {/* CONTACT INFO */}
-  <div className="relative z-10 mt-8 flex flex-col items-center gap-4 text-sm text-white/80">
+  <div className="relative z-10 mt-8 flex flex-col items-center  font-poppins gap-4 text-sm text-white/80">
     <div className="flex items-center gap-3">
       <LocationIcon />
       <span>4517 Washington, USA</span>
@@ -299,11 +402,12 @@ Future-ready blockchain development, smart contract solutions, Web3 ecosystems, 
   </div>
 
   {/* COPYRIGHT */}
-  <div className="relative z-10 mt-8 text-center text-xs text-white/40">
+  <div className="relative z-10 mt-8 text-center  font-poppins text-[12px] text-white text-nowrap">
     Copyright © 2025 beelockchain, All rights reserved.
   </div>
 
 </div>
+
 
     </footer>
   );

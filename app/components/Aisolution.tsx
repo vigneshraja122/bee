@@ -8,7 +8,7 @@ const Aisolution = () => {
         {/* Left Image */}
         <div className="w-[50%] h-full flex justify-center items-center">
           <img
-            src="/Background+Border.svg"
+            src="/assets/images/Background+Border.svg"
             className="w-full h-screen object-contain"
           />
         </div>
@@ -68,7 +68,7 @@ const Aisolution = () => {
         {/* Image Card */}
         <div className="relative rounded-2xl overflow-hidden border border-cyan-400/30">
           <img
-            src="/Background+Border.svg"
+            src="/assets/images/Background+Border.svg"
             className="w-full object-cover"
           />
 
