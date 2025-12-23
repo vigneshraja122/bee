@@ -70,22 +70,22 @@ const Statictis = () => {
             border border-white/40 shadow-2xl"
                     >
                         <div className="pt-12 text-center md:px-6">
-                            <p className="text-white/90 text-3xl">Powered by</p>
+                            <p className="text-white/90 md:text-3xl text-xl">Powered by</p>
                             <h1 className="mt-4 text-white text-6xl font-bold leading-none">
                                 EVO AI™
                             </h1>
-                            <p className="mt-4 text-white/90 text-4xl">
+                            <p className="mt-4 text-white/90 md:text-4xl text-lg">
                                 Intelligence Engine
                             </p>
                         </div>
 
                         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 
-              md:w-full md:h-full flex justify-center items-end"
+              md:w-full md:h-full flex justify-center items-end w-full"
                         >
                             <img
-                                src="/Apple iPhone X Space Grey.svg"
+                                src="/84b9d6946f21a30ebcea8ae14a70972e 1.svg"
                                 alt="Phone UI"
-                                className="sm:w-[100px] md:w-[220px] "
+                                className="sm:w-[10px] md:w-[320px] "
                             />
                         </div>
                     </div>
