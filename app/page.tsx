@@ -17,14 +17,14 @@ import Shortidea from "./components/Shortidea";
 export default function Home() {
   return (
     <div className="space-y-10 bg-[#00020F]">
-      {/* <Hero /> */}
+      <Hero />
       <Statictis />
       <Teams />
-      <Whychooseus />
+      {/* <Whychooseus /> */}
       <TechTrendsMarquee />
       <Aisolution />
       <Aiblueprint />
-      <Whatwebuild/>
+      {/* <Whatwebuild/> */}
       <HowItWorksCards />
       <Whatweprovide />
       <ProcessSection />

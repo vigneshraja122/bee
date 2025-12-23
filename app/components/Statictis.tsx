@@ -12,7 +12,7 @@ const Statictis = () => {
                     <NavLabel label="Who we are" className="md:text-[15px]"/>
                 </div>
 
-                <div className="hidden md:flex flex-col">
+                <div className="hidden md:flex flex-col ">
                     <div className="flex items-center gap-2 flex-wrap">
                         <h1 className="xl:text-4xl lg:text-4xl md:text-2xl text-white">Create smart blockchain</h1>
                         <img src="/assets/images/animation.svg" className="w-10 h-10" />
@@ -35,7 +35,7 @@ const Statictis = () => {
                 </div>
 
                 {/* ================= MOBILE (EXACT IMAGE LAYOUT) ================= */}
-                <div className="flex md:hidden flex-col gap-4 text-white text-[26px]">
+                <div className="flex md:hidden flex-col gap-4 text-white text-[24px] xl:p-0 lg:p-0 md:p-0 sm:p-2 p-2">
 
                     <h1>Create smart blockchain</h1>
 

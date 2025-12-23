@@ -37,7 +37,7 @@ const Teams = () => {
             
           "
         >
-          <p className="text-white text-xl leading-relaxed font-medium mt-28">
+          <p className="text-white xl:text-xl lg:text-xl md:text-xl sm:text-xl text-[15px] xl:p-0 lg:p-0 md:p-0 sm:p-2 p-5 leading-relaxed font-medium mt-28">
             Our multidisciplinary team consists of blockchain engineers, AI
             researchers, smart contract auditors, Web3 developers, game designers,
             and enterprise consultants delivering world-class digital
