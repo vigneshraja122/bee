@@ -20,7 +20,7 @@ export default function Home() {
       <Hero />
       <Statictis />
       <Teams />
-      <Whychooseus />
+      {/* <Whychooseus /> */}
       <TechTrendsMarquee />
       <Aisolution />
       <Aiblueprint />

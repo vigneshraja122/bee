@@ -35,13 +35,13 @@ const NavLabel = ({
         {/* LABEL BODY */}
         <div
           className="
-            relative flex items-center w-[180px]
-            pl-2 pr-[11.83px] py-2 rounded-lg
+            relative flex items-center w-[150px]
+            pl-2 pr-[11px] py-2 rounded-lg
             border border-[#0B2A44]
             overflow-hidden
           "
         >
-          <p className="text-[20px] text-white whitespace-nowrap">
+          <p className="text-white whitespace-nowrap">
             {label}
           </p>
 
