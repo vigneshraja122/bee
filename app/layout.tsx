@@ -1,8 +1,23 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Head from "next/head";
+import { Poppins, Manrope } from "next/font/google";
 
+/* Poppins */
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-poppins",
+  display: "swap",
+});
 
+/* Manrope */
+const manrope = Manrope({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-manrope",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Blockchain Development Company & Game Development Company | Beelockchain.io",
@@ -73,7 +88,7 @@ export default function RootLayout({
         <meta name="twitter:image" content="url" />
         <meta name="twitter:site" content="@beelockchain_io" />
       </Head>
-      <body
+      <body  className={` ${poppins.variable} ${manrope.variable} antialiased`}
       >
         {children}
       </body>
