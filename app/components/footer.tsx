@@ -228,7 +228,85 @@ Future-ready blockchain development, smart contract solutions, Web3 ecosystems, 
           <p className="text-2xl">+(1)1230 452 8597</p>
         </div>
       </div>
+
+
+{/* ================= MOBILE FOOTER ================= */}
+<div className="md:hidden relative w-full bg-[#00020f] px-6 py-16 text-white overflow-hidden">
+
+  {/* BACKGROUND TEXT */}
+  <h1 className="absolute top-6 left-1/2 -translate-x-1/2 text-[64px] font-bold tracking-widest text-white/5 select-none">
+    BEELOCK
+    <span className="text-[#1BFFE1] text-sm align-top ml-1">Chain</span>
+  </h1>
+
+  {/* EMAIL PILL */}
+  <div className="relative z-10 flex justify-center mt-14">
+    <div className="flex items-center gap-3 px-6 py-3 rounded-full bg-[#1BFFE1] text-black text-sm font-medium">
+      <svg width="20" height="18" viewBox="0 0 52 46" fill="black">
+        <path d="M31.7 24.6L28.47 27.83C27.16 29.15 24.86 29.18 23.52 27.83L20.29 24.6L8.7 36.23C9.13 36.43 9.61 36.55 10.11 36.55H41.88C42.38 36.55 42.86 36.43 43.29 36.23L31.7 24.6Z"/>
+        <path d="M41.88 9.45H10.11C9.61 9.45 9.13 9.57 8.7 9.77L25.12 26.24C25.55 26.67 26.44 26.67 26.87 26.24L43.29 9.77C42.86 9.57 42.38 9.45 41.88 9.45Z"/>
+      </svg>
+      info@beelockchain.com
+    </div>
+  </div>
+
+  {/* DESCRIPTION */}
+  <div className="relative z-10 mt-6 text-center text-sm leading-relaxed">
+    <p className="text-[#1BFFE1] font-medium">
+      Beelockchain – the World’s First AI-Centered Blockchain Development Company
+    </p>
+    <p className="text-white/70 mt-2">
+      Future-ready blockchain development, smart contract solutions, Web3 ecosystems, and AI-powered automation all under one roof.
+    </p>
+  </div>
+
+  {/* NAV GRID */}
+  <div className="relative z-10 mt-10 grid grid-cols-2 gap-y-8 gap-x-6 text-center">
+    {[
+      { label: "What we do?", value: "Services" },
+      { label: "Who we are?", value: "About Us" },
+      { label: "How we deliver", value: "Contact Us" },
+      { label: "What we're good at?", value: "Our Project" },
+    ].map((item, i) => (
+      <div key={i}>
+        <p className="text-xs text-white/50 uppercase mb-1">{item.label}</p>
+        <p className="text-lg">{item.value}</p>
+      </div>
+    ))}
+    <div className="col-span-2">
+      <p className="text-xs text-white/50 uppercase mb-1">News?</p>
+      <p className="text-lg">News</p>
+    </div>
+  </div>
+
+  {/* SOCIAL ICONS */}
+  <div className="relative z-10 mt-10 flex justify-center gap-8">
+    <FacebookIcon />
+    <TwitterIcon />
+    <LinkedInIcon />
+  </div>
+
+  {/* CONTACT INFO */}
+  <div className="relative z-10 mt-8 flex flex-col items-center gap-4 text-sm text-white/80">
+    <div className="flex items-center gap-3">
+      <LocationIcon />
+      <span>4517 Washington, USA</span>
+    </div>
+    <div className="flex items-center gap-3">
+      <PhoneIcon />
+      <span>+(1)1230 452 8597</span>
+    </div>
+  </div>
+
+  {/* COPYRIGHT */}
+  <div className="relative z-10 mt-8 text-center text-xs text-white/40">
+    Copyright © 2025 beelockchain, All rights reserved.
+  </div>
+
+</div>
+
     </footer>
   );
 };
 export default Footer;
+

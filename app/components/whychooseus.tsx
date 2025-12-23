@@ -50,114 +50,13 @@ const Whychooseus = () => {
               <div className="relative h-72">
               
 
-  <div className="w-64 h-80 relative overflow-hidden bg-transparent">
-
-      {/* JPG / PNG / PDF */}
-      <div className="absolute left-[180.28px] top-[300.23px] -rotate-90 origin-top-left">
-        <div className="h-12 px-4 rounded-full flex items-center gap-5
-          bg-gradient-to-b from-[#1f3b3a] to-[#0c1f1e]
-          border border-[#6fffe9]/40
-          backdrop-blur-md">
-
-          {[
-            { t: "JPG", c: "bg-[#5fffd7]" },
-            { t: "PNG", c: "bg-[#49cfff]" },
-            { t: "PDF", c: "bg-[#8a7dff]" },
-          ].map((i) => (
-            <div key={i.t} className="flex items-center gap-2">
-              <span className={`w-2.5 h-2.5 rounded-full ${i.c}`} />
-              <span className="text-[#d8f9ff] text-sm tracking-widest font-medium">
-                {i.t}
-              </span>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* CAMERA */}
-     
-<div className="absolute left-[40.10px] top-[180.82px] rotate-[5deg] origin-top-left">
-  <div className="w-36 h-32 relative rounded-full">
-
-    <div className="h-16 px-4 py-4 left-[37.46px] top-0 absolute origin-top-left rotate-[38deg]
-      bg-slate-400/20 rounded-full
-      outline outline-[1.27px] outline-offset-[-1.27px] outline-white/5
-      inline-flex items-center gap-4 backdrop-blur-sm">
-
-      {/* ICON 1 */}
-      <div className="w-11 h-11 flex items-center justify-center">
-        <Image
-          src="/assets/images/light-btn.png"
-          alt="light"
-          width={40}
-          height={40}
-          className="object-contain"
-        />
-      </div>
-
-      {/* ICON 2 */}
-      <div className="w-11 h-11 flex items-center justify-center">
-        <Image
-          src="/assets/images/circle-btn.png"
-          alt="circle"
-          width={40}
-          height={40}
-          className="object-contain"
-        />
-      </div>
-
-    </div>
-
-  </div>
-</div>
-
-      {/* CENTER GIFT */}
-      <div className="absolute left-[120.64px] top-[120.85px] rotate-[30deg] origin-top-left">
-          <Image
-            src="/assets/images/g-btn.png"
-            alt="gift"
-            width={75}
-            height={75}
-          />
-      </div>
-
-      {/* REWRITE */}
-      <div className="absolute left-0 top-[190.22px] -rotate-[54.55deg] origin-top-left">
-        <div className="h-12 px-5 rounded-full flex items-center gap-3
-          bg-gradient-to-b from-[#1f3b3a] to-[#0c1f1e]
-          border border-[#6fffe9]/40
-          backdrop-blur-md">
-
-          <span className="w-2.5 h-2.5 rounded-full bg-[#5fffd7]" />
-          <span className="text-[#d8f9ff] text-lg font-medium">
-            Rewrite
-          </span>
-        </div>
-      </div>
-
-      {/* BOTTOM CAMERA */}
-      <div className="absolute left-[94.12px] top-[306.27px] rotate-[150deg] origin-top-left">
-       
-
-          <Image
-            src="/assets/images/c-btn.png"
-            alt="small-camera"
-            width={75}
-            height={75}
-          />
-      </div>
-
-      {/* 14 DAYS TRIAL */}
-      <div className="absolute left-[86.70px] top-[62.96px] -rotate-[22.92deg] origin-top-left">
-        <div className="h-12 px-4 rounded-full flex items-center justify-center
-          bg-gradient-to-b from-[#102f2d] to-[#081716]
-          border-2 border-[#5fa7ff]">
-
-          <span className="text-[#e6f1ff] text-lg font-medium">
-            14 days trial
-          </span>
-        </div>
-      </div>
+  <div className="w-64 h-80 right-6 bottom-2 relative overflow-hidden bg-transparent">
+<Image
+  src="/assets/images/floting-text.png"
+  alt="Idea Light"
+  fill
+  className="object-contain"
+/>
 
     </div>
               </div>

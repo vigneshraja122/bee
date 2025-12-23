@@ -9,10 +9,10 @@ import Aiblueprint from "./components/Aiblueprint";
 import ProcessSection from "./components/ProcessSection";
 import TechnologiesSection from "./components/TechnologiesUsed";
 import HowItWorksCards from "./sections/HowItWorksCards";
-import HowItworksSlide from "./sections/HowItworksSlide";
 import Teams from "./components/Teams";
 import TechTrendsMarquee from "./components/Marquee";
 import Aisolution from "./components/Aisolution";
+import Whatweprovide from "./sections/Whatweprovide";
 export default function Home() {
   return (
     <div className="space-y-10 bg-[#00020F]">
@@ -26,7 +26,7 @@ export default function Home() {
       <Aiblueprint />
       {/* <Whatwebuild/> */}
       <HowItWorksCards />
-      <HowItworksSlide />
+      <Whatweprovide />
       <ProcessSection />
       <TechnologiesSection />
 

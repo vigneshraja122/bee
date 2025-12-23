@@ -28,7 +28,7 @@ const CARD_DATA = [
 ];
 
 /* ================= COMPONENT ================= */
-export default function HowItWorksSlide() {
+export default function Whatweprovide() {
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [active, setActive] = useState<number | null>(null);
   const isAnimating = useRef(false);
@@ -242,13 +242,13 @@ const resetAll = () => {
 
 
   return (
-    <section className="w-full h-[760px] bg-[#05060f] overflow-hidden flex flex-col">
+    <section className="w-full h-full md:[h-300px] lg:h-[760px]  bg-[#05060f] overflow-hidden flex flex-col">
       <h2 className="text-center text-transparent bg-clip-text bg-[linear-gradient(90deg,#00A993_0%,#57ADCD_54%,#FFFFFF_60%)]
       text-5xl md:text-6xl font-semibold mb-16">
-        How It Works
+        What We Provide
       </h2>
 
-      <div className="flex flex-1" onMouseLeave={resetAll}>
+<div className="hidden lg:flex flex-1" onMouseLeave={resetAll}>
         {CARD_DATA.map((card, i) => (
           <div
             key={i}
@@ -289,6 +289,72 @@ const resetAll = () => {
           </div>
         ))}
       </div>
+
+
+
+{/* MOBILE VIEW */}
+<div className="lg:hidden divide-y divide-white/10">
+  {CARD_DATA.map((card, i) => {
+    const isOpen = active === i;
+
+    return (
+      <div
+        key={i}
+        className="overflow-hidden bg-gradient-to-r from-[#2c2c2c] via-[#0f244f] to-[#2c2c2c]"
+      >
+        {/* HEADER */}
+        <button
+  onClick={() => setActive(isOpen ? null : i)}
+  className="w-full flex items-center gap-4 px-4 sm:px-6 py-4 sm:py-5 text-left"
+>
+          {/* ICON — YOUR IMAGES ONLY */}
+          <div className="flex items-center justify-center">
+            {isOpen ? (
+            <Image
+              src="/assets/images/active-arrow.png"
+              alt="Active Arrow"
+              width={18}
+              height={18}
+              className="transition-transform duration-300 rotate-[45deg]"
+            />
+
+            ) : (
+              <Image
+                src="/assets/images/initial-arrow.png"
+                alt="Initial Arrow"
+                width={18}
+                height={18}
+              />
+            )}
+          </div>
+
+          {/* TITLE */}
+         <span className="text-white text-sm sm:text-base font-medium">
+  {card.title}
+</span>
+        </button>
+
+        {/* CONTENT */}
+        <div
+  className={`transition-all duration-300 ease-out ${
+    isOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
+  } overflow-hidden`}
+>
+          <div className="px-6 ml-4 pb-4">
+            <ul className="space-y-3 text-[#1BFFE1] text-sm">
+              {card.content.map((c, idx) => (
+                <li key={idx}>• {c}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    );
+  })}
+</div>
+
+
+
     </section>
   );
 }

@@ -1,14 +1,21 @@
-'use client';
+"use client";
 
 type GradientGlowButtonProps = {
   children: React.ReactNode;
   className?: string;
 };
 
-const GradientGlowButton = ({ children, className = "" }: GradientGlowButtonProps) => {
+const GradientGlowButton = ({
+  children,
+  className = "",
+}: GradientGlowButtonProps) => {
   return (
-    <div className={`relative inline-flex rounded-full p-[1px] ${className}`}>
-
+    <div
+      className={`
+        relative inline-flex rounded-full p-[1px]
+        ${className}
+      `}
+    >
       {/* GRADIENT BORDER */}
       <div
         className="
@@ -23,13 +30,13 @@ const GradientGlowButton = ({ children, className = "" }: GradientGlowButtonProp
       <div
         className="
           absolute
-          -top-[4px]
-          -right-[8px]
-          w-[80%]
-          h-[100%]
+          -top-[3px] md:-top-[4px]
+          -right-[6px] md:-right-[8px]
+          w-[75%] md:w-[80%]
+          h-full
           rounded-full
           bg-[linear-gradient(255deg,#3ADCFF_0%,rgba(58,220,255,0.35)_30%,transparent_60%)]
-          blur-[8px]
+          blur-[6px] md:blur-[8px]
           opacity-90
           pointer-events-none
         "
@@ -39,11 +46,13 @@ const GradientGlowButton = ({ children, className = "" }: GradientGlowButtonProp
       <button
         className="
           relative z-10
-          px-8 py-3
+          px-5 py-2 md:px-8 md:py-3
           rounded-full
           bg-[#090920]
           border border-white/10
-          text-base text-white
+          text-sm md:text-base
+          text-white
+          transition-all
         "
       >
         {children}

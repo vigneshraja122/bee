@@ -2,36 +2,39 @@ import Image from "next/image";
 
 const HowItWorksSection = () => {
   return (
-  <section className="relative w-full py-24 overflow-hidden bg-[#00020f]">
-  
-  {/* Background image overlay */}
-  <div
-    className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-70"
-    style={{
-      backgroundImage: "url('/assets/images/howitworks-bg-cards.png')",
-    }}
-  />
+    <section className="relative w-full py-16 sm:py-20 lg:py-24 overflow-hidden bg-[#00020f]">
 
-    
+      {/* Background image overlay */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-70"
+        style={{
+          backgroundImage: "url('/assets/images/howitworks-bg-cards.png')",
+        }}
+      />
 
       {/* Container */}
-      <div className="relative max-w-7xl mx-auto px-6">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
 
         {/* Heading */}
-        <h2 className="text-center text-transparent bg-clip-text bg-[linear-gradient(90deg,#00A993_0%,#57ADCD_54%,#FFFFFF_60%)] text-5xl md:text-6xl font-semibold  mb-16">
+        <h2 className="
+          text-center text-transparent bg-clip-text
+          bg-[linear-gradient(90deg,#00A993_0%,#57ADCD_54%,#FFFFFF_60%)]
+          text-3xl sm:text-4xl lg:text-5xl md:text-6xl
+          font-semibold mb-10 sm:mb-14 lg:mb-16
+        ">
           How It Works
         </h2>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
 
-          {/* Card 1 (Large) */}
+          {/* Card 1 */}
           <div className="lg:col-span-2 rounded-2xl bg-gradient-to-b from-emerald-950 to-teal-800 border border-slate-600 shadow-xl overflow-hidden">
-            <div className="p-8">
-              <h3 className="text-gray-200 text-2xl font-medium  mb-4">
+            <div className="p-5 sm:p-6 lg:p-8">
+              <h3 className="text-gray-200 text-lg sm:text-xl lg:text-2xl font-medium mb-3 sm:mb-4">
                 User enters an idea Example:
               </h3>
-              <p className="text-stone-300 text-lg">
+              <p className="text-stone-300 text-sm sm:text-base lg:text-lg">
                 “I want a staking platform where users earn rewards based on holding time.”
               </p>
             </div>
@@ -54,12 +57,11 @@ const HowItWorksSection = () => {
               height={300}
               className="w-full object-cover"
             />
-
-            <div className="p-6">
-              <h3 className="text-gray-200 text-2xl font-medium  mb-3">
+            <div className="p-5 sm:p-6">
+              <h3 className="text-gray-200 text-lg sm:text-xl lg:text-2xl font-medium mb-2 sm:mb-3">
                 EVO AI analyzes the concept
               </h3>
-              <p className="text-stone-300 text-lg">
+              <p className="text-stone-300 text-sm sm:text-base lg:text-lg">
                 Our AI breaks the idea into technology requirements, features,
                 modules, user flows, and blockchain logic.
               </p>
@@ -67,8 +69,7 @@ const HowItWorksSection = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="rounded-2xl bg-gradient-to-b from-teal-500 to-black border border-slate-600
- shadow-xl overflow-hidden">
+          <div className="rounded-2xl bg-gradient-to-b from-teal-500 to-black border border-slate-600 shadow-xl overflow-hidden">
             <Image
               src="/assets/images/howworks4.png"
               alt="Blueprint generation"
@@ -76,11 +77,11 @@ const HowItWorksSection = () => {
               height={300}
               className="w-full object-cover"
             />
-            <div className="p-6">
-              <h3 className="text-gray-200 text-2xl font-medium  mb-3">
+            <div className="p-5 sm:p-6">
+              <h3 className="text-gray-200 text-lg sm:text-xl lg:text-2xl font-medium mb-2 sm:mb-3">
                 AI auto-generates the full blueprint
               </h3>
-              <p className="text-stone-300 text-lg ">
+              <p className="text-stone-300 text-sm sm:text-base lg:text-lg">
                 Protecting digital assets while ensuring strict compliance
                 across the entire system.
               </p>
@@ -96,11 +97,11 @@ const HowItWorksSection = () => {
               height={300}
               className="w-full object-cover"
             />
-            <div className="p-6">
-              <h3 className="text-gray-200 text-2xl font-medium  mb-3">
+            <div className="p-5 sm:p-6">
+              <h3 className="text-gray-200 text-lg sm:text-xl lg:text-2xl font-medium mb-2 sm:mb-3">
                 Structured project document
               </h3>
-              <p className="text-stone-300 text-lg ">
+              <p className="text-stone-300 text-sm sm:text-base lg:text-lg">
                 Within seconds, you get a clear, ready-to-build project blueprint.
               </p>
             </div>
@@ -115,11 +116,11 @@ const HowItWorksSection = () => {
               height={300}
               className="w-full object-cover"
             />
-            <div className="p-6">
-              <h3 className="text-gray-200 text-2xl font-medium  mb-3">
+            <div className="p-5 sm:p-6">
+              <h3 className="text-gray-200 text-lg sm:text-xl lg:text-2xl font-medium mb-2 sm:mb-3">
                 Download as PDF
               </h3>
-              <p className="text-stone-300 text-lg ">
+              <p className="text-stone-300 text-sm sm:text-base lg:text-lg">
                 Share it with your team, investors, or kickstart development
                 with Beelockchain.
               </p>

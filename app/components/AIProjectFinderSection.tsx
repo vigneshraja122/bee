@@ -1,105 +1,185 @@
 'use client';
-import Image from "next/image";
-import ProjectFinderBg from "../../public/assets/images/aiproject-finder-ui.png";
 
-const AIProjectFinderSection = () => {
+import { useState } from 'react';
+import { Send, MessageSquare } from 'lucide-react';
+
+interface Message {
+  id: number;
+  type: 'user' | 'ai';
+  content: string;
+  timestamp: Date;
+}
+
+interface Chat {
+  id: number;
+  title: string;
+  timestamp: Date;
+}
+
+export default function BlockchainChatbot() {
+  const [messages, setMessages] = useState<Message[]>([]);
+  const [input, setInput] = useState<string>('');
+  const [chatHistory, setChatHistory] = useState<Chat[]>([]);
+  const [activeChat, setActiveChat] = useState<number | null>(null);
+  const [isGenerating, setIsGenerating] = useState<boolean>(false);
+
+  const handleSubmit = (): void => {
+    if (!input.trim() || isGenerating) return;
+
+    const userMessage: Message = {
+      id: Date.now(),
+      type: 'user',
+      content: input,
+      timestamp: new Date()
+    };
+
+    setMessages(prev => [...prev, userMessage]);
+    setInput('');
+    setIsGenerating(true);
+
+    if (!activeChat) {
+      const newChat: Chat = {
+        id: Date.now(),
+        title: input.slice(0, 50) + (input.length > 50 ? '...' : ''),
+        timestamp: new Date()
+      };
+      setChatHistory(prev => [newChat, ...prev]);
+      setActiveChat(newChat.id);
+    }
+
+    setTimeout(() => {
+      const aiMessage: Message = {
+        id: Date.now() + 1,
+        type: 'ai',
+        content: generateBlockchainResponse(input),
+        timestamp: new Date()
+      };
+      setMessages(prev => [...prev, aiMessage]);
+      setIsGenerating(false);
+    }, 1500);
+  };
+
+  const generateBlockchainResponse = (question: string): string => {
+    return "I'm an AI assistant here to help you shape your idea.";
+  };
+
+  const loadChat = (chatId: number): void => {
+    setActiveChat(chatId);
+    setMessages([]);
+  };
+
   return (
-    <section className="w-full bg-[#00020f] text-white">
+    <div className="w-full  min-h-screen">
 
-      {/* SECTION HEADER */}
-      <div className="max-w-[1140px] mx-auto text-center">
-        <h2 className="text-5xl font-bold mb-6">
-          3x your reply rates with AI
-        </h2>
-
-        <p className="text-lg text-white/80 max-w-[640px] mx-auto leading-relaxed">
-          Generate highly-personalized campaigns with AI.
-          <br />
-          Expert quality, no expertise required!
+      {/* 🔥 HERO TEXT ABOVE CHATBOT */}
+      <div className="text-center pt-24 pb-16 px-6">
+        <h1 className="text-xl  md:text-3xl  text-white font-bold mb-2">
+          AI PROJECT FINDER
+        </h1>
+        <p className="text-4xl md:text-5xl text-[#82888d] font-bold mb-3">
+          Powered by EVO AI
+        </p>
+        <p className="text-white  font-bold">
+          Have only a one-line idea? Start here
         </p>
       </div>
 
-      {/* IMAGE CONTAINER */}
-      <div className="relative max-w-[1140px] mx-auto">
+      {/* 💬 CHATBOT CONTAINER */}
+      <div className="w-full flex justify-center px-6">
+        <div className="flex bg-black/40 backdrop-blur-xl 
+          w-full max-w-6xl h-[520px] rounded-3xl overflow-hidden shadow-[0_0_0px_-10px_rgba(58,220,255,0.6),0_0_100px_-30px_rgba(58,220,255,0.4)]
+">
 
-        {/* BACKGROUND IMAGE */}
-        <img
-          src="assets/images/aiproject-finder-ui.png"
-          alt="AI Project Finder"
-          className="w-full rounded-[48px]"
-      
-        />
+       
 
-        {/* OVERLAY CONTENT
-        <div className="absolute inset-0 rounded-[48px] overflow-hidden backdrop-blur-[2px]">
-
-          <div className="flex h-full">
-
-            LEFT SIDEBAR
-            <div className="w-[380px] border-r border-white/10 bg-black/40">
-              <div className="p-6">
-                <p className="text-xl font-semibold">
-                  AI Project Finder
-                </p>
-              </div>
+          {/* Main Area */}
+          <div className="flex-1 flex flex-col">
+                 <div>
+                   <h2 className="text-white text-md font-semibold mb-2 mt-5 ml-20">
+                    AI Project Finder
+                  </h2>
+                 </div>
+            {/* Messages */}
+            <div className="flex-1 overflow-y-auto">
+              
+              {messages.length === 0 ? (
+                <div className="h-full flex flex-col items-center justify-center text-center px-6">
+                  <h2 className="text-white text-xl font-semibold mb-2">
+                    Discover the Magic AI
+                  </h2>
+                  <p className="text-gray-400 text-sm max-w-md">
+                    Exclusively for designers, developers, product teams & magicians!
+                  </p>
+                </div>
+              ) : (
+                <div className="max-w-5xl mx-auto px-6 py-10 space-y-8">
+                  {messages.map(message => (
+                    <div
+                      key={message.id}
+                      className={`flex gap-5 ${
+                        message.type === 'user'
+                          ? 'justify-end'
+                          : 'justify-start'
+                      }`}
+                    >
+                      <div
+                        className={`max-w-3xl px-7 py-5 rounded-3xl ${
+                          message.type === 'user'
+                            ? 'bg-gradient-to-r from-cyan-500 to-teal-500 text-white'
+                            : 'bg-black/90 text-gray-100'
+                        }`}
+                      >
+                        {message.content}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
 
-            RIGHT CONTENT
-            <div className="flex-1 p-8">
+            {/* Input Area */}
+            <div className="px-6 py-6 bg-black/20 backdrop-blur-sm">
+          <div className="w-full flex justify-center">
+            <div className="w-full max-w-3xl">
+              <div
+                className="flex items-center gap-4 
+                bg-[#2c2c2c] 
+                rounded-full px-6 py-3 shadow-2xl"
+              >
+                {/* Left Icon */}
+                <button className="text-gray-500">
+                  <img src="/assets/images/Butterfly.gif" alt="" className='w-10 mix-blend-screen'/>
+                </button>
 
-              SEARCH BAR
-              <div className="flex items-center gap-4 px-4 py-3 rounded-full bg-[#2c2c2c]/90 border border-white/10 mb-8">
-                <div className="w-9 h-9 rounded-full bg-white/10" />
-                <p className="text-sm italic text-white/60 flex-1">
-                  Select what you want to create...
-                </p>
+                {/* Input */}
+                <input
+                  type="text"
+                  value={input}
+                  onChange={(e) => setInput(e.target.value)}
+                  placeholder="Select what you want to create..."
+                  className="flex-1 text-center bg-transparent text-white placeholder-gray-500 outline-none text-sm"
+                />
 
-                <button className="px-6 py-2 rounded-full bg-gradient-to-b from-[#3ADCFF] to-[#1BFFE1] text-black font-semibold text-sm">
+                {/* Generate Button */}
+                <button
+                  onClick={handleSubmit}
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 
+                  hover:from-cyan-600 hover:to-teal-600 
+                  text-white px-7 py-2.5 rounded-full shadow-lg 
+                  shadow-cyan-500/25 flex items-center gap-2"
+                >
+                  <Send size={16} />
                   Generate
                 </button>
               </div>
-
-              FILTERS
-              <div className="mb-6">
-                <p className="text-sm font-semibold mb-3">
-                  Design Type
-                </p>
-
-                <div className="flex gap-6 text-sm">
-                  <span className="font-semibold">All</span>
-                  <span className="text-white/50">Wireframes</span>
-                  <span className="text-white/50">Mockups</span>
-                  <span className="text-white/50">Inspiration</span>
-                </div>
-              </div>
-
-              GRID
-              <div className="grid grid-cols-4 gap-4">
-                {[
-                  "Signup / Login",
-                  "Landing Page",
-                  "Product Listing",
-                  "Product Page",
-                ].map((item) => (
-                  <div
-                    key={item}
-                    className="rounded-lg overflow-hidden bg-black/40"
-                  >
-                    <div className="h-[110px] bg-white/10" />
-                    <div className="bg-[#2c2c2c]/90 py-2 text-center text-sm text-white/80">
-                      {item}
-                    </div>
-                  </div>
-                ))}
-              </div>
-
             </div>
           </div>
+</div>
 
-        </div> */}
+
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
   );
-};
-
-export default AIProjectFinderSection;
+}
