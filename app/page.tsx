@@ -16,14 +16,14 @@ import Whatweprovide from "./sections/Whatweprovide";
 export default function Home() {
   return (
     <div className="space-y-10 bg-[#00020F]">
-      <Hero />
+      {/* <Hero /> */}
       <Statictis />
       <Teams />
       <Whychooseus />
       <TechTrendsMarquee />
       <Aisolution />
       <Aiblueprint />
-      {/* <Whatwebuild/> */}
+      <Whatwebuild/>
       <HowItWorksCards />
       <Whatweprovide />
       <ProcessSection />
