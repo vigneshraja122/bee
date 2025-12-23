@@ -61,7 +61,7 @@ const Shortidea = () => {
 
                 {/* 3D Image */}
                 <div className="w-full flex justify-center my-8">
-                    <img src="/div.tabs-steps-content.svg" className="w-[280px] max-w-full" alt="3D visualization" />
+                    <img src="/assets/images/div.tabs-steps-content.svg" className="w-[280px] max-w-full" alt="3D visualization" />
                 </div>
 
                 {/* Bottom Text Section */}
@@ -94,7 +94,7 @@ const Shortidea = () => {
 
                         {/* Arrow Image */}
                         <div className="w-full">
-                            <img src="/image.svg" className="w-[500px]" alt="arrow" />
+                            <img src="/assets/images/image.svg" className="w-[500px]" alt="arrow" />
                         </div>
 
                         {/* Cards Container - Horizontal */}
@@ -139,7 +139,7 @@ const Shortidea = () => {
 
                 {/* Right Section - 30% */}
                 <div className="w-[30%] h-full flex flex-col justify-center items-center">
-                    <img src="/div.tabs-steps-content.svg" className="max-w-full" alt="3D visualization" />
+                    <img src="/assets/images/div.tabs-steps-content.svg" className="max-w-full" alt="3D visualization" />
                 </div>
             </div>
         </div>

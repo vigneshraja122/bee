@@ -45,6 +45,7 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <link rel="canonical" href="https://www.beelockchain.io/" />
+        
         <meta name="robots" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1" />
         <script
           type="application/ld+json"
