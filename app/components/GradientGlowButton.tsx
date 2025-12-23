@@ -12,7 +12,7 @@ const GradientGlowButton = ({
   return (
     <div
       className={`
-        relative inline-flex rounded-full p-[1px]
+        relative inline-flex rounded-full p-[1px] 
         ${className}
       `}
     >
@@ -22,7 +22,7 @@ const GradientGlowButton = ({
           absolute inset-0 rounded-full
           bg-[linear-gradient(200deg,#3ADCFF_0%,#050514_70%)]
           [mask:linear-gradient(#000_0_0)_content-box,linear-gradient(#000_0_0)]
-          [mask-composite:exclude]
+          [mask-composite:exclude] 
         "
       />
 
@@ -53,6 +53,7 @@ const GradientGlowButton = ({
           text-sm md:text-base
           text-white
           transition-all
+          cursor-pointer
         "
       >
         {children}
