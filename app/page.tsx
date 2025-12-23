@@ -22,18 +22,13 @@ export default function Home() {
       <Whychooseus />
       <TechTrendsMarquee />
       <Aisolution />
-
       <Aiblueprint />
       {/* <Whatwebuild/> */}
       <HowItWorksCards />
       <Whatweprovide />
       <ProcessSection />
       <TechnologiesSection />
-
       <AIProjectFinderSection />
-
-
-
       <FAQSection />
       <Footer />
     </div>
