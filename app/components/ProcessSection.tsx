@@ -8,7 +8,7 @@ const ProcessSection = () => {
         bg-gradient-to-b from-[#0b0f1a] via-[#000000] to-[#085967]
         border border-white/10
         shadow-[0_0_80px_rgba(0,255,255,0.08)]
-        px-10 py-16"
+        px-10 py-16 flex flex-col items-center"
       >
         {/* TOP BADGE */}
         <div className="flex justify-center mb-6">
@@ -23,12 +23,12 @@ const ProcessSection = () => {
         </div>
 
         {/* TITLE */}
-        <h2 className="text-center text-4xl md:text-5xl font-semibold text-white leading-tight mb-12">
-          Process Often Includes <br /> The Following Key Stages
+        <h2 className="text-center text-2xl md:text-5xl font-semibold text-white leading-tight mb-12 md:w-[670px]">
+          Development Process EVO AI- Stepwise Process
         </h2>
 
         {/* VIDEO / IMAGE BLOCK */}
-        <div className="relative w-full rounded-t-2xl overflow-hidden mb-10">
+        <div className="relative w-full rounded-t-2xl overflow-hidden mb-10 hidden md:block">
           <img
             src="/Background (2).svg" // replace with your image
             alt="Process visual"
@@ -51,11 +51,12 @@ const ProcessSection = () => {
             "Technology",
             "Finance Application",
             "SEO",
-          ].map((tag) => (
+          ].map((tag, index) => (
             <span
               key={tag}
-              className="px-4 py-2 rounded-full text-sm text-[#085967]
-              bg-white/5 border border-white/10 backdrop-blur"
+              className={`px-4 py-2 rounded-full text-sm text-[#085967]
+              bg-white/5 border border-white/10 backdrop-blur
+              ${index >= 3 ? 'hidden sm:inline-flex' : 'inline-flex'}`}
             >
               #<span className="text-white">{tag}</span>
             </span>
@@ -63,27 +64,47 @@ const ProcessSection = () => {
         </div>
 
         {/* STEPS */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 ">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           {[
             {
               step: "STEP 01",
-              title: "Discussion",
-              desc: "Communication, collaboration, & knowledge sharing through structured.",
+              title: "Share Your Idea",
+              desc: "Submit a short brief (1–2 paragraphs or a checklist): goal, industry, must-have features.",
             },
             {
               step: "STEP 02",
-              title: "Ideas & Concept",
-              desc: "Leveraging technology for business innovation and problem-solving.",
+              title: "EVO AI Intake & Analysis",
+              desc: " EVO AI parses requirements, identifies technical needs, and selects optimal architecture patterns.",
             },
             {
               step: "STEP 03",
-              title: "Testing & Trying",
-              desc: "Process of evaluating and verifying that IT systems and integrated solutions.",
+              title: "Quick Review & Feedback",
+              desc: "Short alignment call to confirm scope. EVO AI applies minor revisions within 24–48 hours.",
             },
             {
               step: "STEP 04",
-              title: "Execute & Install",
-              desc: "Planned and developed IT solutions are actually put into practical operation.",
+              title: "Sprint Plan & Milestones",
+              desc: "AI-generated sprint breakdown (2–4 week sprints), deliverables, and success metrics — ready for approval.",
+            },
+            {
+              step: "STEP 05",
+              title: "Design & Prototype",
+              desc: " EVO AI seeds wireframes and design variants; team finalizes clickable prototypes for early testing.",
+            },
+            {
+              step: "STEP 06",
+              title: "Development (AI-Assisted)",
+              desc: "Engineers build smart contracts, backend & dApp with EVO AI scaffolding, code templates, and CI/CD presets",
+            },
+            {
+              step: "STEP 07",
+              title: "AI-Powered Testing & Security",
+              desc: "Automated functional tests, load simulation and EVO AI predictive vulnerability checks; issues prioritized and fixed.",
+            },
+            {
+              step: "STEP 08",
+              title: "Staging Beta & Tuning",
+              desc: "Phased testnet rollout, real-user beta feedback, performance tuning guided by EVO AI analytics.",
             },
           ].map((item) => (
             <div
@@ -102,7 +123,50 @@ const ProcessSection = () => {
                 <span className="px-3 py-1 text-xs rounded-full bg-cyan-400/20 text-cyan-300">
                   {item.step}
                 </span>
-                <span className="w-7 h-7 rounded-full bg-white text-black flex items-center justify-center">
+                <span className="w-7 h-7 rounded-full bg-white text-black flex items-center justify-center ml-2">
+                  ↗
+                </span>
+              </div>
+
+              <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
+              <p className="text-sm text-white/70 leading-relaxed">
+                {item.desc}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        {/* LAST 2 CARDS CENTERED */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 max-w-2xl mx-auto">
+          {[
+            {
+              step: "STEP 09",
+              title: "Production Launch & Monitoring",
+              desc: " Mainnet deployment with live monitoring, AI anomaly detection, and auto-tuning recommendations.",
+            },
+            {
+              step: "STEP 10",
+              title: "Continuous Improvement",
+              desc: "Ongoing EVO AI suggestions for upgrades, cost optimization, and scaling - the blueprint stays alive and adaptive.",
+            },
+          ].map((item) => (
+            <div
+              key={item.step}
+              className="relative rounded-2xl p-6 overflow-hidden
+     
+              border border-white/10
+              shadow-[0_20px_60px_rgba(0,180,180,0.15)]
+              transition-all duration-300
+              hover:scale-[1.02]
+              hover:shadow-[0_30px_80px_rgba(0,255,255,0.25)]
+              text-white"
+            >
+              {/* STEP BADGE */}
+              <div className="flex items-center mb-4">
+                <span className="px-3 py-1 text-xs rounded-full bg-cyan-400/20 text-cyan-300">
+                  {item.step}
+                </span>
+                <span className="w-7 h-7 rounded-full bg-white text-black flex items-center justify-center ml-2">
                   ↗
                 </span>
               </div>
