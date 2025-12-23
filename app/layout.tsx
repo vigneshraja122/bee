@@ -34,7 +34,7 @@ export default function RootLayout({
     "@context": "https://schema.org/",
     "@type": "Product",
     name: "Beelockchain - AI Centric Blockchain & Game Development Company",
-    image: "", 
+    image: "",
     description:
       "Top AI-centric Custom Blockchain & Game Development Company developed DApps, crypto platforms, game art design, and prediction market software.",
     brand: {
@@ -60,7 +60,7 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <link rel="canonical" href="https://www.beelockchain.io/" />
-        
+
         <meta name="robots" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1" />
         <script
           type="application/ld+json"
@@ -78,17 +78,22 @@ export default function RootLayout({
         <meta property="og:title" content="AI-Powered Custom Blockchain & Game Development Company | Beelockchain" />
         <meta property="og:description" content="Beelockchain is an AI-powered blockchain and game development company delivering secure, scalable blockchain solutions, game art design service, and prediction market software for startups and enterprises." />
         <meta property="og:image:type" content="image/webp" />
-        <meta property="og:image" content="url" />
+        <meta property="og:image" content="https://www.beelockchain.io/og/beelockchain-og.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/png" />
+        <meta
+          property="og:image:alt"
+          content="Beelockchain – AI-Centric Blockchain & Game Development Company"
+        />
         <meta property="og:image:alt" content="Beelockchain – AI-Centric Custom Blockchain & Game Development Solution" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="AI-Powered Custom Blockchain & Game Development Company | Beelockchain" />
         <meta name="twitter:description" content="Build secure blockchain platforms, Web3 games, crypto solutions, and prediction market software powered by AI. Explore Beelockchain.io." />
-        <meta name="twitter:image" content="url" />
+        <meta name="twitter:image" content="https://www.beelockchain.io/og/beelockchain-og.png" />
         <meta name="twitter:site" content="@beelockchain_io" />
       </Head>
-      <body  className={` ${poppins.variable} ${manrope.variable} antialiased`}
+      <body className={` ${poppins.variable} ${manrope.variable} antialiased`}
       >
         {children}
       </body>

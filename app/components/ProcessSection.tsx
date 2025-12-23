@@ -109,7 +109,7 @@ const ProcessSection = () => {
           ].map((item) => (
             <div
               key={item.step}
-              className="relative rounded-2xl xl:p-6 lg:p-6 md:p-2 overflow-hidden
+              className="relative rounded-2xl  xl:p-6 lg:p-6 p-2 overflow-hidden
      
               border border-white/10
               shadow-[0_20px_60px_rgba(0,180,180,0.15)]
@@ -152,7 +152,7 @@ const ProcessSection = () => {
           ].map((item) => (
             <div
               key={item.step}
-              className="relative rounded-2xl xl:p-6 lg:p-6 md:p-2 overflow-hidden
+              className="relative rounded-2xl xl:p-6 lg:p-6 p-2 overflow-hidden
      
               border border-white/10
               shadow-[0_20px_60px_rgba(0,180,180,0.15)]

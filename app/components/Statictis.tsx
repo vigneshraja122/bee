@@ -66,7 +66,7 @@ const Statictis = () => {
 
                 {/* -------- CENTER (1st on mobile) -------- */}
                 <div className="w-full md:w-[30%] order-1 md:order-2 h-full flex justify-center items-center">
-                    <div className="relative md:w-full xl:h-full lg:h-full md:h-[400px] rounded-[32px] overflow-hidden h-[500px]
+                    <div className="relative w-[80%] md:w-full xl:h-full lg:h-full md:h-[400px] rounded-[32px] overflow-hidden h-[500px]
             bg-gradient-to-b from-[#00A4AF] to-black 
             border border-white/40 shadow-2xl"
                     >

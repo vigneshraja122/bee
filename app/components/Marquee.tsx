@@ -5,14 +5,14 @@ import Image from "next/image";
 
 const TechTrendsMarquee = () => {
   return (
-    <div className="w-full bg-black h-40 flex justify-center items-center overflow-hidden">
+    <div className="w-full md:h-40 h-20 flex justify-center items-center overflow-hidden bg-[#00020F]">
       <Marquee className="flex " speed={50} direction="right">
         {[1, 2].map((_, i) => (
           <div key={i} className="flex items-center gap-20 mx-10 overflow-hidden">
             {/* <StarIcon /> */}
 
             <h1 className="
-                text-6xl font-extrabold tracking-widest
+                md:text-6xl text-3xl font-extrabold tracking-widest
                 text-transparent
                 bg-clip-text
                 [-webkit-text-fill-color:transparent]
@@ -21,12 +21,12 @@ const TechTrendsMarquee = () => {
             >
               GENERATIVE AI
             </h1>
-            <Image src="/assets/images/marquee-icon.png" alt="Plus Icon" height={200} width={144} />
+            <img src="/assets/images/marquee-icon.png" alt="Plus Icon" className="w-10 h-10 md:w-40 md:h-40" />
             {/* 
             <StarIcon /> */}
 
             <h1 className="
-    text-6xl font-extrabold tracking-widest
+    md:text-6xl  text-3xl font-extrabold tracking-widest
     text-transparent
     bg-clip-text
     [-webkit-text-fill-color:transparent]
@@ -35,7 +35,7 @@ const TechTrendsMarquee = () => {
             >
               TECH TRENDS
             </h1>
-            <Image src="/assets/images/marquee-icon.png" alt="Plus Icon" height={200} width={144} />
+            <img src="/assets/images/marquee-icon.png" alt="Plus Icon" className="w-10 h-10 md:w-40 md:h-40"/>
             {/* <StarIcon /> */}
           </div>
         ))}
