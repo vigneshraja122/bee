@@ -3,14 +3,14 @@ import Topnav from "./Topnav";
 
 const Hero = () => {
     return (
-        <div className="w-full xl:h-screen lg:h-screen md:h-full sm:h-screen h-screen flex flex-col items-center" style={{
+        <div className="w-full xl:h-screen lg:h-screen md:h-full sm:h-screen h-[80vh] flex flex-col items-center" style={{
             backgroundImage: "url('/assets/images/Desktop - 4 (1).svg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
         }}>
             <Topnav />
-            <div className="w-full h-[80%] md:h-full flex flex-col justify-center items-center">
+            <div className="w-full h-[80%] md:h-full flex flex-col justify-center items-center mt-10">
                 <img src="/assets/images/Group 2.svg" className="xl:w-[350px] lg:w-[350px] md:w-[390px] w-[250px]" />
                 <div className="w-[80%] xl:p-0 lg:p-0 md:p-5 h-full flex flex-col justify-center items-center text-center space-y-6 z-10">
                     <div className="space-y-4 flex flex-col justify-center items-center w-full">

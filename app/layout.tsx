@@ -36,7 +36,7 @@ export default function RootLayout({
     "@context": "https://schema.org/",
     "@type": "Product",
     name: "Beelockchain - AI Centric Blockchain & Game Development Company",
-    image: "",
+    image: "https://www.beelockchain.io/og/beelockchain-og.png",
     description:
       "Top AI-centric Custom Blockchain & Game Development Company developed DApps, crypto platforms, game art design, and prediction market software.",
     brand: {
