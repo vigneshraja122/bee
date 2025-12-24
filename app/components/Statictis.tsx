@@ -70,13 +70,13 @@ const Statictis = () => {
                             </p>
                         </div>
 
-                        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 
+                        <div className="absolute bottom-0 left-1/2 -translate-x-1/2  h-full
               md:w-full md:h-full flex justify-center items-end w-full"
                         >
                             <img
                                 src="/assets/images/84b9d6946f21a30ebcea8ae14a70972e 1.svg"
                                 alt="Phone UI"
-                                className="sm:w-[10px] md:w-[320px] "
+                                className="h-[60%] md:w-[320px] "
                             />
                         </div>
                     </div>
@@ -121,7 +121,7 @@ const Statictis = () => {
             flex flex-col justify-center items-center md:gap-4 w-[40%] h-32"
                     >
                         <h1 className="xl:text-5xl lg:text-5xl md:text-xl text-md text-center bg-gradient-to-b 
-              from-[#00A4AF] to-[#00FF97] bg-clip-text text-transparent font-Poppins"
+              from-[#00A4AF] to-[#00FF97] bg-clip-text text-transparent font-manrope"
                         >
                             Automated & Optimized
                         </h1>
