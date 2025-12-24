@@ -54,6 +54,7 @@ const GradientGlowButton = ({
           text-white
           transition-all
           cursor-pointer
+          font-poppins
         "
       >
         {children}
