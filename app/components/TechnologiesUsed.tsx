@@ -19,8 +19,8 @@ export default function TechnologiesSection() {
       <div className="max-w-[1400px] mx-auto px-6">
 
         {/* TITLE */}
-        <h2 className="text-center text-[36px] sm:text-[44px] lg:text-[56px] leading-tight font-bold text-neutral-100 mb-14">
-          Technologies & Tools
+        <h2 className=" font-manrope text-center text-[36px] sm:text-[44px] lg:text-[56px] leading-tight font-bold text-neutral-100 mb-14 font-manrope">
+          Technologies & Tools  
         </h2>
 
         {/* ================= DESKTOP LEGEND ================= */}
@@ -63,7 +63,7 @@ export default function TechnologiesSection() {
                   <img src={tech.icon} alt={tech.label} className="w-8 h-8 object-contain" />
                 </div>
 
-                <div className="absolute top-[68px] w-full text-center text-white/50 text-xs leading-4">
+                <div className="absolute top-[68px] w-full text-center text-white/50 text-xs leading-4 font-poppins">
                   {tech.label}
                 </div>
               </button>
@@ -100,7 +100,7 @@ export default function TechnologiesSection() {
                       style={{ backgroundColor: tech.bg }}
                     >
                       <img src={tech.icon} alt={tech.label} className="w-7 h-7 object-contain mb-2" />
-                      <span className="text-[11px] text-white/60 text-center leading-tight px-1">
+                      <span className="text-[11px] text-white/60 text-center leading-tight px-1 font-poppins">
                         {tech.label}
                       </span>
                     </div>
@@ -131,7 +131,7 @@ function Legend({
   return (
     <button onClick={onClick} className="flex items-center gap-4 select-none cursor-pointer">
       <div className={`w-5 h-5 rounded-sm ${color}`} />
-      <span className={`text-sm transition-colors ${active ? "text-cyan-400" : "text-white/50"}`}>
+      <span className={`text-sm transition-colors font-manrope ${active ? "text-cyan-400" : "text-white/50"}`}>
         {text}
       </span>
     </button>

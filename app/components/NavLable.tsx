@@ -41,7 +41,7 @@ const NavLabel = ({
             overflow-hidden
           "
         >
-          <p className="text-white whitespace-nowrap">
+          <p className="text-white whitespace-nowrap font-manrope">
             {label}
           </p>
 
