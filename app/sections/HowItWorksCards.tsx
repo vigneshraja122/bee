@@ -51,7 +51,7 @@ const HowItWorksSection = () => {
           {/* Card 2 */}
           <div className="rounded-2xl bg-gradient-to-b from-teal-500 to-black border border-slate-600 shadow-xl overflow-hidden">
             <Image
-              src="/assets/images/howworks2.png"
+              src="/assets/images/photo-7-2.jpg.svg"
               alt="AI analysis"
               width={400}
               height={300}
@@ -71,7 +71,7 @@ const HowItWorksSection = () => {
           {/* Card 3 */}
           <div className="rounded-2xl bg-gradient-to-b from-teal-500 to-black border border-slate-600 shadow-xl overflow-hidden">
             <Image
-              src="/assets/images/howworks4.png"
+              src="/assets/images/photo-5-1.jpg.svg"
               alt="Blueprint generation"
               width={400}
               height={300}
@@ -110,7 +110,7 @@ const HowItWorksSection = () => {
           {/* Card 5 */}
           <div className="rounded-2xl bg-gradient-to-b from-teal-500 to-black border border-slate-600 shadow-xl overflow-hidden">
             <Image
-              src="/assets/images/howworks1.png"
+              src="/assets/images/photo-9-1.jpg.svg"
               alt="Download PDF"
               width={400}
               height={300}
