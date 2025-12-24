@@ -34,7 +34,7 @@ const Shortidea = () => {
                     </div>
 
                     {/* Cards positioned to align with arrow curve */}
-                    <div className="w-full flex flex-col items-start space-y-4 pt-20">
+                    <div className="w-full flex flex-col items-center space-y-4 pt-20">
 
                         {/* Card 1 - Positioned at first curve */}
                         <div className="w-[180px] h-20 p-[2px] rounded-lg bg-gradient-to-r from-[#1BFFE1] to-black ml-4">
