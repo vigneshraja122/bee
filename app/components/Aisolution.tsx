@@ -77,7 +77,7 @@ const Aisolution = () => {
 
         {/* Badge */}
         <div className="inline-flex items-center rounded-full px-4 py-1
-          bg-cyan-400/15 border border-cyan-300/30">
+          bg-cyan-400/15 border border-cyan-300/30 w-full">
           <span className="text-cyan-300 font-semibold tracking-wide text-sm">
             AI SOLUTIONS <span className="text-cyan-200">(Powered by EVO AI)</span>
           </span>
