@@ -32,10 +32,10 @@ const HowItWorksSection = () => {
           <div className="lg:col-span-2 rounded-2xl bg-gradient-to-b from-emerald-950 to-teal-800 border border-slate-600 shadow-xl overflow-hidden">
             <div className="p-5 sm:p-6 lg:p-8">
               <h3 className="text-gray-200 text-lg sm:text-xl lg:text-2xl font-medium mb-3 sm:mb-4">
-                User enters an idea Example:
+                User enters an idea :
               </h3>
               <p className="text-stone-300 text-sm sm:text-base lg:text-lg">
-                “I want a staking platform where users earn rewards based on holding time.”
+                “Example: I want a staking platform where users earn rewards based on holding time.”
               </p>
             </div>
 
@@ -82,8 +82,7 @@ const HowItWorksSection = () => {
                 AI auto-generates the full blueprint
               </h3>
               <p className="text-stone-300 text-sm sm:text-base lg:text-lg">
-                Protecting digital assets while ensuring strict compliance
-                across the entire system.
+                Within seconds, you get a structured project document.
               </p>
             </div>
           </div>
