@@ -13,6 +13,7 @@ import Teams from "./components/Teams";
 import TechTrendsMarquee from "./components/Marquee";
 import Aisolution from "./components/Aisolution";
 import Whatweprovide from "./sections/Whatweprovide";
+// import Chattest from "./components/Chattest";
 export default function Home() {
   return (
     <div className="space-y-10 bg-[#00020F]">
@@ -23,12 +24,14 @@ export default function Home() {
       <TechTrendsMarquee />
       <Aisolution />
       <Aiblueprint />
+
       {/* <Whatwebuild/> */}
       <HowItWorksCards />
       <Whatweprovide />
       <ProcessSection />
       <TechnologiesSection />
       <AIProjectFinderSection />
+      {/* <Chattest/> */}
       <FAQSection />
       <Footer />
     </div>

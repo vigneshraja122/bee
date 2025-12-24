@@ -22,7 +22,7 @@ const TechTrendsMarquee = () => {
             >
               GENERATIVE AI
             </h1>
-            <Image src="/assets/images/marquee-icon.png" alt="Plus Icon" height={200} width={144}  className=" w-16 h-16
+            <Image src="/assets/images/marqueeimg.png" alt="Plus Icon" height={200} width={144}  className=" w-16 h-16
             sm:w-16 sm:h-16
             md:w-18 md:h-18
             lg:w-20 lg:h-20
@@ -42,7 +42,7 @@ const TechTrendsMarquee = () => {
             >
               TECH TRENDS
             </h1>
-            <Image src="/assets/images/marquee-icon.png" alt="Plus Icon" height={200} width={204} className=" w-16 h-16
+            <Image src="/assets/images/marqueeimg.png" alt="Plus Icon" height={200} width={204} className=" w-16 h-16
     sm:w-16 sm:h-16
     md:w-18 md:h-18
     lg:w-20 lg:h-20
