@@ -129,7 +129,7 @@ function Legend({
   onClick: () => void;
 }) {
   return (
-    <button onClick={onClick} className="flex items-center gap-4 select-none">
+    <button onClick={onClick} className="flex items-center gap-4 select-none cursor-pointer">
       <div className={`w-5 h-5 rounded-sm ${color}`} />
       <span className={`text-sm transition-colors ${active ? "text-cyan-400" : "text-white/50"}`}>
         {text}

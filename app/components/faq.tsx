@@ -50,12 +50,12 @@ const FAQSection = () => {
             return (
               <div
                 key={index}
-                className="relative rounded-[14px] p-[0.8px] bg-[linear-gradient(160deg,#3ADCFF_0%,#050514_65%)]"
+                className="relative rounded-[14px] p-[0.8px] bg-[linear-gradient(160deg,#3ADCFF_0%,#050514_65%)] cursor-pointer"
               >
                 <div className="bg-[#050514] rounded-[13px] px-5 py-4">
                   <button
                     onClick={() => setOpenIndex(isOpen ? null : index)}
-                    className="w-full flex justify-between items-center gap-6 text-left"
+                    className="w-full flex justify-between items-center gap-6 text-left cursor-pointer"
                   >
                     <p className="text-sm sm:text-base font-medium">
                       {item.q}

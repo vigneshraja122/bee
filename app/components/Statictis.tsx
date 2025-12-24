@@ -2,10 +2,10 @@ import NavLabel from "./NavLable";
 
 const Statictis = () => {
     return (
-        <div className="xl:h-[130vh] lg:h-[130vh] md:h-[110vh] w-full flex flex-col justify-center items-center bg-[#00020F] space-y-2">
+        <div className="xl:h-[130vh] lg:h-[130vh] md:h-[110vh] w-full flex flex-col justify-center items-center bg-[#00020F] top-40 space-y-2">
 
             {/* ================= TOP TEXT ================= */}
-            <div className="xl:w-[70%] lg:w-[70%] md:w-[80%] md:h-unset w-full">
+            <div className="xl:w-[70%] lg:w-[70%] md:w-[80%] md:h-unset w-full mt-20">
                 <div className="relative inline-flex items-center gap-1 rounded-xl 
           bg-linear-to-r from-[#0B0F1C] via-[#111827] to-[#0B0F1C]"
                 >

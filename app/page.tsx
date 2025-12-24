@@ -13,14 +13,13 @@ import Teams from "./components/Teams";
 import TechTrendsMarquee from "./components/Marquee";
 import Aisolution from "./components/Aisolution";
 import Whatweprovide from "./sections/Whatweprovide";
-import Shortidea from "./components/Shortidea";
 export default function Home() {
   return (
     <div className="space-y-10 bg-[#00020F]">
       <Hero />
       <Statictis />
       <Teams />
-      {/* <Whychooseus /> */}
+      <Whychooseus />
       <TechTrendsMarquee />
       <Aisolution />
       <Aiblueprint />
@@ -30,7 +29,6 @@ export default function Home() {
       <ProcessSection />
       <TechnologiesSection />
       <AIProjectFinderSection />
-      <Shortidea/>
       <FAQSection />
       <Footer />
     </div>

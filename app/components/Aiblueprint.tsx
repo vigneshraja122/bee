@@ -70,6 +70,8 @@ const BlueprintGenerator: React.FC = () => {
   const [answers, setAnswers] = useState<Answers>({});
   const [blueprint, setBlueprint] = useState<Blueprint | null>(null);
   const [generatingProgress, setGeneratingProgress] = useState<number>(0);
+  const previewRef = useRef<HTMLDivElement>(null);
+const pdfRef = useRef<HTMLDivElement>(null);
   
   // Diagram ref (used for PDF capture)
   const diagramRef = useRef<HTMLDivElement>(null);
@@ -452,112 +454,49 @@ const BlueprintGenerator: React.FC = () => {
     }
   };
   
-//   const downloadPDF = async () => {
-//     if (!diagramRef.current) return;
-    
-//     try {
-//       const downloadBtn = document.querySelector('[data-download-btn]') as HTMLButtonElement;
-//       if (downloadBtn) {
-//         downloadBtn.disabled = true;
-//         downloadBtn.innerHTML = 'Generating PDF...';
-//       }
-      
-//       // const canvas = await html2canvas(diagramRef.current, {
-//       //   scale: 2,
-//       //   backgroundColor: "#ffffff",
-//       //   useCORS: true,
-//       //   logging: false,
-//       //   width: diagramRef.current.scrollWidth,
-//       //   height: diagramRef.current.scrollHeight
-//       // });
-//       const canvas = await html2canvas(diagramRef.current, {
-//   scale: 2,
-//   backgroundColor: "#ffffff",
-//   useCORS: true,
-//   logging: false,
-//   width: diagramRef.current.scrollWidth,
-//   height: diagramRef.current.scrollHeight,
-//   onclone: (doc) => {
-//     const all = doc.querySelectorAll("*");
-//     all.forEach((el) => {
-//       const style = (el as HTMLElement).style;
-//       style.color = "rgb(0,0,0)";
-//       style.backgroundColor = "transparent";
-//       style.boxShadow = "none";
-//       style.filter = "none";
-//       style.backdropFilter = "none";
-//     });
-//   },
-// });
-
-//       const imgData = canvas.toDataURL('image/png');
-//       const pdf = new jsPDF({
-//         orientation: 'portrait',
-//         unit: 'mm',
-//         format: 'a4'
-//       });
-      
-//       const imgWidth = 210;
-//       const pageHeight = 297;
-//       const imgHeight = (canvas.height * imgWidth) / canvas.width;
-//       let heightLeft = imgHeight;
-//       let position = 0;
-      
-//       pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
-//       heightLeft -= pageHeight;
-      
-//       while (heightLeft >= 0) {
-//         position = heightLeft - imgHeight;
-//         pdf.addPage();
-//         pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
-//         heightLeft -= pageHeight;
-//       }
-      
-//       pdf.save(`${(selectedService || "Blueprint").replace(/\s+/g, "_")}_Blueprint.pdf`);
-      
-//       if (downloadBtn) {
-//         downloadBtn.disabled = false;
-//         downloadBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg> Download Blueprint';
-//       }
-//     } catch (error) {
-//       console.error('Error generating PDF:', error);
-//       alert('Failed to generate PDF. Please try again.');
-      
-//       const downloadBtn = document.querySelector('[data-download-btn]') as HTMLButtonElement;
-//       if (downloadBtn) {
-//         downloadBtn.disabled = false;
-//         downloadBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg> Download Blueprint';
-//       }
-//     }
-//   };
 const downloadPDF = async () => {
-  if (!diagramRef.current) return;
+  if (!pdfRef.current) return;
 
   try {
-    const dataUrl = await toPng(diagramRef.current, {
+    const element = pdfRef.current;
+
+    const dataUrl = await toPng(element, {
       backgroundColor: "#ffffff",
       pixelRatio: 2,
-      cacheBust: true,
     });
 
     const pdf = new jsPDF("p", "mm", "a4");
 
-    const imgWidth = 210;
+    const img = new Image();
+    img.src = dataUrl;
+
+    await new Promise((resolve) => (img.onload = resolve));
+
+    const pageWidth = 210;
     const pageHeight = 297;
-    const imgHeight = (pdf.getImageProperties(dataUrl).height * imgWidth) /
-                      pdf.getImageProperties(dataUrl).width;
 
-    let heightLeft = imgHeight;
-    let position = 0;
+    const imgWidth = pageWidth;
+    const imgHeight = (img.height * imgWidth) / img.width;
 
-    pdf.addImage(dataUrl, "PNG", 0, position, imgWidth, imgHeight);
-    heightLeft -= pageHeight;
+    let remainingHeight = imgHeight;
+    let yOffset = 0;
 
-    while (heightLeft > 0) {
-      position = heightLeft - imgHeight;
-      pdf.addPage();
-      pdf.addImage(dataUrl, "PNG", 0, position, imgWidth, imgHeight);
-      heightLeft -= pageHeight;
+    while (remainingHeight > 0) {
+      pdf.addImage(
+        img,
+        "PNG",
+        0,
+        yOffset,
+        imgWidth,
+        imgHeight
+      );
+
+      remainingHeight -= pageHeight;
+
+      if (remainingHeight > 0) {
+        yOffset -= pageHeight;
+        pdf.addPage();
+      }
     }
 
     pdf.save("Blueprint.pdf");
@@ -566,6 +505,8 @@ const downloadPDF = async () => {
     alert("PDF generation failed");
   }
 };
+
+
 
   const resetGenerator = () => {
     setCurrentStep('select');
@@ -805,13 +746,10 @@ const downloadPDF = async () => {
                     />
                   </div> */}
 
-                  <div
-  ref={diagramRef}
-  className="bg-white text-black p-6 rounded-xl"
-  style={{
-    color: "#000",
-    backgroundColor: "#fff",
-  }}
+{/* SCROLLABLE PREVIEW */}
+<div
+  ref={previewRef}
+  className="mx-auto max-w-6xl max-h-[520px] overflow-y-auto rounded-xl bg-white p-6"
 >
   <BlueprintDiagram
     title={`${selectedService} Blueprint`}
@@ -821,6 +759,40 @@ const downloadPDF = async () => {
     }}
   />
 </div>
+{/* PDF SOURCE — MUST BE RENDERED */}
+{/* PDF SOURCE — INVISIBLE BUT RENDERED */}
+<div
+  style={{
+    position: "fixed",
+    left: 0,
+    top: 0,
+    width: 0,
+    height: 0,
+    overflow: "hidden",
+    pointerEvents: "none",
+  }}
+>
+  <div
+    ref={pdfRef}
+    style={{
+      width: "794px", // A4 width @ 96dpi
+      background: "#ffffff",
+      padding: "24px",
+      
+    }}
+  >
+    <BlueprintDiagram
+      title={`${selectedService} Blueprint`}
+      blueprint={{
+        ...blueprint,
+        inputs: answersToInputs(answers),
+      }}
+    />
+  </div>
+</div>
+
+
+
 
                   
                   <div className="mx-auto flex h-28 w-28 items-center justify-center rounded-3xl bg-gradient-to-br from-green-400 to-emerald-300 shadow-lg">
@@ -842,7 +814,7 @@ const downloadPDF = async () => {
                     <button
                       onClick={downloadPDF}
                       data-download-btn
-                      className="px-10 py-3.5 bg-gradient-to-r from-cyan-400 to-teal-300 hover:from-cyan-500 hover:to-teal-400 text-black rounded-full flex items-center gap-2 transition-all font-semibold shadow-[0_0_30px_-10px_rgba(34,211,238,0.6)] text-base"
+                      className="cursor-pointer px-10 py-3.5 bg-gradient-to-r from-cyan-400 to-teal-300 hover:from-cyan-500 hover:to-teal-400 text-black rounded-full flex items-center gap-2 transition-all font-semibold shadow-[0_0_30px_-10px_rgba(34,211,238,0.6)] text-base"
                     >
                       <Download className="w-5 h-5" />
                       Download Blueprint

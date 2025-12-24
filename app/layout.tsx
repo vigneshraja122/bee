@@ -22,8 +22,10 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: "Blockchain Development Company & Game Development Company | Beelockchain.io",
   description: "Beelockchain.io is a full-cycle AI Centric Blockchain & Game Development Company offering custom blockchain, crypto & game development services for startups and enterprises globally",
-  keywords: "game development company, blockchain development, game development agency, video game development company, blockchain development services, blockchain development company USA, Blockchain Game Development Company, game development services, web3 development company, blockchain development companies in usa, blockchain software development company, dapp development services, enterprise blockchain development company, blockchain smart contract development, web3 development company, game design company"
-};
+  keywords: "game development company, blockchain development, game development agency, video game development company, blockchain development services, blockchain development company USA, Blockchain Game Development Company, game development services, web3 development company, blockchain development companies in usa, blockchain software development company, dapp development services, enterprise blockchain development company, blockchain smart contract development, web3 development company, game design company",
+   icons: "assets/images/favicon.png",
+}; 
+
 
 export default function RootLayout({
   children,
