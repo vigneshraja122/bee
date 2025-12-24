@@ -6,16 +6,33 @@ import GradientGlowButton from "./GradientGlowButton";
 const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const faqs = [
-    { q: "What is outreach AI?", a: "Lorem ipsum dolor sit amet consectetur. At morbi arcu feugiat est tristique risus ipsum maecenas morbi." },
-    { q: "What is AI personalization?", a: "Lorem ipsum dolor sit amet consectetur. At morbi arcu feugiat est tristique risus ipsum maecenas morbi." },
-    { q: "What's the impact of AI on prospecting?", a: "Lorem ipsum dolor sit amet consectetur. At morbi arcu feugiat est tristique risus ipsum maecenas morbi." },
-    { q: "Can AI replace human interaction in outreach?", a: "Lorem ipsum dolor sit amet consectetur. At morbi arcu feugiat est tristique risus ipsum maecenas morbi." },
-    { q: "How does AI improve outreach effectiveness?", a: "Lorem ipsum dolor sit amet consectetur. At morbi arcu feugiat est tristique risus ipsum maecenas morbi." },
-    { q: "What are the benefits of using AI in outreach?", a: "Lorem ipsum dolor sit amet consectetur. At morbi arcu feugiat est tristique risus ipsum maecenas morbi." },
-    { q: "Can AI help in optimizing outreach campaigns?", a: "Lorem ipsum dolor sit amet consectetur. At morbi arcu feugiat est tristique risus ipsum maecenas morbi." },
-    { q: "How to generate personalized campaigns with lemlist AI?", a: "Lorem ipsum dolor sit amet consectetur. At morbi arcu feugiat est tristique risus ipsum maecenas morbi." },
-  ];
+const faqs = [
+  {
+    q: "What makes Beelockchain different from other blockchain development companies?",
+    a: "We are the world’s first AI-centered blockchain development company, integrating EVO AI into every layer from blueprint to deployment, ensuring smarter, faster, and more scalable solutions."
+  },
+  {
+    q: "Do you offer custom blockchain development services?",
+    a: "Yes. We build custom Layer-1, Layer-2, public, private, and hybrid blockchains tailored to your business needs."
+  },
+  {
+    q: "Can you integrate AI into blockchain systems?",
+    a: "Absolutely. EVO AI automates architecture design, testing, optimization, and predictive analysis across your blockchain environment."
+  },
+  {
+    q: "Do you develop dApps and smart contracts?",
+    a: "Yes. We design and develop secure, scalable smart contracts and AI-enhanced dApps across multiple chains."
+  },
+  {
+    q: "What industries do you support?",
+    a: "Finance, gaming, supply chain, healthcare, real estate, energy, government, logistics, and more."
+  },
+  {
+    q: "Do you help with token launches and crypto exchanges?",
+    a: "Yes, including token creation, exchange development, wallet integration, liquidity tools, and compliance guidance."
+  }
+];
+
 
   return (
     <section className="w-full bg-[#00020f] md:py-20 py-0">

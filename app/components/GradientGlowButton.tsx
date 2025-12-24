@@ -50,7 +50,7 @@ const GradientGlowButton = ({
           rounded-full
           bg-[#090920]
           border border-white/10
-          text-[9px] md:text-base
+          text-[9px] md:text-[10px] xl:text-[15px] lg:text-[15px]
           text-white
           transition-all
           cursor-pointer
