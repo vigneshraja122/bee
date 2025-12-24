@@ -16,7 +16,7 @@ interface Chat {
   timestamp: Date;
 }
 
- const BlockchainChatbot =() =>{
+ const Chattest =() =>{
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState<string>('');
   const [chatHistory, setChatHistory] = useState<Chat[]>([]);
@@ -89,7 +89,7 @@ interface Chat {
   };
 
   return (
-    <div className='xl:px-30 lg:px-30 md:px-30 px-3 py-10'>
+    <div className='xl:px-30 lg:px-30 md:px-30 px-2 py-10'>
                                         {/* 🔥 HERO TEXT */}
                 <div className="xl:text-center lg:text-center md:text-center sm:text-center text-center pt-16 sm:pt-24 pb-10 sm:pb-16 px-6">
                     <h1 className="md:text-3xl sm:text-xl text-[10px] text-white font-bold mb-2">
@@ -103,7 +103,7 @@ interface Chat {
                     </p>
                 </div>
 
-            <div className="flex h-screen bg-gradient-to-br from-[#0f1419] via-[#0a0e14] to-[#0d1b1e]  shadow-[0_0_0px_-10px_rgba(58,220,255,0.6),0_0_100px_-30px_rgba(58,220,255,0.4)] ">
+            <div className="flex h-screen bg-gradient-to-br from-[#0f1419] via-[#0a0e14] to-[#0d1b1e]  shadow-[0_0_0px_-10px_rgba(58,220,255,0.6),0_0_100px_-30px_rgba(58,220,255,0.4)]">
 
                 {/* Sidebar */}
                 <div className="w-72 bg-black/30 backdrop-blur-md border-r border-white/5 flex-col  lg:flex sm:hidden hidden">
@@ -265,10 +265,10 @@ interface Chat {
                                     rounded-full
                                     shadow-lg shadow-cyan-500/25
                                     flex items-center gap-2
-                                    text-[9px] sm:text-base
+                                    text-[10px] sm:text-base
                                 "
                                 >
-                                <Send size={14} />
+                                <Send size={16} />
                                 Generate
                                 </button>
 
@@ -281,4 +281,4 @@ interface Chat {
     </div>
   );
 }
-export default BlockchainChatbot;
+export default Chattest;

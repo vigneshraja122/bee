@@ -8,7 +8,7 @@ import NavLabel from "./NavLable";
 const Whychooseus = () => {
   return (
     <section className="w-full bg-[#00020F] py-16 md:py-20 flex justify-center text-white">
-      <div className="relative w-[60%] px-4 md:px-6">
+      <div className="relative w-full max-w-[1200px] px-4 md:px-6">
 
         {/* TITLE */}
         <div className="mb-12 md:mb-16 flex justify-center">
@@ -19,132 +19,99 @@ const Whychooseus = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 items-stretch">
 
           {/* LEFT STACK */}
-         <div
-  className="
-    col-span-1 md:col-span-3
-    grid grid-cols-2 gap-4
-    md:flex md:flex-col md:gap-4
-    h-full md:translate-x-4
-  "
->
-  {/* ICON CARD */}
-  <div
-    className="
-      col-span-1
-      flex-[1]
-      rounded-2xl md:rounded-[28px]
-      border border-white/10
-      bg-gradient-to-br from-[#2A2A2A] via-[#151515] to-[#050505]
-      shadow-[inset_0_1px_1px_rgba(255,255,255,0.12),_0_16px_30px_rgba(0,0,0,0.7)]
-      p-3 md:p-5
-      flex items-center justify-center
-    "
-  >
-    <img
-      src="/assets/images/dark-btn.png"
-      alt="icon"
-      className="w-16 md:w-20"
-    />
-  </div>
+          <div
+            className="
+              col-span-1 md:col-span-3
+              grid grid-cols-2 gap-4
+              md:flex md:flex-col md:gap-4
+              h-full md:translate-x-4
+            "
+          >
+            {/* ICON CARD */}
+            <div className="rounded-2xl md:rounded-[28px] border border-white/10
+              bg-gradient-to-br from-[#2A2A2A] via-[#151515] to-[#050505]
+              shadow-[inset_0_1px_1px_rgba(255,255,255,0.12),_0_16px_30px_rgba(0,0,0,0.7)]
+              p-3 md:p-5 flex items-center justify-center">
+              <img
+                src="/assets/images/dark-btn.png"
+                alt="icon"
+                className="w-16 md:w-20"
+              />
+            </div>
 
-  {/* EVO AI CARD */}
-  <div
-    className="
-      col-span-1
-      flex-[1.2]
-      rounded-2xl md:rounded-[28px]
-      border border-white/10
-      bg-gradient-to-br from-[#2A2A2A] via-[#151515] to-[#050505]
-      shadow-[inset_0_1px_1px_rgba(255,255,255,0.12),_0_16px_30px_rgba(0,0,0,0.7)]
-      p-3 md:p-5
-      flex flex-col items-center justify-center gap-2
-    "
-  >
-    <h2
-      className="
-        text-2xl md:text-4xl font-semibold
-        text-transparent bg-clip-text
-        bg-[linear-gradient(90deg,#FFFFFF_10%,#00A993_60%,#00A993_45%)]
-      "
-    >
-      EVO AI
-    </h2>
-    <img
-      src="/assets/images/core-approch-icon.png"
-      alt="icon"
-      className="w-20 md:w-24"
-    />
-  </div>
+            {/* EVO AI CARD */}
+            <div className="rounded-2xl md:rounded-[28px] border border-white/10
+              bg-gradient-to-br from-[#2A2A2A] via-[#151515] to-[#050505]
+              shadow-[inset_0_1px_1px_rgba(255,255,255,0.12),_0_16px_30px_rgba(0,0,0,0.7)]
+              p-3 md:p-5 flex flex-col items-center justify-center gap-2">
+              <h2 className="text-2xl md:text-4xl font-semibold text-transparent bg-clip-text
+                bg-[linear-gradient(90deg,#FFFFFF_10%,#00A993_60%,#00A993_45%)]">
+                EVO AI
+              </h2>
+              <img
+                src="/assets/images/core-approch-icon.png"
+                alt="icon"
+                className="w-20 md:w-24"
+              />
+            </div>
 
-  {/* PROJECT CARD — FULL WIDTH ON MOBILE */}
-  <div
-    className="
-      col-span-2
-      flex-[1.8]
-      rounded-2xl md:rounded-[28px]
-      border border-white/10
-      bg-gradient-to-br from-[#2A2A2A] via-[#151515] to-[#050505]
-      shadow-[inset_0_1px_1px_rgba(255,255,255,0.12),_0_16px_30px_rgba(0,0,0,0.7)]
-      p-3 md:p-5
-      flex flex-col justify-between
-    "
-  >
-    <h3 className="text-base md:text-xl font-bold text-emerald-50">
-      Project Ideation & Planning
-    </h3>
+            {/* PROJECT CARD – FULL WIDTH ON MOBILE */}
+            <div className="col-span-2 rounded-2xl md:rounded-[28px] border border-white/10
+              bg-gradient-to-br from-[#2A2A2A] via-[#151515] to-[#050505]
+              shadow-[inset_0_1px_1px_rgba(255,255,255,0.12),_0_16px_30px_rgba(0,0,0,0.7)]
+              p-3 md:p-5 flex flex-col justify-between">
+              <h3 className="text-base md:text-xl font-bold text-emerald-50">
+                Project Ideation & Planning
+              </h3>
 
-    <div className="relative h-28 md:h-40">
-      <Image
-        src="/assets/images/floting-text.png"
-        alt="Idea"
-        fill
-        className="object-contain"
-      />
-    </div>
-  </div>
-</div>
+              <div className="relative h-28 md:h-40">
+                <Image
+                  src="/assets/images/floting-text.png"
+                  alt="Idea"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          </div>
 
+          {/* CENTER HUB */}
+          <div className="col-span-1 md:col-span-6 flex justify-center items-center">
+            <div
+              className="
+                relative
+                w-full
+                h-[540px]
+                sm:h-[520px]
+                md:w-[520px]
+              "
+            >
+              {/* DESKTOP / TABLET IMAGE */}
+              <Image
+                src="/assets/images/whychoose-center-img.png"
+                alt="AI Core"
+                fill
+                priority
+                className="hidden md:block object-contain"
+              />
 
-          {/* CENTER HUB (HEIGHT MASTER) */}
-{/* CENTER HUB */}
-<div className="col-span-1 md:col-span-6 flex justify-center items-center">
-  <div
-    className="
-      relative
-      w-full
-      h-full  
-     /* desktop remains perfect square */
-    "
-  >
-    {/* DESKTOP / TABLET IMAGE */}
-    <Image
-      src="/assets/images/whychoose-center-img.png"
-      alt="AI Core"
-      fill
-      priority
-      className="hidden md:block object-contain"
-    />
+              {/* MOBILE IMAGE */}
+              <Image
+                src="/assets/images/whychoose-center-imgmobile.png"
+                alt="AI Core Mobile"
+                fill
+                priority
+                className="block md:hidden object-contain"
+              />
 
-    {/* MOBILE IMAGE – FULL WIDTH & TALLER */}
-    <Image
-      src="/assets/images/whychoose-center-imgmobile.png"
-      alt="AI Core Mobile"
-      fill
-      priority
-      className="block md:hidden object-contain"
-    />
-
-    {/* CTA */}
-    <div className="absolute inset-0 flex items-center justify-center z-10 top-20">
-      <GradientGlowButton>
-        Know More
-      </GradientGlowButton>
-    </div>
-  </div>
-</div>
-
-
-
+              {/* CTA */}
+              <div className="absolute inset-0 flex items-center justify-center z-10">
+                <GradientGlowButton>
+                  Know More
+                </GradientGlowButton>
+              </div>
+            </div>
+          </div>
 
           {/* RIGHT STACK */}
           <div className="col-span-1 md:col-span-3 flex flex-col gap-4 h-full md:-translate-x-4">
@@ -188,7 +155,7 @@ const Whychooseus = () => {
               <img
                 src="/assets/images/small-avatar-icon.png"
                 alt="avatar"
-                className="w-22 rounded-full"
+                className="w-10 rounded-full"
               />
             </div>
 

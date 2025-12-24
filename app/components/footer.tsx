@@ -263,7 +263,9 @@ const MailIcon = ({ className = "" }: { className?: string }) => (
 
 
     {/* BOTTOM BAR */}
-    <div className="absolute text-white top-[710px] lg:top-[680px] w-full border-t border-[#262833] flex justify-between items-center px-10 lg:px-20 h-[70px]">
+    <div className="absolute text-white top-[710px] lg:top-[680px] w-full border-t border-[#262833]
+     flex justify-between items-center
+     px-10 lg:px-10 h-[70px]">
       <div className="flex items-center gap-3">
         <LocationIcon />
         <p className="text-base lg:text-xl font-poppins">4517 Washington, USA</p>
@@ -402,7 +404,7 @@ const MailIcon = ({ className = "" }: { className?: string }) => (
   </div>
 
   {/* COPYRIGHT */}
-  <div className="relative z-10 mt-8 text-center  font-poppins text-[12px] text-white text-nowrap">
+  <div className="relative z-10 mt-8 text-center  font-poppins text-[11px] text-white text-nowrap">
     Copyright © 2025 beelockchain, All rights reserved.
   </div>
 
