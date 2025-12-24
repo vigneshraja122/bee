@@ -34,8 +34,14 @@ body {
 .font-manrope {
   font-family: var(--font-manrope), sans-serif;
 }
+
+
+/* ===== Custom Scrollbar – Light Blue Rounded ===== */
+
+/* Chrome, Edge, Safari */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -44,12 +50,21 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #38bdf8, #22d3ee);
+  background: linear-gradient(
+    180deg,
+    #38bdf8, /* sky-400 */
+    #22d3ee  /* cyan-400 */
+  );
   border-radius: 999px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
 }
 
-::-webkit-scrollbar-button {
-  display: none;
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    #0ea5e9, /* sky-500 */
+    #06b6d4  /* cyan-500 */
+  );
 }
 
 /* Firefox */

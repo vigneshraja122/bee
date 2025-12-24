@@ -9,7 +9,7 @@ interface MacBookFrameProps {
 export const MacBookFrame: React.FC<MacBookFrameProps> = ({ children }) => {
   return (
     <div
-      className="min-h-screen w-full bg-[#05070d] flex items-center justify-center p-2 sm:p-4 lg:p-8 overflow-x-hidden"
+      className="lg:min-h-screen w-full h-full bg-[#05070d] flex items-center justify-center p-2 sm:p-4 lg:p-8 overflow-x-hidden"
       style={{ scrollbarGutter: "stable" }}
     >
       <div className="origin-center w-full">

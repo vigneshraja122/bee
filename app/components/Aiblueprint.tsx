@@ -1,7 +1,8 @@
 // src/App.tsx
 'use client'
 import React, { useState, useRef } from 'react';
-import html2canvas from "html2canvas";
+// import html2canvas from "html2canvas";
+import { toPng } from "html-to-image";
 import BlueprintDiagram from "./BlueprintDiagram";
 import jsPDF from "jspdf";
 import { ChevronDown, Download, ArrowLeft, ArrowRight, Check } from 'lucide-react';
@@ -10,7 +11,7 @@ import { Answer, Blueprint, QuizQuestion, ServiceQuestions, Step, BlueprintInput
 
 
 async function fetchBlueprint(service: string, answers: Answer): Promise<Blueprint> {
-  const res = await fetch("http://localhost:5001/api/blueprint", {
+  const res = await fetch("/api/blueprint", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ service, answers }),
@@ -22,7 +23,7 @@ async function fetchBlueprint(service: string, answers: Answer): Promise<Bluepri
   }
 
   return res.json();
-}
+} 
 
 const BlueprintGenerator: React.FC = () => {
   const [currentStep, setCurrentStep] = useState<Step>('select');
@@ -427,65 +428,147 @@ const BlueprintGenerator: React.FC = () => {
     }
   };
   
-  const downloadPDF = async (): Promise<void> => {
-    if (!diagramRef.current) return;
+  // const downloadPDF = async (): Promise<void> => {
+  //   if (!diagramRef.current) return;
     
-    try {
-      const downloadBtn = document.querySelector('[data-download-btn]') as HTMLButtonElement | null;
-      if (downloadBtn) {
-        downloadBtn.disabled = true;
-        downloadBtn.innerHTML = 'Generating PDF...';
-      }
+  //   try {
+  //     const downloadBtn = document.querySelector('[data-download-btn]') as HTMLButtonElement | null;
+  //     if (downloadBtn) {
+  //       downloadBtn.disabled = true;
+  //       downloadBtn.innerHTML = 'Generating PDF...';
+  //     }
       
-      const canvas = await html2canvas(diagramRef.current, {
-        scale: 2,
-        backgroundColor: "#ffffff",
-        useCORS: true,
-        logging: false,
-        width: diagramRef.current.scrollWidth,
-        height: diagramRef.current.scrollHeight
-      });
+  //     const canvas = await html2canvas(diagramRef.current, {
+  //       scale: 2,
+  //       backgroundColor: "#ffffff",
+  //       useCORS: true,
+  //       logging: false,
+  //       width: diagramRef.current.scrollWidth,
+  //       height: diagramRef.current.scrollHeight
+  //     });
       
-      const imgData = canvas.toDataURL('image/png');
-      const pdf = new jsPDF({
-        orientation: 'portrait',
-        unit: 'mm',
-        format: 'a4'
-      });
+  //     const imgData = canvas.toDataURL('image/png');
+  //     const pdf = new jsPDF({
+  //       orientation: 'portrait',
+  //       unit: 'mm',
+  //       format: 'a4'
+  //     });
       
-      const imgWidth = 210;
-      const pageHeight = 297;
-      const imgHeight = (canvas.height * imgWidth) / canvas.width;
-      let heightLeft = imgHeight;
-      let position = 0;
+  //     const imgWidth = 210;
+  //     const pageHeight = 297;
+  //     const imgHeight = (canvas.height * imgWidth) / canvas.width;
+  //     let heightLeft = imgHeight;
+  //     let position = 0;
       
-      pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
-      heightLeft -= pageHeight;
+  //     pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+  //     heightLeft -= pageHeight;
       
-      while (heightLeft >= 0) {
-        position = heightLeft - imgHeight;
-        pdf.addPage();
-        pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
-        heightLeft -= pageHeight;
-      }
+  //     while (heightLeft >= 0) {
+  //       position = heightLeft - imgHeight;
+  //       pdf.addPage();
+  //       pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+  //       heightLeft -= pageHeight;
+  //     }
       
-      pdf.save(`${(selectedService || "Blueprint").replace(/\s+/g, "_")}_Blueprint.pdf`);
+  //     pdf.save(`${(selectedService || "Blueprint").replace(/\s+/g, "_")}_Blueprint.pdf`);
       
-      if (downloadBtn) {
-        downloadBtn.disabled = false;
-        downloadBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg> Download Blueprint';
-      }
-    } catch (error) {
-      console.error('Error generating PDF:', error);
-      alert('Failed to generate PDF. Please try again.');
+  //     if (downloadBtn) {
+  //       downloadBtn.disabled = false;
+  //       downloadBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg> Download Blueprint';
+  //     }
+  //   } catch (error) {
+  //     console.error('Error generating PDF:', error);
+  //     alert('Failed to generate PDF. Please try again.');
       
-      const downloadBtn = document.querySelector('[data-download-btn]') as HTMLButtonElement | null;
-      if (downloadBtn) {
-        downloadBtn.disabled = false;
-        downloadBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg> Download Blueprint';
-      }
+  //     const downloadBtn = document.querySelector('[data-download-btn]') as HTMLButtonElement | null;
+  //     if (downloadBtn) {
+  //       downloadBtn.disabled = false;
+  //       downloadBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg> Download Blueprint';
+  //     }
+  //   }
+  // };
+const downloadPDF = async (): Promise<void> => {
+  if (!diagramRef.current) return;
+
+  const downloadBtn = document.querySelector(
+    "[data-download-btn]"
+  ) as HTMLButtonElement | null;
+
+  try {
+    if (downloadBtn) {
+      downloadBtn.disabled = true;
+      downloadBtn.innerText = "Generating PDF...";
     }
-  };
+
+    const node = diagramRef.current;
+
+    // 🔒 wait for images inside the diagram
+    const images = node.querySelectorAll("img");
+    await Promise.all(
+      Array.from(images).map(
+        (img) =>
+          new Promise((resolve) => {
+            if (img.complete) resolve(true);
+            img.onload = img.onerror = () => resolve(true);
+          })
+      )
+    );
+
+    // 🎯 generate image
+    const dataUrl = await toPng(node, {
+      backgroundColor: "#ffffff",
+      pixelRatio: 2,
+      cacheBust: true,
+    });
+
+    // 📄 create PDF
+    const pdf = new jsPDF("p", "mm", "a4");
+
+    const pageWidth = 210;
+    const pageHeight = 297;
+
+    const img = new Image();
+    img.src = dataUrl;
+
+    await new Promise((res) => (img.onload = res));
+
+    const imgHeight = (img.height * pageWidth) / img.width;
+
+    let heightLeft = imgHeight;
+    let position = 0;
+
+    pdf.addImage(dataUrl, "PNG", 0, position, pageWidth, imgHeight);
+    heightLeft -= pageHeight;
+
+    while (heightLeft > 0) {
+      position -= pageHeight;
+      pdf.addPage();
+      pdf.addImage(dataUrl, "PNG", 0, position, pageWidth, imgHeight);
+      heightLeft -= pageHeight;
+    }
+
+    pdf.save(
+      `${(selectedService || "Blueprint").replace(/\s+/g, "_")}_Blueprint.pdf`
+    );
+  } catch (err) {
+    console.error("PDF generation failed:", err);
+    alert("Failed to generate PDF. Please try again.");
+  } finally {
+    if (downloadBtn) {
+      downloadBtn.disabled = false;
+      downloadBtn.innerHTML = `
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        Download Blueprint
+      `;
+    }
+  }
+};
 
   const resetGenerator = (): void => {
     setCurrentStep('select');
@@ -513,7 +596,7 @@ const BlueprintGenerator: React.FC = () => {
         <div className="w-full max-w-7xl h-full flex flex-col">
           <div className="rounded-xl sm:rounded-2xl lg:rounded-[24px] border border-white/12 bg-white/6 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] backdrop-blur-xl overflow-hidden h-full flex flex-col">
             {/* Inner top bar - Responsive */}
-            <div className="flex items-center justify-between border-b border-white/10 bg-black/25 px-3 sm:px-4 lg:px-6 py-2.5 sm:py-3 lg:py-4 flex-shrink-0">
+            <div className="flex items-center justify-between border-b border-white/10 bg-[#1d222e] px-3 sm:px-4 lg:px-6 py-2.5 sm:py-3 lg:py-4 flex-shrink-0">
               <div className="text-xs sm:text-sm text-white/35"> </div>
               <div className="flex items-center gap-2 sm:gap-3 text-xs sm:text-sm">
                 {currentStep === "generating" ? (
@@ -525,11 +608,15 @@ const BlueprintGenerator: React.FC = () => {
                     Q {currentQuestion + 1}/{currentQuestions.length}
                   </span>
                 ) : (
-                  <img 
-                    src='assets/images/image-blue.gif'
-                    alt="Ready" 
-                    className="h-20 w-20 sm:h-6 sm:w-6 object-contain"
+                  <div className="relative bg-[#1d222e]">
+                  <img
+                    src="/assets/images/image-blue.gif"
+                    alt="Ready"
+                    className="mix-blend-screen object-contain h-12 w-12 md:h-20 md:w-20"
                   />
+                </div>
+
+
                 )}
                 <span className="text-white/25 hidden sm:inline">•</span>
                 <span className="text-white/80 truncate max-w-[100px] sm:max-w-[200px] lg:max-w-none">
@@ -573,7 +660,7 @@ const BlueprintGenerator: React.FC = () => {
                       </button>
   
                       {showDropdown && (
-                        <div className="absolute left-0 right-0 mt-2 overflow-hidden rounded-xl sm:rounded-2xl border border-white/15 bg-[#0b1222]/90 shadow-2xl backdrop-blur-xl z-10 max-h-[250px] sm:max-h-[300px] overflow-y-auto">
+                        <div className=" absolute left-0 right-0 mt-2 overflow-hidden rounded-xl sm:rounded-2xl border border-white/15 bg-[#0b1222]/90 shadow-2xl backdrop-blur-xl z-10 max-h-[250px] sm:max-h-[300px] overflow-y-auto">
                           {services.map((item: string) => (
                             <button
                               key={item}
@@ -721,11 +808,11 @@ const BlueprintGenerator: React.FC = () => {
                     />
                   </div>
                   
-                  <div className="mx-auto flex h-20 w-20 sm:h-24 sm:w-24 lg:h-28 lg:w-28 items-center justify-center rounded-2xl sm:rounded-3xl bg-gradient-to-br from-green-400 to-emerald-300 shadow-lg">
-                    <Check className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 text-white" />
+                  <div className="mx-auto flex h-20 w-20 sm:h-20 sm:w-20 lg:h-20 lg:w-20 items-center justify-center rounded-2xl sm:rounded-3xl bg-gradient-to-br from-green-400 to-emerald-300 shadow-lg">
+                    <Check className="w-12 h-12 sm:w-12 sm:h-12 lg:w-12 lg:h-12 text-white" />
                   </div>
                   <div className="px-4">
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-3 sm:mb-4">
+                    <h2 className="text-[20px]  md:text-[28px] lg:text-[30px] sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-3 sm:mb-4">
                       Blueprint Generated!
                     </h2>
                     <p className="text-white/50 text-base sm:text-lg">
