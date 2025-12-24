@@ -13,6 +13,7 @@ import Teams from "./components/Teams";
 import TechTrendsMarquee from "./components/Marquee";
 import Aisolution from "./components/Aisolution";
 import Whatweprovide from "./sections/Whatweprovide";
+import Shortidea from "./components/Shortidea";
 // import Chattest from "./components/Chattest";
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
       <TechnologiesSection />
       <AIProjectFinderSection />
       {/* <Chattest/> */}
+      <Shortidea/>
       <FAQSection />
       <Footer />
     </div>

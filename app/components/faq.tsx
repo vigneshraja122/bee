@@ -39,21 +39,21 @@ const faqs = [
       <div className="w-[90%] md:w-[80%] mx-auto flex flex-col md:flex-row gap-10 md:gap-[120px] text-white">
 
         {/* MOBILE TITLE */}
-        <h3 className="md:hidden text-xl  text-center font-semibold text-white mb-6 mt-10">
+        <h3 className="md:hidden text-xl  text-center font-semibold text-white mb-6 mt-10 font-manrope">
           FAQs
         </h3>
 
         {/* LEFT SIDE — Desktop only */}
         <div className="hidden md:flex md:w-[40%] flex-col gap-10">
-          <h2 className="text-[64px] font-bold leading-tight">
+          <h2 className="text-[64px] font-bold leading-tight font-manrope">
             Frequently <br /> Asked <br /> Questions
           </h2>
 
-          <div className="flex flex-col items-start gap-2">
+          <div className="flex flex-col items-start gap-2 font-poppins">
             <GradientGlowButton>
               Try For Free
             </GradientGlowButton>
-            <p className="text-sm text-white/40 ml-4">
+            <p className="text-sm text-white/40 ml-4 font-pooppins">
               No card required.
             </p>
           </div>
@@ -74,7 +74,7 @@ const faqs = [
                     onClick={() => setOpenIndex(isOpen ? null : index)}
                     className="w-full flex justify-between items-center gap-6 text-left cursor-pointer"
                   >
-                    <p className="text-sm sm:text-base font-medium">
+                    <p className="text-sm sm:text-base font-medium font-manrope">
                       {item.q}
                     </p>
 
@@ -94,7 +94,7 @@ const faqs = [
                       isOpen ? "max-h-40 mt-4" : "max-h-0"
                     }`}
                   >
-                    <p className="text-sm text-white/60 leading-relaxed">
+                    <p className="text-sm text-white/60 leading-relaxed font-poppins">
                       {item.a}
                     </p>
                   </div>

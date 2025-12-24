@@ -1,14 +1,14 @@
 const Shortidea = () => {
     return (
-        <div className="w-full min-h-screen flex justify-center items-center bg-[#00020F] bg-cover bg-center"
+        <div className="w-full min-h-screen flex justify-center items-center bg-[#00020F] bg-cover bg-center sm:mt-10 md:mt-10 lg:mt-30" 
             style={{ backgroundImage: "url('/Section.svg')" }}>
 
             {/* MOBILE LAYOUT */}
             <div className="md:hidden w-full min-h-screen flex flex-col justify-center items-center px-6 py-12 space-y-8">
 
                 {/* Title */}
-                <h1 className="text-xl text-white text-center leading-tight">
-                    Enter a short <span className="bg-gradient-to-r from-[#00A4AF] to-[#01eeff] bg-clip-text text-transparent">idea</span> such as:
+                <h1 className="text-xl text-white text-center leading-tight font-manrope">
+                    Enter a short <span className="bg-gradient-to-r font-manrope from-[#00A4AF] to-[#01eeff] bg-clip-text text-transparent">idea</span> such as:
                 </h1>
 
                 {/* Arrow and Cards Container */}
@@ -39,7 +39,7 @@ const Shortidea = () => {
                         {/* Card 1 - Positioned at first curve */}
                         <div className="w-[180px] h-20 p-[2px] rounded-lg bg-gradient-to-r from-[#1BFFE1] to-black ml-4">
                             <div className="w-full h-full flex justify-center items-center px-4 py-3 rounded-lg backdrop-blur-sm bg-[#1BFFE1]/15">
-                                <h2 className="text-white text-xs font-medium text-center leading-tight drop-shadow-md">
+                                <h2 className="text-white text-xs font-medium text-center leading-tight drop-shadow-md font-manrope">
                                     Decentralized marketplace for digital art
                                 </h2>
                             </div>
@@ -51,7 +51,7 @@ const Shortidea = () => {
                         {/* Card 2 - Positioned at end of arrow */}
                         <div className="w-[180px] h-20 p-[2px] rounded-lg bg-gradient-to-r from-[#1BFFE1] to-black ml-2">
                             <div className="w-full h-full flex justify-center items-center px-4 py-3 rounded-lg backdrop-blur-sm bg-[#1BFFE1]/15">
-                                <h2 className="text-white text-xs font-medium text-center leading-tight drop-shadow-md">
+                                <h2 className="text-white text-xs font-medium text-center leading-tight drop-shadow-md font-manrope">
                                     A private blockchain for enterprise data verification.
                                 </h2>
                             </div>
@@ -66,13 +66,13 @@ const Shortidea = () => {
 
                 {/* Bottom Text Section */}
                 <div className="space-y-4 text-left w-full ">
-                    <p className="text-[14px] font-bold text-white leading-relaxed">
+                    <p className="text-[14px] font-bold text-white leading-relaxed font-poppins">
                         EVO AI analyzes your input and delivers a full project insight
                     </p>
-                    <h1 className="text-xl font-bold bg-gradient-to-b from-[#00A4AF] to-[#01eeff] bg-clip-text text-transparent leading-tight">
+                    <h1 className=" font-poppins text-xl font-bold bg-gradient-to-b from-[#00A4AF] to-[#01eeff] bg-clip-text text-transparent leading-tight">
                         From one sentence → to complete project clarity.
                     </h1>
-                    <p className="text-[12px] font-bold text-white leading-relaxed">
+                    <p className="font-poppins text-[12px] font-bold text-white leading-relaxed">
                         Perfect for founders, enterprises, and teams validating their next big Web3 idea
                     </p>
                 </div>

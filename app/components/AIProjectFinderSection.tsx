@@ -120,13 +120,13 @@ const BlockchainChatbot = () => {
 
       {/* 🔥 HERO SECTION */}
       <div className="text-center pt-16 md:pt-24 pb-10 md:pb-16 px-4 md:px-6">
-        <h1 className="text-lg md:text-3xl text-white font-bold mb-2">
+        <h1 className="text-lg md:text-3xl text-white font-bold mb-2 font-manrope">
           AI PROJECT FINDER
         </h1>
-        <p className="text-3xl md:text-5xl text-[#82888d] font-bold mb-3">
+        <p className="text-3xl md:text-5xl text-[#82888d] font-bold mb-3 font-manrope">
           Powered by EVO AI
         </p>
-        <p className="text-sm md:text-base text-white font-bold">
+        <p className="text-sm md:text-base text-white font-bold font-manrope">
           Have only a one-line idea? Start here
         </p>
       </div>
@@ -147,7 +147,7 @@ const BlockchainChatbot = () => {
           <div className="flex-1 flex flex-col">
 
             {/* HEADER */}
-            <h2 className="text-white text-sm md:text-md font-semibold mt-4 md:mt-5 px-6 md:ml-20">
+            <h2 className="text-white text-sm md:text-md font-semibold mt-4 md:mt-5 px-6 md:ml-20 font-manrope">
               AI Project Finder
             </h2>
 
@@ -155,10 +155,10 @@ const BlockchainChatbot = () => {
             <div className="flex-1 overflow-y-auto">
               {messages.length === 0 ? (
                 <div className="h-full flex flex-col items-center justify-center text-center px-4 md:px-6">
-                  <h2 className="text-white text-lg md:text-xl font-semibold mb-2">
+                  <h2 className="text-white text-lg md:text-xl font-semibold mb-2 font-manrope">
                     Discover the Magic AI
                   </h2>
-                  <p className="text-gray-400 text-xs md:text-sm max-w-md">
+                  <p className="text-gray-400 text-xs md:text-sm max-w-md font-manrope">
                     Exclusively for designers, developers, product teams & magicians!
                   </p>
                 </div>
@@ -242,7 +242,7 @@ const BlockchainChatbot = () => {
                       "
                     >
                       <Send size={16} />
-                      <span className="hidden md:inline">
+                      <span className="hidden md:inline font-manrope">
                         {isGenerating ? "Generating..." : "Generate"}
                       </span>
                     </button>

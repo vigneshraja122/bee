@@ -23,7 +23,7 @@ const ProcessSection = () => {
         </div>
 
         {/* TITLE */}
-        <h2 className="text-center text-2xl md:text-5xl font-semibold text-white leading-tight mb-12 md:w-[670px]">
+        <h2 className="text-center text-2xl md:text-5xl font-semibold text-white leading-tight mb-12 md:w-[670px] font-manrope">
           Development Process EVO AI- Stepwise Process
         </h2>
 
@@ -58,7 +58,7 @@ const ProcessSection = () => {
               bg-white/5 border border-white/10 backdrop-blur
               ${index >= 3 ? 'hidden sm:inline-flex' : 'inline-flex'}`}
             >
-              #<span className="text-white">{tag}</span>
+              #<span className="text-white font-manrope">{tag}</span>
             </span>
           ))}
         </div>
@@ -128,8 +128,8 @@ const ProcessSection = () => {
                 </span>
               </div>
 
-              <h3 className="xl:text-lg lg:text-lg md:text-[10px] font-semibold mb-2">{item.title}</h3>
-              <p className="xl:text-lg lg:text-lg md:text-[9px] text-white/70 leading-relaxed">
+              <h3 className="xl:text-lg lg:text-lg md:text-[10px] font-semibold mb-2 font-manrope">{item.title}</h3>
+              <p className="xl:text-lg lg:text-lg md:text-[9px] text-white/70 leading-relaxed font-poppins">
                 {item.desc}
               </p>
             </div>
@@ -163,7 +163,7 @@ const ProcessSection = () => {
             >
               {/* STEP BADGE */}
               <div className="flex items-center mb-4">
-                <span className="px-3 py-1 text-xs rounded-full bg-cyan-400/20 text-cyan-300">
+                <span className="px-3 py-1 text-xs rounded-full bg-cyan-400/20 text-cyan-300 font-manrope">
                   {item.step}
                 </span>
                 <span className="w-7 h-7 rounded-full bg-white text-black flex items-center justify-center ml-2">
@@ -172,7 +172,7 @@ const ProcessSection = () => {
               </div>
 
               <h3 className="xl:text-lg lg:text-lg md:text-sm font-semibold mb-2">{item.title}</h3>
-              <p className="xl:text-lg lg:text-lg md:text-[9px] text-white/70 leading-relaxed">
+              <p className="xl:text-lg lg:text-lg md:text-[9px] text-white/70 leading-relaxed font-poppins">
                 {item.desc}
               </p>
             </div>
