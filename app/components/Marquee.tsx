@@ -31,7 +31,7 @@ const TechTrendsMarquee = () => {
             {/* 
             <StarIcon /> */}
 
-             <h1 className="text-6xl  sm:text-6xl  md:text-6xl
+             <h1 className="text-2xl  sm:text-6xl  md:text-6xl
                 lg:text-6xl font-extrabold tracking-widest
                 text-transparent
                 bg-clip-text

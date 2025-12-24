@@ -16,7 +16,7 @@ import Whatweprovide from "./sections/Whatweprovide";
 // import Chattest from "./components/Chattest";
 export default function Home() {
   return (
-    <div className="space-y-4 bg-[#00020F]">
+    <div className="space-y-8 bg-[#00020F]">
       <Hero />
       <Statictis />
       <Teams />
