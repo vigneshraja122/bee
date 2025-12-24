@@ -23,7 +23,7 @@ const Statictis = () => {
                         <h1 className="xl:text-4xl lg:text-4xl md:text-2xl text-white">
                             adapt, and evolve just like the businesses
                         </h1>
-                        <img src="/assets/images/animation (1).svg" className="w-10 h-10" />
+                        <img src="/assets/images/Butterfly.gif" className="w-14 h-14" />
                         <h1 className="xl:text-4xl lg:text-4xl md:text-2xl text-white">that use</h1>
                     </div>
 
@@ -51,7 +51,7 @@ const Statictis = () => {
                     <div className="flex items-center gap-3">
                         <div className="space-y-4"> <h1>the businesses</h1><h1>that use them.</h1></div>
 
-                        <img src="/assets/images/animation (1).svg" className="w-20 h-20" />
+                        <img src="/assets/images/Butterfly.gif" className="w-20 h-20" />
                     </div>
 
                     <img
