@@ -15,7 +15,7 @@ import Aisolution from "./components/Aisolution";
 import Whatweprovide from "./sections/Whatweprovide";
 export default function Home() {
   return (
-    <div className="space-y-10 bg-[#00020F]">
+    <div className="space-y-4 bg-[#00020F]">
       <Hero />
       <Statictis />
       <Teams />

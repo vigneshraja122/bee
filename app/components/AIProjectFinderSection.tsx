@@ -116,7 +116,7 @@ const BlockchainChatbot = () => {
   };
 
   return (
-    <div className="w-full min-h-screen bg-[#00020F]">
+    <div className="w-full h-screen bg-[#00020F]">
 
       {/* 🔥 HERO SECTION */}
       <div className="text-center pt-16 md:pt-24 pb-10 md:pb-16 px-4 md:px-6">
@@ -137,7 +137,7 @@ const BlockchainChatbot = () => {
           className="
             flex bg-black/40 backdrop-blur-xl
             w-full max-w-6xl
-            h-[85vh] md:h-[520px]
+            h-[75vh] md:h-[520px]
             rounded-2xl md:rounded-3xl
             overflow-hidden
             shadow-[0_0_0px_-10px_rgba(58,220,255,0.6),0_0_100px_-30px_rgba(58,220,255,0.4)]

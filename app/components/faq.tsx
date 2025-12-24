@@ -18,11 +18,11 @@ const FAQSection = () => {
   ];
 
   return (
-    <section className="w-full bg-[#00020f] py-20">
-      <div className="w-[90%] md:w-[80%] mx-auto flex flex-col md:flex-row gap-16 md:gap-[120px] text-white">
+    <section className="w-full bg-[#00020f] md:py-20 py-0">
+      <div className="w-[90%] md:w-[80%] mx-auto flex flex-col md:flex-row gap-10 md:gap-[120px] text-white">
 
         {/* MOBILE TITLE */}
-        <h3 className="md:hidden text-xl  text-center font-semibold text-white mb-6">
+        <h3 className="md:hidden text-xl  text-center font-semibold text-white mb-6 mt-10">
           FAQs
         </h3>
 

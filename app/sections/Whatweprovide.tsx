@@ -14,17 +14,19 @@ const CARD_DATA = [
   {
     title: "Blockchain Development",
     content: [
-      "Web3 App Development",
-      "Web3 Integration for Existing Systems",
-      "Wallet Connect & Blockchain Authentication",
-      "Web3 Identity & Access Management",
+      "Custom Blockchain Development",
+      "Smart Contract Development",
+      "Dapp Development",
+      "Layer 1 Blockchain Development",
+      "Layer 2 Blockchain Development",
+      "NFT Marketplace Development",
+      "Hyperledger Blockchain Development",
     ],
   },
-  { title: "AI & Automation", content: ["Web3 App Development", "Automation", "ML Models", "Analytics"] },
-  { title: "DApp Development", content: ["Ethereum", "Solana", "Web3 UI", "Gas Opt"] },
-  { title: "Crypto Development", content: ["Coins", "Exchanges", "Web3 App Development", "Audits"] },
-  { title: "Web3 Solutions", content: ["Web3 Apps", "Integration", "Web3 App Development Connect"] },
-  { title: "Gaming & Metaverse", content: ["NFT Games", "Metaverse", "Web3 App Development", "Economies"] },
+  { title: "Crypto", content: ["Crypto Exchange Development ", "Crypto Wallet Development", "Token & Coin Creation", "ICO Development","IDO Development","Crypto Trading Bot Development"] },
+  { title: "Game Development", content: ["Play-to-Earn Game Development", "Move-to-Earn Game Development", "2D & 3D Game Development ", "NFT Game Development","Casino Game Development","Unreal Engine Game Development","iGaming Software Development","Poker Game Development"] },
+  { title: "Game Art ", content: ["3D Art", "2D Art", "Character Design", "Game Animation","UI & UX Service"] },
+  { title: "Prediction Market", content: ["Prediction Market Software"] },
 ];
 
 /* ================= COMPONENT ================= */
@@ -244,7 +246,7 @@ const resetAll = () => {
   return (
     <section className="w-full h-full md:[h-300px] lg:h-[760px]  bg-[#05060f] overflow-hidden flex flex-col">
       <h2 className="text-center text-transparent bg-clip-text bg-[linear-gradient(90deg,#00A993_0%,#57ADCD_54%,#FFFFFF_60%)]
-      text-5xl md:text-6xl font-semibold mb-16">
+      text-3xl md:text-6xl font-semibold mb-16">
         What We Provide
       </h2>
 

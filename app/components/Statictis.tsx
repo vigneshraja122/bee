@@ -9,55 +9,45 @@ const Statictis = () => {
                 <div className="relative inline-flex items-center gap-1 rounded-xl 
           bg-linear-to-r from-[#0B0F1C] via-[#111827] to-[#0B0F1C]"
                 >
-                    <NavLabel label="Who we are" className="md:text-[15px]"/>
+                    <NavLabel label="Who we are" className="md:text-[15px]" />
                 </div>
 
                 <div className="hidden md:flex flex-col ">
                     <div className="flex items-center gap-2 flex-wrap">
-                        <h1 className="xl:text-4xl lg:text-4xl md:text-2xl text-white">Create smart blockchain</h1>
-                        <img src="/assets/images/animation.svg" className="w-10 h-10" />
-                        <h1 className="xl:text-4xl lg:text-4xl md:text-2xl text-white">systems that think,</h1>
+                        <h1 className="xl:text-4xl lg:text-4xl md:text-2xl text-white">We combine deep expertise with</h1>
+                        <img src="/assets/images/animation.svg" className="w-16 h-16" />
+                        <h1 className="xl:text-4xl lg:text-4xl md:text-2xl text-white">EVO AI to enhance</h1>
                     </div>
 
                     <div className="flex items-center flex-wrap">
                         <h1 className="xl:text-4xl lg:text-4xl md:text-2xl text-white">
-                            adapt, and evolve just like the businesses
+                            the development process, optimization, and
                         </h1>
-                        <img src="/assets/images/Butterfly.gif" className="w-14 h-14" />
-                        <h1 className="xl:text-4xl lg:text-4xl md:text-2xl text-white">that use</h1>
+                        <img src="/assets/images/Butterfly.gif" className="w-20 h-20" />
+                        <h1 className="xl:text-4xl lg:text-4xl md:text-2xl text-white">scaling</h1>
                     </div>
 
 
                     <div className="flex items-center">
-                        <h1 className="xl:text-4xl lg:text-4xl md:text-2xl text-white">them.</h1>
-                        <img src="/assets/images/Container (2).svg" className="w-40" />
+                        <h1 className="xl:text-4xl lg:text-4xl md:text-2xl text-white">of decentralized solutions.</h1>
+                        <img src="/assets/images/Container (2).svg" className="w-60" />
                     </div>
                 </div>
 
                 {/* ================= MOBILE (EXACT IMAGE LAYOUT) ================= */}
-                <div className="flex md:hidden flex-col gap-4 text-white text-[24px] xl:p-0 lg:p-0 md:p-0 sm:p-2 p-2">
+                <div className="flex md:hidden flex-col gap-1 text-white text-[24px] xl:p-0 lg:p-0 md:p-0 sm:p-2 p-4">
 
-                    <h1>Create smart blockchain</h1>
 
-                    <div className="flex items-center gap-3">
-                        <img src="/assets/images/animation.svg" className="w-10 h-10" />
-                        <h1>systems that think,</h1>
+
+                    <div className="flex justify-between items-center gap-3 ">
+                        <div className="space-y-4 text-[28px]">
+                            <h2>Create smart blockchain systems that think,EVO AI to enhance the development process,optimization, and scaling of decentralized solutions</h2>
+                            <h2></h2>
+                        </div>
+                       
                     </div>
 
-                    <h1>adapt, and evolve just like</h1>
-
-
-
-                    <div className="flex items-center gap-3">
-                        <div className="space-y-4"> <h1>the businesses</h1><h1>that use them.</h1></div>
-
-                        <img src="/assets/images/Butterfly.gif" className="w-20 h-20" />
-                    </div>
-
-                    <img
-                        src="/assets/images/Container (2).svg"
-                        className="w-[90%] mt-2"
-                    />
+                    
                 </div>
             </div>
 
@@ -66,7 +56,7 @@ const Statictis = () => {
 
                 {/* -------- CENTER (1st on mobile) -------- */}
                 <div className="w-full md:w-[30%] order-1 md:order-2 h-full flex justify-center items-center">
-                    <div className="relative w-[80%] md:w-full xl:h-full lg:h-full md:h-[400px] rounded-[32px] overflow-hidden h-[500px]
+                    <div className="relative w-[90%] md:w-full xl:h-full lg:h-full md:h-[400px] rounded-[32px] overflow-hidden h-[500px]
             bg-gradient-to-b from-[#00A4AF] to-black 
             border border-white/40 shadow-2xl"
                     >

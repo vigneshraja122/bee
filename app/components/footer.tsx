@@ -141,7 +141,7 @@ const MailIcon = ({ className = "" }: { className?: string }) => (
         <MailIcon className="w-8 h-8 lg:w-10 lg:h-10" />
       </div>
       <p className="absolute left-[80px] sm:left-[90px] top-1/2 -translate-y-1/2 text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] font-manrope text-black">
-        info@beelockchain.com
+        contact@beelockchain.com
       </p>
     </div>
 
@@ -149,7 +149,7 @@ const MailIcon = ({ className = "" }: { className?: string }) => (
     <div className="absolute left-1/2 -translate-x-1/2 top-[260px] sm:top-[300px] lg:top-[350px] w-[95%] sm:w-[90%] lg:w-[80%] px-6 text-start">
       <p className="text-[15px] sm:text-[16px] md:text-[18px] font-poppins font-semibold leading-relaxed">
         <span className="text-[#1BFFE1]">
-          Beelockchain – The World’s First AI-Centered Blockchain Development Company
+          Beelockchain –World’s First AI-Centered Blockchain Development Company
         </span>
         <br />
         <span className="text-white/80">
@@ -312,14 +312,14 @@ const MailIcon = ({ className = "" }: { className?: string }) => (
   <div className="relative z-10 flex justify-center mt-14">
     <div className="flex items-center gap-3 px-6 py-1  font-manrope rounded-full bg-[#1BFFE1] text-black text-sm font-medium">
      <MailIcon className="w-10 h-10" />
-      info@beelockchain.com
+      contact@beelockchain.com
     </div>
   </div>
 
   {/* DESCRIPTION */}
   <div className="relative z-10 mt-6 text-start text-[12px] leading-relaxed">
     <p className="text-[#1BFFE1]  font-poppins font-medium">
-      Beelockchain – the World’s First AI-Centered Blockchain Development Company
+      Beelockchain – World’s First AI-Centered Blockchain Development Company
     </p>
     <p className="text-white/70  font-poppins mt-2">
       Future-ready blockchain development, smart contract solutions, Web3 ecosystems, and AI-powered automation all under one roof.

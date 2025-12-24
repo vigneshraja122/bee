@@ -26,7 +26,7 @@ const Aisolution = () => {
 
           {/* Main paragraph */}
           <p className="text-md leading-relaxed text-white/90">
-            At the heart of <span className="font-semibold text-white">Beelockchain</span> lies{" "}
+            At the heart of <span className="font-semibold text-white">Beelockchain</span> lies
             <span className="font-semibold text-cyan-300">EVO AI</span>, our autonomous
             development engine that elevates every project with:
           </p>
@@ -56,7 +56,7 @@ const Aisolution = () => {
             intelligence into blockchain engineering enabling the world’s first truly
             <br />
             <span className="font-semibold text-cyan-300">
-              AI-centered blockchain workflows
+              AI-centric blockchain workflow generator.
             </span>.
           </p>
         </div>
@@ -114,8 +114,8 @@ const Aisolution = () => {
           <span className="font-semibold text-white">EVO AI</span> brings machine
           intelligence into blockchain engineering enabling the world’s first truly{" "}
           <span className="font-semibold text-cyan-300">
-            AI-centered blockchain workflows
-          </span>.
+            AI-centric blockchain workflow generator.
+          </span>
         </p>
       </div>
     </div>
