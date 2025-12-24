@@ -18,7 +18,7 @@ const TechTrendsMarquee = () => {
                 [-webkit-text-fill-color:transparent]
                 [-webkit-text-stroke:1.5px_rgba(46,242,227,0.9)]
                 bg-gradient-to-r from-teal-400/0 to-teal-400/100 via-teal-400/60 bg-[length:200%_200%] bg-[position:0%_50%] 
-                animate-gradient-move"
+                animate-gradient-move font-poppins"
             >
               GENERATIVE AI
             </h1>

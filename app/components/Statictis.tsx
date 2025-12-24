@@ -12,7 +12,7 @@ const Statictis = () => {
                     <NavLabel label="Who we are" className="md:text-[15px]" />
                 </div>
 
-                <div className="hidden md:flex flex-col ">
+                <div className="hidden md:flex flex-col font-manrope">
                     <div className="flex items-center gap-2 flex-wrap">
                         <h1 className="xl:text-4xl lg:text-4xl md:text-2xl text-white">We combine deep expertise with</h1>
                         <img src="/assets/images/animation.svg" className="w-16 h-16" />
@@ -41,7 +41,7 @@ const Statictis = () => {
 
                     <div className="flex justify-between items-center gap-3 ">
                         <div className="space-y-4 text-[28px]">
-                            <h2>Create smart blockchain systems that think,EVO AI to enhance the development process,optimization, and scaling of decentralized solutions</h2>
+                            <h2 className="font-manrope">Create smart blockchain systems that think,EVO AI to enhance the development process,optimization, and scaling of decentralized solutions</h2>
                             <h2></h2>
                         </div>
                        
@@ -61,11 +61,11 @@ const Statictis = () => {
             border border-white/40 shadow-2xl"
                     >
                         <div className="pt-12 text-center md:px-6">
-                            <p className="text-white/90 xl:text-3xl lg:text-3xl md:text-xl text-md">Powered by</p>
-                            <h1 className="mt-4 text-white xl:text-6xl lg:text-6xl md:text-xl text-6xl font-bold leading-none">
+                            <p className="text-white/90 xl:text-3xl lg:text-3xl md:text-xl text-md font-poppins">Powered by</p>
+                            <h1 className="mt-4 text-white xl:text-6xl lg:text-6xl md:text-xl text-6xl font-bold leading-none font-manrope">
                                 EVO AI™
                             </h1>
-                            <p className="mt-4 text-white/90 xl:text-4xl lg:text-4xl md:text-xl text-lg">
+                            <p className="mt-4 text-white/90 xl:text-4xl lg:text-4xl md:text-xl text-lg font-poppins">
                                 Intelligence Engine
                             </p>
                         </div>
@@ -92,7 +92,7 @@ const Statictis = () => {
             shadow-[inset_0_1px_1px_rgba(255,255,255,0.15),_0_20px_40px_rgba(0,0,0,0.8)]
             flex flex-col justify-center items-center w-[50%] h-32"
                     >
-                        <h1 className="xl:text-4xl lg:text-4xl md:text-sm text-md font-semibold text-center">
+                        <h1 className="xl:text-4xl lg:text-4xl md:text-sm text-md font-semibold text-center font-manrope">
                             Pioneers in Blockchain Engineering
                         </h1>
                     </div>
@@ -104,7 +104,7 @@ const Statictis = () => {
             flex flex-col justify-center items-center xl:gap-4 lg:gap-4 md:gap-4"
                     >
                         <img src="/assets/images/Frame 19.svg" />
-                        <p className="text-center xl:text-2xl lg:text-2xl md:text-xl text-md">
+                        <p className="text-center xl:text-2xl lg:text-2xl md:text-xl text-md font-manrope">
                             Predictive & <br /> Adaptive <br /> Architecture
                         </p>
                     </div>
@@ -121,11 +121,11 @@ const Statictis = () => {
             flex flex-col justify-center items-center md:gap-4 w-[40%] h-32"
                     >
                         <h1 className="xl:text-5xl lg:text-5xl md:text-xl text-md text-center bg-gradient-to-b 
-              from-[#00A4AF] to-[#00FF97] bg-clip-text text-transparent"
+              from-[#00A4AF] to-[#00FF97] bg-clip-text text-transparent font-Poppins"
                         >
                             Automated & Optimized
                         </h1>
-                        <p className="xl:text-2xl lg:text-2xl md:text-sm text-[15px] text-center">Development Workflows</p>
+                        <p className="xl:text-2xl lg:text-2xl md:text-sm text-[15px] text-center font-Poppins">Development Workflows</p>
                     </div>
 
                     <div className="text-white md:w-full xl:h-64 lg:h-45 md:h-45 rounded-[32px] 
@@ -134,7 +134,7 @@ const Statictis = () => {
             shadow-[inset_0_1px_1px_rgba(255,255,255,0.15),_0_20px_40px_rgba(0,0,0,0.8)]
             flex flex-col justify-center items-center w-[50%] h-32"
                     >
-                        <h1 className="xl:text-5xl lg:text-5xl md:text-xl text-xl text-center">
+                        <h1 className="xl:text-5xl lg:text-5xl md:text-xl text-xl text-center font-manrope">
                             Accelerated<br />Time-to-<br />Market
                         </h1>
                     </div>

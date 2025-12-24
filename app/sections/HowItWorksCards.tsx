@@ -20,7 +20,7 @@ const HowItWorksSection = () => {
           text-center text-transparent bg-clip-text
           bg-[linear-gradient(90deg,#00A993_0%,#57ADCD_54%,#FFFFFF_60%)]
           text-3xl sm:text-4xl lg:text-5xl md:text-6xl
-          font-semibold mb-10 sm:mb-14 lg:mb-16
+          font-semibold mb-10 sm:mb-14 lg:mb-16 font-manrope
         ">
           How It Works
         </h2>
@@ -31,10 +31,10 @@ const HowItWorksSection = () => {
           {/* Card 1 */}
           <div className="lg:col-span-2 rounded-2xl bg-gradient-to-b from-emerald-950 to-teal-800 border border-slate-600 shadow-xl overflow-hidden">
             <div className="p-5 sm:p-6 lg:p-8">
-              <h3 className="text-gray-200 text-lg sm:text-xl lg:text-2xl font-medium mb-3 sm:mb-4">
+              <h3 className="text-gray-200 text-lg sm:text-xl lg:text-2xl font-medium mb-3 sm:mb-4 font-manrope">
                 User enters an idea :
               </h3>
-              <p className="text-stone-300 text-sm sm:text-base lg:text-lg">
+              <p className="text-stone-300 text-sm sm:text-base lg:text-lg font-poppins">
                 “Example: I want a staking platform where users earn rewards based on holding time.”
               </p>
             </div>
@@ -58,10 +58,10 @@ const HowItWorksSection = () => {
               className="w-full object-cover"
             />
             <div className="p-5 sm:p-6">
-              <h3 className="text-gray-200 text-lg sm:text-xl lg:text-2xl font-medium mb-2 sm:mb-3">
+              <h3 className="text-gray-200 text-lg sm:text-xl lg:text-2xl font-medium mb-2 sm:mb-3 font-manrope">
                 EVO AI analyzes the concept
               </h3>
-              <p className="text-stone-300 text-sm sm:text-base lg:text-lg">
+              <p className="text-stone-300 text-sm sm:text-base lg:text-lg font-poppins">
                 Our AI breaks the idea into technology requirements, features,
                 modules, user flows, and blockchain logic.
               </p>
@@ -78,10 +78,10 @@ const HowItWorksSection = () => {
               className="w-full object-cover"
             />
             <div className="p-5 sm:p-6">
-              <h3 className="text-gray-200 text-lg sm:text-xl lg:text-2xl font-medium mb-2 sm:mb-3">
+              <h3 className="text-gray-200 text-lg sm:text-xl lg:text-2xl font-medium mb-2 sm:mb-3 font-manrope">
                 AI auto-generates the full blueprint
               </h3>
-              <p className="text-stone-300 text-sm sm:text-base lg:text-lg">
+              <p className="text-stone-300 text-sm sm:text-base lg:text-lg font-poppins">
                 Within seconds, you get a structured project document.
               </p>
             </div>
@@ -97,10 +97,10 @@ const HowItWorksSection = () => {
               className="w-full object-cover"
             />
             <div className="p-5 sm:p-6">
-              <h3 className="text-gray-200 text-lg sm:text-xl lg:text-2xl font-medium mb-2 sm:mb-3">
+              <h3 className="text-gray-200 text-lg sm:text-xl lg:text-2xl font-medium mb-2 sm:mb-3 font-manrope">
                 Structured project document
               </h3>
-              <p className="text-stone-300 text-sm sm:text-base lg:text-lg">
+              <p className="text-stone-300 text-sm sm:text-base lg:text-lg font-poppins">
                 Within seconds, you get a clear, ready-to-build project blueprint.
               </p>
             </div>
@@ -116,10 +116,10 @@ const HowItWorksSection = () => {
               className="w-full object-cover"
             />
             <div className="p-5 sm:p-6">
-              <h3 className="text-gray-200 text-lg sm:text-xl lg:text-2xl font-medium mb-2 sm:mb-3">
+              <h3 className="text-gray-200 text-lg sm:text-xl lg:text-2xl font-medium mb-2 sm:mb-3 font-manrope">
                 Download as PDF
               </h3>
-              <p className="text-stone-300 text-sm sm:text-base lg:text-lg">
+              <p className="text-stone-300 text-sm sm:text-base lg:text-lg font-poppins">
                 Share it with your team, investors, or kickstart development
                 with Beelockchain.
               </p>

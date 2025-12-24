@@ -88,11 +88,11 @@ const Whychooseus = () => {
             {/* DESIGN CARD (bigger weight) */}
             <div className="flex-[2] rounded-[32px] border border-white/10 bg-gradient-to-br from-[#2A2A2A] via-[#151515] to-[#050505] shadow-[inset_0_1px_1px_rgba(255,255,255,0.15),_0_20px_40px_rgba(0,0,0,0.8)] xl:p-8 lg:p-8 md:p-4 sm:p-4 p-4 flex flex-col justify-between">
              <Image src="/assets/images/small-logo.svg" alt="Design Icon" width={64} height={64} className="w-16 h-16 mb-4" />
-              <h3 className="xl:text-3xl lg:text-3xl md:text-lg font-semibold leading-tight">
+              <h3 className="xl:text-3xl lg:text-3xl md:text-lg font-semibold leading-tight font-manrope">
                 Design & UI/UX
               </h3>
 
-              <div className="mt-8">
+              <div className="mt-8 font-poppins">
                 <p className="xl:text-emerald-50 lg:text-emerald-50 md:text-[10px] text-[20px] font-bold">
                   Development Speed
                 </p>

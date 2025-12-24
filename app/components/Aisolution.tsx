@@ -19,13 +19,13 @@ const Aisolution = () => {
           {/* Badge */}
           <div className="inline-flex items-center rounded-full px-4 py-1
             bg-cyan-400/15 border border-cyan-300/30">
-            <span className="text-cyan-300 font-semibold tracking-wide">
+            <span className="text-cyan-300 font-semibold tracking-wide font-manrope">
               AI SOLUTIONS <span className="text-cyan-200">(Powered by EVO AI)</span>
             </span>
           </div>
 
           {/* Main paragraph */}
-          <p className="text-md leading-relaxed text-white/90">
+          <p className="text-md leading-relaxed text-white/90 font-manrope">
             At the heart of <span className="font-semibold text-white">Beelockchain</span> lies
             <span className="font-semibold text-cyan-300">EVO AI</span>, our autonomous
             development engine that elevates every project with:
@@ -43,7 +43,7 @@ const Aisolution = () => {
             ].map((item, index) => (
               <li key={index} className="flex items-start gap-4">
                 <span className="mt-2 w-2 h-2 rounded-full bg-cyan-300 flex-shrink-0" />
-                <span className="text-white/85 text-lg leading-relaxed">
+                <span className="text-white/85 text-lg leading-relaxed font-poppins">
                   {item}
                 </span>
               </li>
@@ -51,7 +51,7 @@ const Aisolution = () => {
           </ul>
 
           {/* Closing */}
-          <p className="text-lg leading-relaxed text-white/90">
+          <p className="text-lg leading-relaxed text-white/90 font-manrope">
             <span className="font-semibold text-white">EVO AI</span> brings machine
             intelligence into blockchain engineering enabling the world’s first truly
             <br />

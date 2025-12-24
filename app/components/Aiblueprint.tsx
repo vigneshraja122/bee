@@ -585,7 +585,7 @@ const downloadPDF = async (): Promise<void> => {
           text-center text-transparent bg-clip-text
           bg-[linear-gradient(90deg,#00A993_0%,#57ADCD_54%,#FFFFFF_60%)]
           text-3xl sm:text-4xl lg:text-5xl md:text-6xl
-          font-semibold mb-5 sm:mb-14 md:mb-14 lg:mb-16
+          font-semibold mb-5 sm:mb-14 md:mb-14 lg:mb-16 font-poppins
         ">
           EVO AI Blueprint Generator
         </h2>

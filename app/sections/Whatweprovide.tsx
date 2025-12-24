@@ -246,7 +246,7 @@ const resetAll = () => {
   return (
     <section className="w-full h-full md:[h-300px] lg:h-[760px]  bg-[#05060f] overflow-hidden flex flex-col">
       <h2 className="text-center text-transparent bg-clip-text bg-[linear-gradient(90deg,#00A993_0%,#57ADCD_54%,#FFFFFF_60%)]
-      text-3xl md:text-6xl font-semibold mb-16">
+      text-3xl md:text-6xl font-semibold mb-16 font-poppins">
         What We Provide
       </h2>
 
@@ -263,7 +263,7 @@ const resetAll = () => {
 
             {/* CONTENT */}
             <div className="relative z-10 h-full p-10 pointer-events-none">
-              <h3 className="collapsed-title absolute inset-0 flex items-center justify-center text-white text-3xl whitespace-nowrap">
+              <h3 className="collapsed-title absolute inset-0 flex items-center justify-center text-white text-3xl whitespace-nowrap font-manrope">
                 {card.title}
               </h3>
 
@@ -274,7 +274,7 @@ const resetAll = () => {
                 </div>
               </div>
 
-              <ul className="content mt-28 space-y-4 text-[#1BFFE1] text-[20px] leading-7">
+              <ul className="content mt-28 space-y-4 text-[#1BFFE1] text-[20px] leading-7 font-poppins">
                 {card.content.map((c, idx) => (
                   <li key={idx}>• {c}</li>
                 ))}
@@ -331,7 +331,7 @@ const resetAll = () => {
           </div>
 
           {/* TITLE */}
-         <span className="text-white text-sm sm:text-base font-medium">
+         <span className="text-white text-sm sm:text-base font-medium font-manrope">
   {card.title}
 </span>
         </button>
@@ -343,7 +343,7 @@ const resetAll = () => {
   } overflow-hidden`}
 >
           <div className="px-6 ml-4 pb-4">
-            <ul className="space-y-3 text-[#1BFFE1] text-sm">
+            <ul className="space-y-3 text-[#1BFFE1] text-sm font-poppins">
               {card.content.map((c, idx) => (
                 <li key={idx}>• {c}</li>
               ))}

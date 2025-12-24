@@ -7,7 +7,7 @@ const Teams = () => {
             backgroundRepeat: "no-repeat",
         }}>
 
-      <h2 className="text-white font-bold text-4xl tracking-widest md:mb-10">
+      <h2 className="text-white font-bold text-4xl tracking-widest md:mb-10 font-manrope">
         TEAMS
       </h2>
 
@@ -37,7 +37,7 @@ const Teams = () => {
             
           "
         >
-          <p className="text-white xl:text-xl lg:text-xl md:text-xl sm:text-xl text-[15px] xl:p-0 lg:p-0 md:p-0 sm:p-2 p-5 leading-relaxed font-medium mt-28">
+          <p className="text-white xl:text-xl lg:text-xl md:text-xl sm:text-xl text-[15px] xl:p-0 lg:p-0 md:p-0 sm:p-2 p-5 leading-relaxed font-medium mt-28 font-poppins">
             Our multidisciplinary team consists of blockchain engineers, AI
             researchers, smart contract auditors, Web3 developers, game designers,
             and enterprise consultants delivering world-class digital

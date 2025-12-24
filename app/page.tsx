@@ -24,7 +24,6 @@ export default function Home() {
       <TechTrendsMarquee />
       <Aisolution />
       <Aiblueprint />
-
       {/* <Whatwebuild/> */}
       <HowItWorksCards />
       <Whatweprovide />
